@@ -56,3 +56,4 @@ C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Microsof
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\System.Net.Mail.Abstractions.dll

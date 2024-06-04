@@ -83,6 +83,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "System.Net.Mail.Abstractions": {
+              "target": "Package",
+              "version": "[1.1.21, )"
             }
           },
           "imports": [
@@ -191,6 +195,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "System.Net.Mail.Abstractions": {
+              "target": "Package",
+              "version": "[1.1.21, )"
             }
           },
           "imports": [
@@ -288,6 +296,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "System.Net.Mail.Abstractions": {
+              "target": "Package",
+              "version": "[1.1.21, )"
             }
           },
           "imports": [
@@ -386,6 +398,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
+            },
+            "System.Net.Mail.Abstractions": {
+              "target": "Package",
+              "version": "[1.1.21, )"
             }
           },
           "imports": [

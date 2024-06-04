@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Interface;
 using Microsoft.Extensions.Configuration;
 using ModelLayer.Entity;
+using ModelLayer.RequestDTO;
 using RepositoryLayer.Interface;
 using System;
 using System.Collections.Generic;
@@ -21,13 +22,29 @@ namespace BusinessLayer.Service
 
         //start
 
-        public Task<bool> RegisterUser(User userRegistration)
+        public Task<bool> AdminRegistration(AdminRegistrationModel Admin)
         {
-            return Registartion.RegisterUser(userRegistration);
+            return Registartion.AdminRegistration(Admin);
         }
-        public Task<string> UserLogin(string email, string password, IConfiguration configuration)
+
+        public Task<bool> CustomerRegistration(CustomerRegistrationModel Customer)
         {
-            return Registartion.UserLogin(email, password, configuration);
+            return Registartion.CustomerRegistration(Customer);
+        }
+
+        public Task<bool> EmployeeRegistration(EmployeeRegistrationModel Employee)
+        {
+            return Registartion.EmployeeRegistration(Employee);
+        }
+
+        public Task<bool> AgentRegistration(InsuranceAgentRegistrationModel Agent)
+        {
+            return Registartion.AgentRegistration(Agent);
+        }
+
+        public Task<string> UserLogin(string email, string password, IConfiguration configuration, string role)
+        {
+            return Registartion.UserLogin(email, password, configuration,role);
         }
 
     }

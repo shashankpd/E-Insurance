@@ -14,7 +14,8 @@
           "NLog": "5.3.2",
           "NLog.Extensions.Logging": "5.3.11",
           "NLog.Web.AspNetCore": "5.3.11",
-          "System.Data.SqlClient": "4.8.6"
+          "System.Data.SqlClient": "4.8.6",
+          "System.Net.Mail.Abstractions": "1.1.21"
         },
         "runtime": {
           "ModelLayer.dll": {}
@@ -252,6 +253,14 @@
           }
         }
       },
+      "System.Net.Mail.Abstractions/1.1.21": {
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Mail.Abstractions.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "1.1.21.0"
+          }
+        }
+      },
       "System.Security.AccessControl/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.0",
@@ -455,6 +464,13 @@
       "sha512": "sha512-Thhbe1peAmtSBFaV/ohtykXiZSOkx59Da44hvtWfIMFofDA3M3LaVyjstACf2rKGn4dEDR2cUpRAZ0Xs/zB+7Q==",
       "path": "system.identitymodel.tokens.jwt/7.1.2",
       "hashPath": "system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512"
+    },
+    "System.Net.Mail.Abstractions/1.1.21": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ai5VFcfdYVmOciq3AUD5i9oy7LE2zZFUouWDBHlFufzkUXsw9xnEW4DgtJNbmMVqHV9Mt5aJKoHRdie7+bNi5w==",
+      "path": "system.net.mail.abstractions/1.1.21",
+      "hashPath": "system.net.mail.abstractions.1.1.21.nupkg.sha512"
     },
     "System.Security.AccessControl/4.7.0": {
       "type": "package",

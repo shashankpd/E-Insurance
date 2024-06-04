@@ -445,6 +445,15 @@
           }
         }
       },
+      "System.Net.Mail.Abstractions/1.1.21": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Net.Mail.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Net.Mail.Abstractions.dll": {}
+        }
+      },
       "System.Security.AccessControl/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -501,7 +510,8 @@
           "NLog": "5.3.2",
           "NLog.Extensions.Logging": "5.3.11",
           "NLog.Web.AspNetCore": "5.3.11",
-          "System.Data.SqlClient": "4.8.6"
+          "System.Data.SqlClient": "4.8.6",
+          "System.Net.Mail.Abstractions": "1.1.21"
         },
         "compile": {
           "bin/placeholder/ModelLayer.dll": {}
@@ -521,7 +531,8 @@
           "NLog": "5.3.2",
           "NLog.Extensions.Logging": "5.3.11",
           "NLog.Web.AspNetCore": "5.3.11",
-          "System.Data.SqlClient": "4.8.6"
+          "System.Data.SqlClient": "4.8.6",
+          "System.Net.Mail.Abstractions": "1.1.21"
         },
         "compile": {
           "bin/placeholder/RepositoryLayer.dll": {}
@@ -1325,6 +1336,18 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "System.Net.Mail.Abstractions/1.1.21": {
+      "sha512": "ai5VFcfdYVmOciq3AUD5i9oy7LE2zZFUouWDBHlFufzkUXsw9xnEW4DgtJNbmMVqHV9Mt5aJKoHRdie7+bNi5w==",
+      "type": "package",
+      "path": "system.net.mail.abstractions/1.1.21",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/System.Net.Mail.Abstractions.dll",
+        "system.net.mail.abstractions.1.1.21.nupkg.sha512",
+        "system.net.mail.abstractions.nuspec"
+      ]
+    },
     "System.Security.AccessControl/4.7.0": {
       "sha512": "JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
       "type": "package",
@@ -1446,7 +1469,8 @@
       "NLog.Extensions.Logging >= 5.3.11",
       "NLog.Web.AspNetCore >= 5.3.11",
       "RepositoryLayer >= 1.0.0",
-      "System.Data.SqlClient >= 4.8.6"
+      "System.Data.SqlClient >= 4.8.6",
+      "System.Net.Mail.Abstractions >= 1.1.21"
     ]
   },
   "packageFolders": {
@@ -1532,6 +1556,10 @@
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.8.6, )"
+          },
+          "System.Net.Mail.Abstractions": {
+            "target": "Package",
+            "version": "[1.1.21, )"
           }
         },
         "imports": [

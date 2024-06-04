@@ -1817,3 +1817,237 @@ Error Number:137,State:2,Class:15
 2024-06-03 21:29:09.7005|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance) in 57.1058ms
 2024-06-03 21:29:09.7005|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
 2024-06-03 21:29:09.7005|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=string14&password=string - 200 - application/json;+charset=utf-8 60.2182ms
+2024-06-03 21:29:15.9018|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-03 21:29:15.9159|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 13.7955ms
+2024-06-03 21:29:15.9819|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-03 21:29:15.9819|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-03 21:29:15.9819|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.1601ms
+2024-06-03 21:29:16.0157|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 33.1438ms
+2024-06-03 21:29:16.1935|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-03 21:29:16.2090|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 15.4372ms
+2024-06-03 22:56:10.9076|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 22:56:11.0707|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-03 22:56:11.0707|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-03 22:56:11.0707|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-03 22:56:11.0707|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-03 22:56:11.0707|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-03 22:56:18.1932|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-03 22:56:18.6715|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 479.6263ms
+2024-06-03 22:56:19.1982|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-03 22:56:19.1982|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-03 22:56:19.1982|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.4038ms
+2024-06-03 22:56:19.9141|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 713.3801ms
+2024-06-03 22:56:19.9933|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-03 22:56:20.1058|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 112.4377ms
+2024-06-03 22:57:17.2511|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 174
+2024-06-03 22:57:17.2511|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 22:57:17.2919|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 22:57:17.5371|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-03 22:57:17.5371|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-03 22:57:17.5371|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-03 22:57:17.5371|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-03 22:57:17.6020|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'ModelLayer.RequestDTO.AdminRegistrationModel' does not contain a definition for 'Password'
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role)
+2024-06-03 22:57:17.6661|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-03 22:57:17.6797|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 374.6578ms
+2024-06-03 22:57:17.6797|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 22:57:17.6797|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 429.0238ms
+2024-06-03 22:58:29.8734|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 174
+2024-06-03 22:58:29.8758|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 22:58:29.8758|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 22:58:29.8758|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-03 22:58:29.8758|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-03 22:58:29.8758|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-03 22:58:29.8758|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-03 22:58:29.8758|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'ModelLayer.RequestDTO.AdminRegistrationModel' does not contain a definition for 'Password'
+   at CallSite.Target(Closure, CallSite, Object)
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role)
+2024-06-03 22:58:29.8758|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-03 22:58:29.8758|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 2.8149ms
+2024-06-03 22:58:29.8758|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 22:58:29.8758|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 5.9051ms
+2024-06-03 23:02:28.0590|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 23:02:28.2699|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-03 23:02:28.2699|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-03 23:02:28.2699|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-03 23:02:28.2699|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-03 23:02:28.2699|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-03 23:02:28.7635|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-03 23:02:29.1577|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 393.5524ms
+2024-06-03 23:02:29.2294|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-03 23:02:29.2294|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-03 23:02:29.2294|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.0356ms
+2024-06-03 23:02:29.2583|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 28.7432ms
+2024-06-03 23:02:29.3683|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-03 23:02:29.4652|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 96.8934ms
+2024-06-03 23:04:01.0036|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 174
+2024-06-03 23:04:01.0196|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:04:01.0452|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:04:01.0960|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-03 23:04:01.0960|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-03 23:04:01.0960|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-03 23:04:01.0960|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-03 23:04:01.1313|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'ModelLayer.RequestDTO.AdminRegistrationModel' does not contain a definition for 'Password'
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role)
+2024-06-03 23:04:01.1604|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-03 23:04:01.1754|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 116.1197ms
+2024-06-03 23:04:01.1754|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:04:01.1754|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 172.5334ms
+2024-06-03 23:07:37.0236|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 23:07:37.1693|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-03 23:07:37.1693|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-03 23:07:37.1693|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-03 23:07:37.1693|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-03 23:07:37.1693|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-03 23:07:37.7573|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-03 23:07:37.9696|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 211.5321ms
+2024-06-03 23:07:38.0091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-03 23:07:38.0091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-03 23:07:38.0091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.5391ms
+2024-06-03 23:07:38.0404|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 31.2808ms
+2024-06-03 23:07:38.2261|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-03 23:07:38.3270|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 100.7931ms
+2024-06-03 23:08:05.1735|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 174
+2024-06-03 23:08:05.1907|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:08:05.2149|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:08:05.2410|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-03 23:08:05.2410|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-03 23:08:05.2410|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-03 23:08:05.2410|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-03 23:08:05.2641|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'ModelLayer.RequestDTO.AdminRegistrationModel' does not contain a definition for 'Password'
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role)
+2024-06-03 23:08:05.2994|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-03 23:08:05.2994|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 85.4762ms
+2024-06-03 23:08:05.3129|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:08:05.3129|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 139.6289ms
+2024-06-03 23:12:47.3678|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 23:12:47.5347|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-03 23:12:47.5347|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-03 23:12:47.5347|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-03 23:12:47.5347|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-03 23:12:47.5347|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-03 23:12:47.8078|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-03 23:12:48.0258|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 216.9829ms
+2024-06-03 23:12:48.0554|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-03 23:12:48.0554|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-03 23:12:48.0554|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.6344ms
+2024-06-03 23:12:48.0936|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 38.1233ms
+2024-06-03 23:12:48.2988|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-03 23:12:48.5022|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 203.3362ms
+2024-06-03 23:13:03.7567|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 174
+2024-06-03 23:13:03.7715|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:13:03.8062|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:13:03.8386|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-03 23:13:03.8386|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-03 23:13:03.8386|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-03 23:13:03.8386|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-03 23:13:03.8775|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|Microsoft.CSharp.RuntimeBinder.RuntimeBinderException: 'ModelLayer.RequestDTO.AdminRegistrationModel' does not contain a definition for 'Password'
+   at CallSite.Target(Closure, CallSite, Object)
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute1[T0,TRet](CallSite site, T0 arg0)
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role)
+2024-06-03 23:13:03.8988|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-03 23:13:03.9103|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 91.9871ms
+2024-06-03 23:13:03.9103|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:13:03.9103|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 154.0679ms
+2024-06-03 23:17:40.4604|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 23:17:40.6190|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-03 23:17:40.6190|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-03 23:17:40.6190|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-03 23:17:40.6190|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-03 23:17:40.6190|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-03 23:18:36.2302|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-03 23:18:36.3602|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-03 23:18:36.3602|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-03 23:18:36.3602|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-03 23:18:36.3602|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-03 23:18:36.3602|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-03 23:18:36.7198|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-03 23:18:36.8841|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 164.3550ms
+2024-06-03 23:18:36.9480|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-03 23:18:36.9480|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-03 23:18:36.9480|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.9421ms
+2024-06-03 23:18:36.9824|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 34.1970ms
+2024-06-03 23:18:37.0532|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-03 23:18:37.1467|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 93.3753ms
+2024-06-03 23:18:50.6770|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-03 23:18:50.6923|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:18:50.7116|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:18:50.7483|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-03 23:18:50.7483|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-03 23:18:50.7483|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-03 23:18:50.7483|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-03 23:18:51.3853|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|System.Exception: Email address is already in use
+   at RepositoryLayer.Service.RegistrationService.RegisterUser(User user) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 56
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 78
+2024-06-03 23:18:51.4428|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-03 23:18:51.4582|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 734.0408ms
+2024-06-03 23:18:51.4582|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:18:51.4582|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 782.8221ms
+2024-06-03 23:18:59.8326|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-03 23:18:59.8326|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:18:59.8326|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:18:59.8326|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-03 23:18:59.8326|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-03 23:18:59.8326|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-03 23:18:59.8326|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-03 23:18:59.8532|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|System.Exception: Email address is already in use
+   at RepositoryLayer.Service.RegistrationService.RegisterUser(User user) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 56
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 78
+2024-06-03 23:18:59.8532|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-03 23:18:59.8532|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 19.0691ms
+2024-06-03 23:18:59.8532|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:18:59.8532|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 23.7912ms
+2024-06-03 23:19:06.8634|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-03 23:19:06.8634|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:19:06.8634|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:19:06.8634|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-03 23:19:06.8634|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-03 23:19:06.8634|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-03 23:19:06.8634|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-03 23:19:06.9966|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Admin
+2024-06-03 23:19:06.9966|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-03 23:19:07.0064|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 140.7413ms
+2024-06-03 23:19:07.0064|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-03 23:19:07.0064|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 200 - application/json;+charset=utf-8 143.3677ms
+2024-06-03 23:19:37.4969|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Employee - application/json 150
+2024-06-03 23:19:37.4969|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-03 23:19:37.5072|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "EmployeeRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EmployeeRegistration(ModelLayer.RequestDTO.EmployeeRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:19:37.5196|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Employee
+2024-06-03 23:19:37.5196|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Employee
+2024-06-03 23:19:37.5196|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Employee
+2024-06-03 23:19:37.5196|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Employee
+2024-06-03 23:19:37.5635|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Employee
+2024-06-03 23:19:37.5635|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.EmployeeRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-03 23:19:37.5635|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance) in 60.7132ms
+2024-06-03 23:19:37.5635|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-03 23:19:37.5635|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Employee - 200 - application/json;+charset=utf-8 71.7022ms
+2024-06-03 23:20:00.5822|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Customer - application/json 173
+2024-06-03 23:20:00.5822|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-03 23:20:00.5822|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CustomerRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerRegistration(ModelLayer.RequestDTO.CustomerRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:20:00.6002|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Customer
+2024-06-03 23:20:00.6002|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Customer
+2024-06-03 23:20:00.6002|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Customer
+2024-06-03 23:20:00.6002|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Customer
+2024-06-03 23:20:00.6434|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Customer
+2024-06-03 23:20:00.6434|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.CustomerRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-03 23:20:00.6434|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance) in 54.5211ms
+2024-06-03 23:20:00.6434|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-03 23:20:00.6434|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Customer - 200 - application/json;+charset=utf-8 62.8584ms
+2024-06-03 23:20:24.8047|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/InsuranceAgent - application/json 150
+2024-06-03 23:20:24.8047|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance)'
+2024-06-03 23:20:24.8047|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "InsuranceAgentRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsuranceAgentRegistration(ModelLayer.RequestDTO.InsuranceAgentRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-03 23:20:24.8181|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: InsuranceAgent
+2024-06-03 23:20:24.8181|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: InsuranceAgent
+2024-06-03 23:20:24.8181|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: InsuranceAgent
+2024-06-03 23:20:24.8181|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: InsuranceAgent
+2024-06-03 23:20:24.8498|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: InsuranceAgent
+2024-06-03 23:20:24.8498|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.InsuranceAgentRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-03 23:20:24.8498|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance) in 45.6919ms
+2024-06-03 23:20:24.8498|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance)'
+2024-06-03 23:20:24.8498|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/InsuranceAgent - 200 - application/json;+charset=utf-8 51.5837ms

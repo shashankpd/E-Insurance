@@ -7,7 +7,6 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
-using System.Net.Mime;
 using UserManagement.Controllers;
 
 namespace E_Insurance.Controllers
@@ -25,62 +24,15 @@ namespace E_Insurance.Controllers
             _logger = logger;
         }
 
-        [HttpPost("SignUp/Admin")]
-        [Consumes(MediaTypeNames.Application.Json)]
-        public async Task<IActionResult> AdminRegistration([FromBody] AdminRegistrationModel user)
+        [HttpPost("AdminRegistration")]
+        public async Task<IActionResult> AdminRegistration([FromBody] AdminRegistrationModel admin)
         {
-            return await RegisterUser(user, "Admin");
-        }
-
-        [HttpPost("SignUp/Employee")]
-        [Consumes(MediaTypeNames.Application.Json)]
-        public async Task<IActionResult> EmployeeRegistration([FromBody] EmployeeRegistrationModel user)
-        {
-            return await RegisterUser(user, "Employee");
-        }
-
-        [HttpPost("SignUp/Customer")]
-        [Consumes(MediaTypeNames.Application.Json)]
-        public async Task<IActionResult> CustomerRegistration([FromBody] CustomerRegistrationModel user)
-        {
-            return await RegisterUser(user, "Customer");
-        }
-
-        [HttpPost("SignUp/InsuranceAgent")]
-        [Consumes(MediaTypeNames.Application.Json)]
-        public async Task<IActionResult> InsuranceAgentRegistration([FromBody] InsuranceAgentRegistrationModel user)
-        {
-            return await RegisterUser(user, "InsuranceAgent");
-        }
-
-        private async Task<IActionResult> RegisterUser<T>(T model, string role)
-        {
-            _logger.LogInformation("Starting registration for role: {Role}", role);
-
-            if (model == null)
-            {
-                _logger.LogWarning("Received null registration model for role: {Role}", role);
-                return BadRequest("Invalid registration data.");
-            }
-
             try
             {
-                _logger.LogInformation("Mapping registration model to User entity for role: {Role}", role);
-                var userEntity = MapToEntity(model, role);
-
-                if (userEntity == null)
+                var details = await _user.AdminRegistration(admin);
+                if (details)
                 {
-                    _logger.LogWarning("Mapping failed for role: {Role}", role);
-                    return BadRequest("Invalid registration data.");
-                }
-
-                _logger.LogInformation("Attempting to register user for role: {Role}", role);
-                var result = await _user.RegisterUser(userEntity);
-
-                if (result)
-                {
-                    _logger.LogInformation("User registration successful for role: {Role}", role);
-                    var response = new ResponseModel<T>
+                    var response = new ResponseModel<AdminRegistrationModel>
                     {
                         Success = true,
                         Message = "User Registration Successful"
@@ -89,98 +41,192 @@ namespace E_Insurance.Controllers
                 }
                 else
                 {
-                    _logger.LogError("User registration failed for role: {Role}", role);
-                    return BadRequest("User registration failed. Unknown reason.");
+                    return BadRequest(new ResponseModel<AdminRegistrationModel>
+                    {
+                        Success = false,
+                        Message = "Invalid input"
+                    });
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred during user registration for role: {Role}", role);
-
-                if (ex.Message.Contains("Email address is already in use"))
+                if (ex is DuplicateEmailException || ex is InvalidEmailFormatException)
                 {
-                    return BadRequest("Email address is already in use.");
-                }
-                else if (ex is InvalidDataException)
-                {
-                    return BadRequest("Invalid data provided for registration.");
+                    var response = new ResponseModel<AdminRegistrationModel>
+                    {
+                        Success = false,
+                        Message = ex.Message
+                    };
+                    return BadRequest(response);
                 }
                 else
                 {
-                    return BadRequest("User registration failed due to an unexpected error.");
+                    _logger.LogError(ex, "An error occurred while adding the user");
+                    var response = new ResponseModel<AdminRegistrationModel>
+                    {
+                        Success = false,
+                        Message = "An error occurred while adding the user"
+                    };
+                    return BadRequest(response);
                 }
             }
         }
 
-        private User MapToEntity<T>(T model, string role)
+        [HttpPost("CustomerRegistration")]
+        public async Task<IActionResult> CustomerRegistration([FromBody] CustomerRegistrationModel Customer)
         {
-            _logger.LogInformation("Mapping model to User entity for role: {Role}", role);
-
-            switch (model)
+            try
             {
-                case AdminRegistrationModel adminModel:
-                    return new User
+                var details = await _user.CustomerRegistration(Customer);
+                if (details)
+                {
+                    var response = new ResponseModel<AdminRegistrationModel>
                     {
-                        Username = adminModel.Username,
-                        Email = adminModel.Email,
-                        PasswordHash = adminModel.PasswordHash,
-                        PhoneNumber = adminModel.PhoneNumber,
-                        CreatedDate = DateTime.UtcNow,
-                        Role = role
+                        Success = true,
+                        Message = "User Registration Successful"
                     };
-
-                case EmployeeRegistrationModel employeeModel:
-                    return new User
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<CustomerRegistrationModel>
                     {
-                        Username = employeeModel.FirstName,
-                        Email = employeeModel.Email,
-                        PasswordHash = employeeModel.PasswordHash,
-                        PhoneNumber = employeeModel.PhoneNumber,
-                        CreatedDate = DateTime.UtcNow,
-                        Role = role
-                    };
-
-                case CustomerRegistrationModel customerModel:
-                    return new User
+                        Success = false,
+                        Message = "Invalid input"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is DuplicateEmailException || ex is InvalidEmailFormatException)
+                {
+                    var response = new ResponseModel<CustomerRegistrationModel>
                     {
-                        Username = customerModel.FirstName,
-                        Email = customerModel.Email,
-                        PasswordHash = customerModel.PasswordHash,
-                        PhoneNumber = customerModel.PhoneNumber,
-                        DateOfBirth = customerModel.DateOfBirth,
-                        Address = customerModel.Address,
-                        CreatedDate = DateTime.UtcNow,
-                        Role = role
+                        Success = false,
+                        Message = ex.Message
                     };
-
-                case InsuranceAgentRegistrationModel agentModel:
-                    return new User
+                    return BadRequest(response);
+                }
+                else
+                {
+                    _logger.LogError(ex, "An error occurred while adding the user");
+                    var response = new ResponseModel<CustomerRegistrationModel>
                     {
-                        Username = agentModel.FirstName,
-                        Email = agentModel.Email,
-                        PasswordHash = agentModel.PasswordHash,
-                        PhoneNumber = agentModel.PhoneNumber,
-                        CreatedDate = DateTime.UtcNow,
-                        Role = role
+                        Success = false,
+                        Message = "An error occurred while adding the user"
                     };
-
-                default:
-                    _logger.LogWarning("Invalid model type provided for role: {Role}", role);
-                    return null;
+                    return BadRequest(response);
+                }
             }
         }
 
+        [HttpPost("AgentRegistration")]
+        public async Task<IActionResult> AgentRegistration([FromBody] InsuranceAgentRegistrationModel Agent)
+        {
+            try
+            {
+                var details = await _user.AgentRegistration(Agent);
+                if (details)
+                {
+                    var response = new ResponseModel<InsuranceAgentRegistrationModel>
+                    {
+                        Success = true,
+                        Message = "User Registration Successful"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<InsuranceAgentRegistrationModel>
+                    {
+                        Success = false,
+                        Message = "Invalid input"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is DuplicateEmailException || ex is InvalidEmailFormatException)
+                {
+                    var response = new ResponseModel<InsuranceAgentRegistrationModel>
+                    {
+                        Success = false,
+                        Message = ex.Message
+                    };
+                    return BadRequest(response);
+                }
+                else
+                {
+                    _logger.LogError(ex, "An error occurred while adding the user");
+                    var response = new ResponseModel<InsuranceAgentRegistrationModel>
+                    {
+                        Success = false,
+                        Message = "An error occurred while adding the user"
+                    };
+                    return BadRequest(response);
+                }
+            }
+        }
+
+        [HttpPost("EmployeeRegistration")]
+        public async Task<IActionResult> EmployeeRegistration([FromBody] EmployeeRegistrationModel Employee)
+        {
+            try
+            {
+                var details = await _user.EmployeeRegistration(Employee);
+                if (details)
+                {
+                    var response = new ResponseModel<EmployeeRegistrationModel>
+                    {
+                        Success = true,
+                        Message = "User Registration Successful"
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<EmployeeRegistrationModel>
+                    {
+                        Success = false,
+                        Message = "Invalid input"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is DuplicateEmailException || ex is InvalidEmailFormatException)
+                {
+                    var response = new ResponseModel<EmployeeRegistrationModel>
+                    {
+                        Success = false,
+                        Message = ex.Message
+                    };
+                    return BadRequest(response);
+                }
+                else
+                {
+                    _logger.LogError(ex, "An error occurred while adding the user");
+                    var response = new ResponseModel<EmployeeRegistrationModel>
+                    {
+                        Success = false,
+                        Message = "An error occurred while adding the user"
+                    };
+                    return BadRequest(response);
+                }
+            }
+        }
 
         [HttpPost("Login")]
-        public async Task<IActionResult> UserLogin(string email, string password, [FromServices] IConfiguration configuration)
+        public async Task<IActionResult> UserLogin(string email, string password, [FromServices] IConfiguration configuration,string role)
         {
             try
             {
                 _logger.LogInformation("Starting login process for email: {Email}", email);
-                var details = await _user.UserLogin(email, password, configuration);
+                var details = await _user.UserLogin(email, password, configuration,role);
 
                 var response = new ResponseModel<string>
                 {
+                    Success = true,
                     Message = "Login Successful",
                     Data = details
                 };
@@ -193,7 +239,7 @@ namespace E_Insurance.Controllers
 
                 if (ex is NotFoundException)
                 {
-                    var response = new ResponseModel<User>
+                    var response = new ResponseModel<string>
                     {
                         Success = false,
                         Message = ex.Message
@@ -202,7 +248,7 @@ namespace E_Insurance.Controllers
                 }
                 else if (ex is InvalidPasswordException)
                 {
-                    var response = new ResponseModel<User>
+                    var response = new ResponseModel<string>
                     {
                         Success = false,
                         Message = ex.Message
@@ -211,7 +257,12 @@ namespace E_Insurance.Controllers
                 }
                 else
                 {
-                    return BadRequest();
+                    var response = new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "An error occurred during login"
+                    };
+                    return BadRequest(response);
                 }
             }
         }

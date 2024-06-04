@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8fLQKf8rPUJu01F3nh6RLrFpL/fbqL/GNNWrlp3BOR9dZZbD++64g1IyX1tjon1u4INnXhIy1eC4dzXLLAtagg==",
+  "dgSpecHash": "8G+dLs+GyWltCbdWusVt6AkY01t+xV/LUk8CMstwzRlfRsG0doDK64Xkqz5OTn1NjqcCq13C9X3OxpjPteqtbQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj",
   "expectedPackageFiles": [
@@ -31,6 +31,7 @@
     "C:\\Users\\SHASHANK\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.1.2\\system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512",
+    "C:\\Users\\SHASHANK\\.nuget\\packages\\system.net.mail.abstractions\\1.1.21\\system.net.mail.abstractions.1.1.21.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\SHASHANK\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
   ],
