@@ -37,7 +37,7 @@ namespace E_Insurance.Controllers
                         Success = true,
                         Message = "User Registration Successful"
                     };
-                    return Ok(response);
+                    return CreatedAtAction(nameof(AdminRegistration), response);
                 }
                 else
                 {
@@ -85,7 +85,7 @@ namespace E_Insurance.Controllers
                         Success = true,
                         Message = "User Registration Successful"
                     };
-                    return Ok(response);
+                    return CreatedAtAction(nameof(CustomerRegistration), response);
                 }
                 else
                 {
@@ -133,7 +133,7 @@ namespace E_Insurance.Controllers
                         Success = true,
                         Message = "User Registration Successful"
                     };
-                    return Ok(response);
+                    return CreatedAtAction(nameof(AgentRegistration), response);
                 }
                 else
                 {
@@ -181,7 +181,7 @@ namespace E_Insurance.Controllers
                         Success = true,
                         Message = "User Registration Successful"
                     };
-                    return Ok(response);
+                    return CreatedAtAction(nameof(EmployeeRegistration), response);
                 }
                 else
                 {
