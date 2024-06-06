@@ -140,7 +140,7 @@ namespace E_Insurance.Controllers
                     return BadRequest(new ResponseModel<InsuranceAgentRegistrationModel>
                     {
                         Success = false,
-                        Message = "Invalid input"
+                        Message = "Invalid user input"
                     });
                 }
             }
