@@ -3,6 +3,7 @@ using BusinessLayer.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using ModelLayer.Entity;
 using NLog.Web;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
@@ -12,10 +13,19 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-// Add services to the container.
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddScoped<IRegistrationBusinessLogic, RegistrationBusinessLigic>();
 builder.Services.AddScoped<IRegistrationService, RegistrationService>();
+
+//policy creation
+
+builder.Services.AddScoped<IPolicyCreationBL, PolicyCreationBL>();
+builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
+
+//policy purchase
+
+builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
+builder.Services.AddScoped<ICustomerPolicyPurchaseService, CustomerPolicyPurchaseService>();
 
 builder.Services.AddControllers();
 

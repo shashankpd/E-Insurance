@@ -16,6 +16,6 @@ namespace ModelLayer.RequestDTO
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public int Age { get; set; }  // Changed from DateOfBirth to Age to match the table schema
         public string Address { get; set; }
-        public int? AgentId { get; set; }  // Added to match the table schema
+       // public int? AgentId { get; set; }  // Added to match the table schema
     }
 }
