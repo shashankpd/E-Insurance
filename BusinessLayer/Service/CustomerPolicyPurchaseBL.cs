@@ -24,9 +24,16 @@ namespace BusinessLayer.Service
         public Task<bool> PolicyPurchase(PolicyPurchase policy)
         {
             return Policypurchase.PolicyPurchase(policy);
-        } public Task<IEnumerable<CustomerPolicyDetails>> GetCustomerPurchaseDetailsById(int customerId)
+        } 
+        public Task<IEnumerable<CustomerPolicyDetails>> GetCustomerPurchaseDetailsById(int customerId)
         {
             return Policypurchase.GetCustomerPurchaseDetailsById(customerId);
         }
+
+        public Task<bool> RemoveCustomerPolicy(int customerPolicyId)
+        {
+            return Policypurchase.RemoveCustomerPolicy(customerPolicyId);
+        }
+
     }
 }

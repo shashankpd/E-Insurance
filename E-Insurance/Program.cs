@@ -27,6 +27,11 @@ builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
 builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
 builder.Services.AddScoped<ICustomerPolicyPurchaseService, CustomerPolicyPurchaseService>();
 
+//Payment
+
+builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
+builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
+
 builder.Services.AddControllers();
 
 // Add NLog Logger

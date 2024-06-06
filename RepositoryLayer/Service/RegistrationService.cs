@@ -71,7 +71,7 @@ namespace RepositoryLayer.Service
             try
             {
                 string hashedPassword = HashPassword(Customer.PasswordHash);
-                var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate ,Age, Address) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate, @Age, @Address)";
+                var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
 
                 using (var connection = _context.CreateConnection())
                 {
@@ -83,8 +83,7 @@ namespace RepositoryLayer.Service
                         Customer.PhoneNumber,
                         Customer.Role,
                         CreatedDate = DateTime.Now,
-                        Customer.Age,
-                        Customer.Address,
+                       
                        
                     });
 

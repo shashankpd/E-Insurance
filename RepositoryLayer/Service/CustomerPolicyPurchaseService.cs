@@ -29,6 +29,13 @@ namespace RepositoryLayer.Service
                 parameters.Add("PolicyId", policy.PolicyId);
                 parameters.Add("PurchaseDate", policy.PurchaseDate);
                 parameters.Add("AgentId", policy.AgentId);
+                parameters.Add("AnnualIncome", policy.AnnualIncome);
+                parameters.Add("DateOfBirth", policy.DateOfBirth);
+                parameters.Add("FirstName", policy.FirstName);
+                parameters.Add("LastName", policy.LastName);
+                parameters.Add("Gender", policy.Gender);
+                parameters.Add("MobileNumber", policy.MobileNumber);
+                parameters.Add("Address", policy.Address);
 
                 var rowsAffected = await _context.CreateConnection().ExecuteAsync("sp_PurchasePolicy", parameters);
 
@@ -63,6 +70,31 @@ namespace RepositoryLayer.Service
                 throw;
             }
         }
+
+        public async Task<bool> RemoveCustomerPolicy(int customerPolicyId)
+        {
+            try
+            {
+                var parameters = new DynamicParameters();
+                parameters.Add("CustomerPolicyId", customerPolicyId);
+
+                var rowsAffected = await _context.CreateConnection().ExecuteAsync(
+                    "DeletePolicy",
+                    parameters,
+                    commandType: CommandType.StoredProcedure
+                );
+
+                Logger.Info($"Policy with CustomerPolicyId={customerPolicyId} deleted successfully");
+
+                return rowsAffected > 0;
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, $"An error occurred while deleting policy with CustomerPolicyId={customerPolicyId}");
+                throw;
+            }
+        }
+
 
     }
 }
