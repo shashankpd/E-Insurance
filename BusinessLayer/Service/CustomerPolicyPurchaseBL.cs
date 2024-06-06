@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Interface;
 using ModelLayer.Entity;
+using ModelLayer.Response;
 using RepositoryLayer.Interface;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,9 @@ namespace BusinessLayer.Service
         public Task<bool> PolicyPurchase(PolicyPurchase policy)
         {
             return Policypurchase.PolicyPurchase(policy);
+        } public Task<IEnumerable<CustomerPolicyDetails>> GetCustomerPurchaseDetailsById(int customerId)
+        {
+            return Policypurchase.GetCustomerPurchaseDetailsById(customerId);
         }
     }
 }

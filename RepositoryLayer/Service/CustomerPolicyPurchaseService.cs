@@ -1,9 +1,11 @@
 ﻿using Dapper;
 using ModelLayer.Entity;
+using ModelLayer.Response;
 using NLog;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using System;
+using System.Data;
 using System.Threading.Tasks;
 
 namespace RepositoryLayer.Service
@@ -40,5 +42,27 @@ namespace RepositoryLayer.Service
                 throw;
             }
         }
+
+        public async Task<IEnumerable<CustomerPolicyDetails>> GetCustomerPurchaseDetailsById(int customerId)
+        {
+            try
+            {
+                var policies = await _context.CreateConnection().QueryAsync<CustomerPolicyDetails>(
+                    "ViewCustomerPolicies",
+                    new { CustomerId = customerId },
+                    commandType: CommandType.StoredProcedure
+                );
+
+                Logger.Info("Retrieved all policies");
+
+                return policies;
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, "An error occurred while retrieving policies");
+                throw;
+            }
+        }
+
     }
 }

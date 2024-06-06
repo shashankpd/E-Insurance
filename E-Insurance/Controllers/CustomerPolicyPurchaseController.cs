@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Response;
 using Microsoft.AspNetCore.Http;
 using BusinessLayer.Service;
+using ModelLayer.Response;
 
 namespace E_Insurance.Controllers
 {
@@ -54,5 +55,42 @@ namespace E_Insurance.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, response);
             }
         }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCustomerPurchaseDetailsById(int customerId)
+        {
+            try
+            {
+                var result = await _policyPurchaseBL.GetCustomerPurchaseDetailsById(customerId);
+                if (result != null)
+                {
+                    var response = new ResponseModel<IEnumerable<CustomerPolicyDetails>>
+                    {
+                        Success = true,
+                        Message = "Customer details retrieved successfully",
+                        Data = result
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<IEnumerable<CustomerPolicyDetails>>
+                    {
+                        Success = false,
+                        Message = "No Details found"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<CustomerPolicyDetails>
+                {
+                    Success = false,
+                    Message = "An error occurred while retrieving Customer Details"
+                });
+            }
+        }
+
+
     }
 }
