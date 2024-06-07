@@ -1,7 +1,8 @@
 ﻿using BusinessLayer.Interface;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging; // Add this
 using ModelLayer.Entity;
+using ModelLayer.RequestDTO;
 using Response;
 using System;
 using System.Threading.Tasks;
@@ -13,10 +14,12 @@ namespace E_Insurance.Controllers
     public class PaymentProcessController : ControllerBase
     {
         private readonly IPaymentProcessBL _paymentProcessBL;
+        private readonly ILogger<PaymentProcessController> _logger; // Add this
 
-        public PaymentProcessController(IPaymentProcessBL paymentProcessBL)
+        public PaymentProcessController(IPaymentProcessBL paymentProcessBL, ILogger<PaymentProcessController> logger) // Modify the constructor
         {
             _paymentProcessBL = paymentProcessBL;
+            _logger = logger; // Initialize the logger
         }
 
         [HttpPost("payment")]
@@ -55,18 +58,137 @@ namespace E_Insurance.Controllers
             }
             catch (Exception ex)
             {
-                
-                ILogger<PaymentProcessController> logger =
-                    new Logger<PaymentProcessController>(new LoggerFactory());
-                logger.LogError(ex, "An error occurred while processing the payment");
+                _logger.LogError(ex, "An error occurred while processing the payment"); // Use the injected logger
 
-                // Return a generic error message
                 var response = new ResponseModel<string>
                 {
                     Success = false,
                     Message = "An error occurred while processing the payment"
                 };
                 return StatusCode(StatusCodes.Status500InternalServerError, response);
+            }
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAllPayments()
+        {
+            try
+            {
+                var result = await _paymentProcessBL.GetAllPayments();
+                if (result != null)
+                {
+                    var response = new ResponseModel<IEnumerable<PaymentModel>>
+                    {
+                        Success = true,
+                        Message = "All payments retrieved successfully",
+                        Data = result
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<PaymentModel>
+                    {
+                        Success = false,
+                        Message = "No Payments found"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while retrieving Payments");
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<PaymentModel>
+                {
+                    Success = false,
+                    Message = "An error occurred while retrieving Payments"
+                });
+            }
+        }
+
+        [HttpGet("getbycustomerid")]
+        public async Task<IActionResult> GetPaymentById(int CustomerId)
+        {
+            try
+            {
+                var result = await _paymentProcessBL.GetPaymentById(CustomerId);
+                if (result != null)
+                {
+                    var response = new ResponseModel<IEnumerable<PaymentModel>>
+                    {
+                        Success = true,
+                        Message = "All payments retrieved successfully",
+                        Data = result
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<PaymentModel>
+                    {
+                        Success = false,
+                        Message = "No Payments found"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while retrieving Payments");
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<PaymentModel>
+                {
+                    Success = false,
+                    Message = "An error occurred while retrieving Payments"
+                });
+            }
+        }
+
+        [HttpGet("generateReceipt/{paymentId}")]
+        public async Task<IActionResult> GetRecieptByPaymementId(int paymentId)
+        {
+            try
+            {
+                var result = await _paymentProcessBL.GetRecieptByPaymementId(paymentId);
+                if (result != null)
+                {
+                    var response = new ResponseModel<IEnumerable<ReceiptDetails>>
+                    {
+                        Success = true,
+                        Message = "Receipt generated successfully",
+                        Data = result
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return NotFound(new ResponseModel<string>
+                    {
+                        Success = false,
+                        Message = "No receipt found"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while generating the receipt");
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "An error occurred while generating the receipt"
+                });
+            }
+        }
+
+        [HttpPost("calculate-premium")]
+        public async Task<IActionResult> CalculatePremium([FromBody] PremiumCalculationRequest request)
+        {
+            try
+            {
+                var premium = await _paymentProcessBL.CalculatePremium(request.PolicyId, request.CustomerAge, request.CoverageAmount, request.TermLength, request.PolicyType);
+                return Ok(new { Premium = premium });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while calculating premium"); // Use the injected logger
+                return StatusCode(StatusCodes.Status500InternalServerError, new { ErrorMessage = "An error occurred while calculating premium" });
             }
         }
     }

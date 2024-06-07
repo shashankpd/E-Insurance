@@ -11,5 +11,7 @@ namespace ModelLayer.RequestDTO
         public int CustomerPolicyId { get; set; }
         public DateTime PaymentDate { get; set; }
         public double Amount { get; set; }
+
+        public string Status { get; set; }
     }
 }

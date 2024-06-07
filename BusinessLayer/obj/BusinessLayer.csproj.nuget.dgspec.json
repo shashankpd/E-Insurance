@@ -80,6 +80,10 @@
               "target": "Package",
               "version": "[5.3.11, )"
             },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.7.33, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
@@ -177,6 +181,10 @@
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[5.3.11, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.7.33, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",
@@ -279,6 +287,10 @@
             "NLog.Web.AspNetCore": {
               "target": "Package",
               "version": "[5.3.11, )"
+            },
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.7.33, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

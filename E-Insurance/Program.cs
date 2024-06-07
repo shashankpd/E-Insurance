@@ -8,6 +8,7 @@ using NLog.Web;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
+using StackExchange.Redis;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -42,6 +43,15 @@ builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
 builder.Host.UseNLog();
 builder.Services.AddSingleton<NLog.ILogger>(NLog.LogManager.GetCurrentClassLogger());
 //Nlog end
+
+//config for Redis
+builder.Services.AddSingleton<ConnectionMultiplexer>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>(); // Retrieve the IConfiguration object
+    var redisConnectionString = configuration.GetConnectionString("Redis");
+    return ConnectionMultiplexer.Connect(redisConnectionString);
+});
+
 
 //Adding jwt
 // Define the JWT bearer scheme
