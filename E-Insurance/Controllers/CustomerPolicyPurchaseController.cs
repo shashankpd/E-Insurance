@@ -90,6 +90,41 @@ namespace E_Insurance.Controllers
                 });
             }
         }
+        [HttpDelete("{customerPolicyId}")]
+        public async Task<IActionResult> RemoveCustomerPolicy(int customerPolicyId)
+        {
+            try
+            {
+                var result = await _policyPurchaseBL.RemoveCustomerPolicy(customerPolicyId);
+                if (result)
+                {
+                    return Ok(new ResponseModel<bool>
+                    {
+                        Success = true,
+                        Message = $"Policy with CustomerPolicyId={customerPolicyId} has been successfully removed",
+                        Data = true
+                    });
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<bool>
+                    {
+                        Success = false,
+                        Message = $"Failed to remove policy with CustomerPolicyId={customerPolicyId}",
+                        Data = false
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<bool>
+                {
+                    Success = false,
+                    Message = $"An error occurred while removing policy with CustomerPolicyId={customerPolicyId}",
+                    Data = false
+                });
+            }
+        }
 
 
     }

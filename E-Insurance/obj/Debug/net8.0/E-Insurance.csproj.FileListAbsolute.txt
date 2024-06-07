@@ -57,3 +57,5 @@ C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Microsof
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\System.Net.Mail.Abstractions.dll
+C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\StackExchange.Redis.dll

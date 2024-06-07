@@ -14,5 +14,6 @@ namespace ModelLayer.RequestDTO
         public string PhoneNumber { get; set; }
         public string Role { get; set; }  // Added to match the table schema
         public DateTime CreatedDate { get; set; } = DateTime.Now;
+        public string Location { get; set; } 
     }
 }

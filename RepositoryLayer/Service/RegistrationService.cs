@@ -71,7 +71,7 @@ namespace RepositoryLayer.Service
             try
             {
                 string hashedPassword = HashPassword(Customer.PasswordHash);
-                var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate ,Age, Address) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate, @Age, @Address)";
+                var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
 
                 using (var connection = _context.CreateConnection())
                 {
@@ -83,8 +83,7 @@ namespace RepositoryLayer.Service
                         Customer.PhoneNumber,
                         Customer.Role,
                         CreatedDate = DateTime.Now,
-                        Customer.Age,
-                        Customer.Address,
+                       
                        
                     });
 
@@ -109,7 +108,7 @@ namespace RepositoryLayer.Service
             try
             {
                 string hashedPassword = HashPassword(Agent.PasswordHash);
-                var query = "INSERT INTO InsuranceAgentRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
+                var query = "INSERT INTO InsuranceAgentRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate,Location) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate,@Location)";
 
                 using (var connection = _context.CreateConnection())
                 {
@@ -120,7 +119,8 @@ namespace RepositoryLayer.Service
                         PasswordHash = hashedPassword,
                         Agent.PhoneNumber,
                         Agent.Role,
-                        CreatedDate = DateTime.Now
+                        CreatedDate = DateTime.Now,
+                        Agent.Location
                     });
 
                     if (affectedRows > 0)
