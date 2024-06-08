@@ -131,9 +131,9 @@ namespace RepositoryLayer.Service
             }
             catch (Exception ex)
             {
-                // Log error
+           
                 Logger.Error(ex, "Error occurred while adding customer: {Message}", ex.Message);
-                throw; // Rethrow the exception
+                throw; 
             }
         }
 
@@ -261,7 +261,7 @@ namespace RepositoryLayer.Service
                     throw new ArgumentException("Invalid phone number.", nameof(employee.PhoneNumber));
                 }
 
-                // Perform registration
+               
                 string hashedPassword = HashPassword(employee.PasswordHash);
                 var query = "INSERT INTO EmployeeRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
 
