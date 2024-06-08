@@ -1,0 +1,952 @@
+2024-06-04 10:56:48.8674|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 10:56:50.7387|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 10:56:50.7387|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 10:56:50.7387|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 10:56:50.7387|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 10:56:50.7387|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 10:56:52.7552|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger - - -
+2024-06-04 10:56:53.5930|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger - 301 0 - 837.4299ms
+2024-06-04 10:56:53.6435|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 10:56:54.0939|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 450.7632ms
+2024-06-04 10:56:54.1263|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui.css - - -
+2024-06-04 10:56:54.1894|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui-bundle.js - - -
+2024-06-04 10:56:54.1894|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui-standalone-preset.js - - -
+2024-06-04 10:56:54.2715|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-04 10:56:54.2715|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui.css - 200 143943 text/css 145.5730ms
+2024-06-04 10:56:54.3220|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-04 10:56:54.3220|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 128.8465ms
+2024-06-04 10:56:54.3617|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-04 10:56:54.3617|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 172.6750ms
+2024-06-04 10:56:54.8085|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 10:56:54.8158|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 7.0411ms
+2024-06-04 10:56:55.3728|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 10:56:55.7294|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 356.5734ms
+2024-06-04 10:56:58.4860|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 10:56:58.8269|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 340.8090ms
+2024-06-04 11:19:16.7943|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 11:19:16.9606|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 11:19:16.9606|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 11:19:16.9606|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 11:19:16.9606|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 11:19:16.9606|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 11:19:18.1464|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 11:19:18.5762|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 429.9764ms
+2024-06-04 11:19:18.6514|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 11:19:18.6514|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 11:19:18.6649|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 13.2418ms
+2024-06-04 11:19:18.7675|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 115.7764ms
+2024-06-04 11:19:19.1744|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 11:19:19.3083|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 133.8347ms
+2024-06-04 11:20:51.1031|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-04 11:20:51.1154|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:20:51.1774|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:20:51.4038|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-04 11:20:51.4038|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-04 11:20:51.4038|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-04 11:20:51.4038|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-04 11:20:53.7415|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Admin
+2024-06-04 11:20:53.7552|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:20:53.7816|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 2586.4548ms
+2024-06-04 11:20:53.7816|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:20:53.7816|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 200 - application/json;+charset=utf-8 2681.6155ms
+2024-06-04 11:23:18.3553|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Employee - application/json 150
+2024-06-04 11:23:18.3588|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 11:23:18.3767|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "EmployeeRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EmployeeRegistration(ModelLayer.RequestDTO.EmployeeRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:23:18.3767|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Employee
+2024-06-04 11:23:18.3767|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Employee
+2024-06-04 11:23:18.3767|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Employee
+2024-06-04 11:23:18.3767|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Employee
+2024-06-04 11:23:18.4078|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Employee
+2024-06-04 11:23:18.4078|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.EmployeeRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:23:18.4078|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance) in 34.6497ms
+2024-06-04 11:23:18.4078|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 11:23:18.4078|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Employee - 200 - application/json;+charset=utf-8 57.3140ms
+2024-06-04 11:23:48.8451|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Customer - application/json 173
+2024-06-04 11:23:48.8451|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 11:23:48.8572|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CustomerRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerRegistration(ModelLayer.RequestDTO.CustomerRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:23:48.8767|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Customer
+2024-06-04 11:23:48.8767|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Customer
+2024-06-04 11:23:48.8767|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Customer
+2024-06-04 11:23:48.8767|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Customer
+2024-06-04 11:23:48.8942|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Customer
+2024-06-04 11:23:48.8942|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.CustomerRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:23:48.8942|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance) in 38.8703ms
+2024-06-04 11:23:48.8942|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 11:23:48.8942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Customer - 200 - application/json;+charset=utf-8 51.6383ms
+2024-06-04 11:24:14.3997|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/InsuranceAgent - application/json 150
+2024-06-04 11:24:14.3997|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance)'
+2024-06-04 11:24:14.3997|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "InsuranceAgentRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsuranceAgentRegistration(ModelLayer.RequestDTO.InsuranceAgentRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:24:14.4174|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: InsuranceAgent
+2024-06-04 11:24:14.4174|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: InsuranceAgent
+2024-06-04 11:24:14.4174|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: InsuranceAgent
+2024-06-04 11:24:14.4174|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: InsuranceAgent
+2024-06-04 11:24:14.4347|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: InsuranceAgent
+2024-06-04 11:24:14.4347|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.InsuranceAgentRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:24:14.4347|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance) in 27.8469ms
+2024-06-04 11:24:14.4347|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance)'
+2024-06-04 11:24:14.4347|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/InsuranceAgent - 200 - application/json;+charset=utf-8 36.6007ms
+2024-06-04 11:24:49.5165|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-04 11:24:49.5165|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:24:49.5165|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:24:49.5165|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-04 11:24:49.5165|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-04 11:24:49.5165|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-04 11:24:49.5165|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-04 11:24:49.5307|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Admin
+2024-06-04 11:24:49.5307|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:24:49.5307|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 14.0958ms
+2024-06-04 11:24:49.5307|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:24:49.5307|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 200 - application/json;+charset=utf-8 15.6536ms
+2024-06-04 11:41:38.2883|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 11:41:39.2370|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 11:41:39.2370|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 11:41:39.2370|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 11:41:39.2370|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 11:41:39.2370|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 11:41:40.1148|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 11:41:40.7665|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 651.2294ms
+2024-06-04 11:41:40.7881|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 11:41:40.7881|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 11:41:40.7881|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 8.2251ms
+2024-06-04 11:41:40.8529|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 64.6919ms
+2024-06-04 11:41:40.9048|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 11:41:41.0709|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 166.0463ms
+2024-06-04 11:41:54.5013|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-04 11:41:54.5173|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:41:54.5767|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:41:54.7255|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-04 11:41:54.7255|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-04 11:41:54.7255|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-04 11:41:54.7255|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-04 11:41:55.7337|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|System.InvalidOperationException: Invalid operation. The connection is closed.
+   at System.Data.SqlClient.SqlConnection.GetOpenTdsConnection()
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at RepositoryLayer.Service.RegistrationService.RegisterUser(User user) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 60
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 78
+2024-06-04 11:41:55.9676|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-04 11:41:55.9833|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 1393.518ms
+2024-06-04 11:41:55.9833|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:41:55.9848|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 1483.5923ms
+2024-06-04 11:42:24.2651|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Employee - application/json 150
+2024-06-04 11:42:24.2651|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 11:42:24.2837|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "EmployeeRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EmployeeRegistration(ModelLayer.RequestDTO.EmployeeRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:42:24.2837|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Employee
+2024-06-04 11:42:24.2837|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Employee
+2024-06-04 11:42:24.2837|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Employee
+2024-06-04 11:42:24.2837|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Employee
+2024-06-04 11:42:24.3010|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Employee|System.InvalidOperationException: Invalid operation. The connection is closed.
+   at System.Data.SqlClient.SqlConnection.GetOpenTdsConnection()
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at RepositoryLayer.Service.RegistrationService.RegisterUser(User user) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 60
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 78
+2024-06-04 11:42:24.3010|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-04 11:42:24.3010|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance) in 18.79ms
+2024-06-04 11:42:24.3010|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 11:42:24.3010|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Employee - 400 - text/plain;+charset=utf-8 37.9260ms
+2024-06-04 11:43:05.6067|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 11:43:05.7849|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 11:43:05.7849|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 11:43:05.7849|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 11:43:05.7849|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 11:43:05.7849|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 11:43:06.1829|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 11:43:06.3709|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 188.0225ms
+2024-06-04 11:43:06.4136|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 11:43:06.4136|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 11:43:06.4187|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.8896ms
+2024-06-04 11:43:06.4485|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 34.9011ms
+2024-06-04 11:43:06.5309|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 11:43:06.5487|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/favicon-32x32.png - - -
+2024-06-04 11:43:06.5669|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-06-04 11:43:06.5669|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/favicon-32x32.png - 200 628 image/png 18.6300ms
+2024-06-04 11:43:06.7451|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 214.2027ms
+2024-06-04 11:43:18.5766|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-04 11:43:18.5766|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:43:18.6247|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:43:18.6946|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-04 11:43:18.6946|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-04 11:43:18.6946|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-04 11:43:18.6946|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-04 11:43:19.0697|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred during user registration for role: Admin|System.InvalidOperationException: Invalid operation. The connection is closed.
+   at System.Data.SqlClient.SqlConnection.GetOpenTdsConnection()
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso, String transactionName)
+   at System.Data.SqlClient.SqlConnection.BeginTransaction(IsolationLevel iso)
+   at System.Data.SqlClient.SqlConnection.BeginDbTransaction(IsolationLevel isolationLevel)
+   at RepositoryLayer.Service.RegistrationService.RegisterUser(User user) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 60
+   at E_Insurance.Controllers.UserManagementController.RegisterUser[T](T model, String role) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 78
+2024-06-04 11:43:19.2261|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-04 11:43:19.2426|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 603.6895ms
+2024-06-04 11:43:19.2426|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:43:19.2446|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 400 - text/plain;+charset=utf-8 668.0339ms
+2024-06-04 11:46:10.5580|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 11:46:10.7132|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 11:46:10.7132|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 11:46:10.7132|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 11:46:10.7132|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 11:46:10.7132|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 11:46:10.9832|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 11:46:11.1610|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 176.2923ms
+2024-06-04 11:46:11.1898|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 11:46:11.1898|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 11:46:11.1898|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.4548ms
+2024-06-04 11:46:11.2164|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 26.4995ms
+2024-06-04 11:46:11.3031|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 11:46:11.4420|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 138.8659ms
+2024-06-04 11:46:26.0335|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-04 11:46:26.0474|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:46:26.0681|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:46:26.1084|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-04 11:46:26.1084|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-04 11:46:26.1084|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-04 11:46:26.1084|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-04 11:46:26.6287|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Admin
+2024-06-04 11:46:26.6393|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:46:26.6607|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 579.5478ms
+2024-06-04 11:46:26.6607|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 11:46:26.6607|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 200 - application/json;+charset=utf-8 629.7988ms
+2024-06-04 11:46:58.9244|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Customer - application/json 173
+2024-06-04 11:46:58.9244|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 11:46:58.9425|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CustomerRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerRegistration(ModelLayer.RequestDTO.CustomerRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:46:58.9603|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Customer
+2024-06-04 11:46:58.9603|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Customer
+2024-06-04 11:46:58.9603|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Customer
+2024-06-04 11:46:58.9603|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Customer
+2024-06-04 11:46:58.9830|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Customer
+2024-06-04 11:46:58.9830|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.CustomerRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:46:58.9830|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance) in 44.3108ms
+2024-06-04 11:46:58.9830|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 11:46:58.9830|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Customer - 200 - application/json;+charset=utf-8 63.6361ms
+2024-06-04 11:47:26.9941|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Employee - application/json 150
+2024-06-04 11:47:26.9941|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 11:47:26.9941|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "EmployeeRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EmployeeRegistration(ModelLayer.RequestDTO.EmployeeRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:47:27.0196|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Employee
+2024-06-04 11:47:27.0196|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Employee
+2024-06-04 11:47:27.0196|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Employee
+2024-06-04 11:47:27.0196|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Employee
+2024-06-04 11:47:27.0313|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Employee
+2024-06-04 11:47:27.0313|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.EmployeeRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:47:27.0313|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance) in 27.0445ms
+2024-06-04 11:47:27.0313|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 11:47:27.0313|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Employee - 200 - application/json;+charset=utf-8 39.9851ms
+2024-06-04 11:47:57.9597|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/InsuranceAgent - application/json 150
+2024-06-04 11:47:57.9597|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance)'
+2024-06-04 11:47:57.9704|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "InsuranceAgentRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] InsuranceAgentRegistration(ModelLayer.RequestDTO.InsuranceAgentRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 11:47:57.9786|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: InsuranceAgent
+2024-06-04 11:47:57.9786|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: InsuranceAgent
+2024-06-04 11:47:57.9786|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: InsuranceAgent
+2024-06-04 11:47:57.9786|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: InsuranceAgent
+2024-06-04 11:47:57.9786|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: InsuranceAgent
+2024-06-04 11:47:57.9786|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.InsuranceAgentRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 11:47:57.9927|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance) in 22.0459ms
+2024-06-04 11:47:57.9927|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.InsuranceAgentRegistration (E-Insurance)'
+2024-06-04 11:47:57.9927|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/InsuranceAgent - 200 - application/json;+charset=utf-8 33.7386ms
+2024-06-04 12:08:02.5595|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - application/json 149
+2024-06-04 12:08:02.5595|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 12:08:02.5595|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 12:08:02.5595|INFO|E_Insurance.Controllers.UserManagementController|Starting registration for role: Admin
+2024-06-04 12:08:02.5595|INFO|E_Insurance.Controllers.UserManagementController|Mapping registration model to User entity for role: Admin
+2024-06-04 12:08:02.5595|INFO|E_Insurance.Controllers.UserManagementController|Mapping model to User entity for role: Admin
+2024-06-04 12:08:02.5595|INFO|E_Insurance.Controllers.UserManagementController|Attempting to register user for role: Admin
+2024-06-04 12:08:02.5925|INFO|E_Insurance.Controllers.UserManagementController|User registration successful for role: Admin
+2024-06-04 12:08:02.5925|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 12:08:02.5925|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 31.0691ms
+2024-06-04 12:08:02.5925|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 12:08:02.5925|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/SignUp/Admin - 200 - application/json;+charset=utf-8 34.3613ms
+2024-06-04 17:27:26.1952|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 17:27:27.6504|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 17:27:27.6504|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 17:27:27.6504|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 17:27:27.6504|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 17:27:27.6504|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 17:27:34.5298|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 17:27:35.8722|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 1340.4930ms
+2024-06-04 17:27:38.3941|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 17:27:38.3941|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 17:27:38.3984|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.1971ms
+2024-06-04 17:27:38.9611|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 566.8997ms
+2024-06-04 17:27:39.9309|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 17:27:40.0485|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 117.4387ms
+2024-06-04 17:28:47.6363|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 162
+2024-06-04 17:28:47.6478|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:28:47.6886|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:28:54.3819|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 47
+ClientConnectionId:192f40ef-0776-4b17-afd6-c8648aacbd32
+Error Number:515,State:2,Class:16
+2024-06-04 17:28:55.1958|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 47
+   at E_Insurance.Controllers.UserManagementController.AdminRegistration(AdminRegistrationModel admin) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 32
+ClientConnectionId:192f40ef-0776-4b17-afd6-c8648aacbd32
+Error Number:515,State:2,Class:16
+2024-06-04 17:28:55.2263|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:28:55.2450|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 7543.5941ms
+2024-06-04 17:28:55.2450|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:28:55.2450|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 400 - application/json;+charset=utf-8 7610.6636ms
+2024-06-04 17:35:09.8099|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 17:35:09.9724|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 17:35:09.9724|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 17:35:09.9747|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 17:35:09.9747|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 17:35:09.9747|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 17:35:10.2982|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 17:35:10.5336|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 237.4319ms
+2024-06-04 17:35:10.6115|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 17:35:10.6115|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 17:35:10.6160|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.3624ms
+2024-06-04 17:35:10.6402|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 28.6534ms
+2024-06-04 17:35:10.7553|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 17:35:10.8547|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 99.3999ms
+2024-06-04 17:35:21.0521|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 162
+2024-06-04 17:35:21.0693|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:35:21.0996|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:35:21.5019|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+ClientConnectionId:47da83a2-3afe-45a4-981a-611400407ac8
+Error Number:515,State:2,Class:16
+2024-06-04 17:35:21.5578|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+   at E_Insurance.Controllers.UserManagementController.AdminRegistration(AdminRegistrationModel admin) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 32
+ClientConnectionId:47da83a2-3afe-45a4-981a-611400407ac8
+Error Number:515,State:2,Class:16
+2024-06-04 17:35:21.5578|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:35:21.5764|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 470.7518ms
+2024-06-04 17:35:21.5764|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:35:21.5764|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 400 - application/json;+charset=utf-8 525.7443ms
+2024-06-04 17:39:19.3391|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 17:39:19.4987|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 17:39:19.4987|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 17:39:19.4987|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 17:39:19.4987|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 17:39:19.4987|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 17:39:20.0640|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 17:39:20.2194|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 154.5320ms
+2024-06-04 17:39:20.2553|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 17:39:20.2553|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 17:39:20.2553|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.8578ms
+2024-06-04 17:39:20.2863|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 30.8890ms
+2024-06-04 17:39:20.3612|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 17:39:20.4661|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 104.6520ms
+2024-06-04 17:39:38.0718|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 162
+2024-06-04 17:39:38.0868|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:39:38.1311|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:39:38.5255|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:39:38.5728|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+   at E_Insurance.Controllers.UserManagementController.AdminRegistration(AdminRegistrationModel admin) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 32
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:39:38.5857|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:39:38.6043|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 461.1247ms
+2024-06-04 17:39:38.6043|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:39:38.6043|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 400 - application/json;+charset=utf-8 534.8434ms
+2024-06-04 17:41:40.6225|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/CustomerRegistration - application/json 216
+2024-06-04 17:41:40.6225|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 17:41:40.6331|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CustomerRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerRegistration(ModelLayer.RequestDTO.CustomerRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:41:41.1708|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.CustomerRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.CustomerRegistration(CustomerRegistrationModel Customer) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 77
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:41:41.1708|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.CustomerRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.CustomerRegistration(CustomerRegistrationModel Customer) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 77
+   at E_Insurance.Controllers.UserManagementController.CustomerRegistration(CustomerRegistrationModel Customer) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 80
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:41:41.1708|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.CustomerRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:41:41.1806|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance) in 547.3159ms
+2024-06-04 17:41:41.1806|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 17:41:41.1806|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/CustomerRegistration - 400 - application/json;+charset=utf-8 558.8712ms
+2024-06-04 17:41:49.3111|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - application/json 163
+2024-06-04 17:41:49.3111|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance)'
+2024-06-04 17:41:49.3111|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AgentRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AgentRegistration(ModelLayer.RequestDTO.InsuranceAgentRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:41:49.4183|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.InsuranceAgentRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AgentRegistration(InsuranceAgentRegistrationModel Agent) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 114
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:41:49.4183|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.InsuranceAgentRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AgentRegistration(InsuranceAgentRegistrationModel Agent) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 114
+   at E_Insurance.Controllers.UserManagementController.AgentRegistration(InsuranceAgentRegistrationModel Agent) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 128
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:41:49.4183|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.InsuranceAgentRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:41:49.4183|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance) in 107.9666ms
+2024-06-04 17:41:49.4183|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance)'
+2024-06-04 17:41:49.4183|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - 400 - application/json;+charset=utf-8 114.2571ms
+2024-06-04 17:41:56.7123|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/EmployeeRegistration - application/json 163
+2024-06-04 17:41:56.7123|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 17:41:56.7123|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "EmployeeRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EmployeeRegistration(ModelLayer.RequestDTO.EmployeeRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:41:56.7620|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.EmployeeRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.EmployeeRegistration(EmployeeRegistrationModel Employee) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 148
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:41:56.7620|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.EmployeeRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.EmployeeRegistration(EmployeeRegistrationModel Employee) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 148
+   at E_Insurance.Controllers.UserManagementController.EmployeeRegistration(EmployeeRegistrationModel Employee) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 176
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:41:56.7620|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.EmployeeRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:41:56.7620|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance) in 48.6374ms
+2024-06-04 17:41:56.7620|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 17:41:56.7620|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/EmployeeRegistration - 400 - application/json;+charset=utf-8 56.8896ms
+2024-06-04 17:43:19.0252|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - application/json 173
+2024-06-04 17:43:19.0252|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance)'
+2024-06-04 17:43:19.0252|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AgentRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AgentRegistration(ModelLayer.RequestDTO.InsuranceAgentRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:43:19.0252|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.InsuranceAgentRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AgentRegistration(InsuranceAgentRegistrationModel Agent) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 114
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:43:19.0252|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.InsuranceAgentRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AgentRegistration(InsuranceAgentRegistrationModel Agent) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 114
+   at E_Insurance.Controllers.UserManagementController.AgentRegistration(InsuranceAgentRegistrationModel Agent) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 128
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:43:19.0252|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.InsuranceAgentRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:43:19.0362|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance) in 10.096ms
+2024-06-04 17:43:19.0362|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance)'
+2024-06-04 17:43:19.0362|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - 400 - application/json;+charset=utf-8 11.2951ms
+2024-06-04 17:43:58.6725|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 172
+2024-06-04 17:43:58.6725|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:43:58.6725|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:43:58.6791|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:43:58.6791|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+   at E_Insurance.Controllers.UserManagementController.AdminRegistration(AdminRegistrationModel admin) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 32
+ClientConnectionId:1bcabd8a-f8d3-463f-b30c-b5ec79f2f7b9
+Error Number:515,State:2,Class:16
+2024-06-04 17:43:58.6791|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:43:58.6791|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 6.5431ms
+2024-06-04 17:43:58.6791|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:43:58.6791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 400 - application/json;+charset=utf-8 8.6648ms
+2024-06-04 17:53:24.3003|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 17:53:24.4406|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 17:53:24.4406|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 17:53:24.4425|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 17:53:24.4425|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 17:53:24.4425|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 17:53:24.8960|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 17:53:25.1648|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 264.9893ms
+2024-06-04 17:53:25.1841|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 17:53:25.1841|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 17:53:25.1841|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 7.5137ms
+2024-06-04 17:53:25.2303|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 46.1900ms
+2024-06-04 17:53:25.3245|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 17:53:25.4691|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 144.3435ms
+2024-06-04 17:53:36.7869|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 162
+2024-06-04 17:53:36.7869|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:53:36.8106|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:53:37.0237|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+ClientConnectionId:606c0c8c-ab8c-4c30-9037-8cb5c12596d1
+Error Number:515,State:2,Class:16
+2024-06-04 17:53:37.0382|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CreatedDate', table 'E-Insurance-3.dbo.AdminRegistration'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+   at E_Insurance.Controllers.UserManagementController.AdminRegistration(AdminRegistrationModel admin) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 32
+ClientConnectionId:606c0c8c-ab8c-4c30-9037-8cb5c12596d1
+Error Number:515,State:2,Class:16
+2024-06-04 17:53:37.0382|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:53:37.0548|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 236.1097ms
+2024-06-04 17:53:37.0548|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:53:37.0548|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 400 - application/json;+charset=utf-8 269.2463ms
+2024-06-04 17:57:31.0188|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 17:57:31.1661|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 17:57:31.1661|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 17:57:31.1661|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 17:57:31.1661|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 17:57:31.1661|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 17:57:31.7889|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 17:57:31.9548|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 165.7617ms
+2024-06-04 17:57:32.0197|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 17:57:32.0197|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 17:57:32.0241|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.1548ms
+2024-06-04 17:57:32.0651|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 45.2829ms
+2024-06-04 17:57:32.1330|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 17:57:32.2401|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 107.0408ms
+2024-06-04 17:57:54.6741|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 162
+2024-06-04 17:57:54.6845|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:57:54.7137|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 17:57:54.9683|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@CreatedDate".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+ClientConnectionId:76510a43-8ab4-4f36-a3ff-e8ebc638f591
+Error Number:137,State:2,Class:15
+2024-06-04 17:57:55.0303|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@CreatedDate".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+   at E_Insurance.Controllers.UserManagementController.AdminRegistration(AdminRegistrationModel admin) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 32
+ClientConnectionId:76510a43-8ab4-4f36-a3ff-e8ebc638f591
+Error Number:137,State:2,Class:15
+2024-06-04 17:57:55.0364|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 17:57:55.0364|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 327.0241ms
+2024-06-04 17:57:55.0364|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 17:57:55.0364|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 400 - application/json;+charset=utf-8 377.4082ms
+2024-06-04 17:59:46.2145|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 17:59:46.2243|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 9.6185ms
+2024-06-04 17:59:46.2563|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 17:59:46.2563|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 17:59:46.2563|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 1.3169ms
+2024-06-04 17:59:46.2563|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 13.4531ms
+2024-06-04 17:59:46.4779|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 17:59:46.4779|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 6.7968ms
+2024-06-04 18:00:04.4497|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 162
+2024-06-04 18:00:04.4497|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 18:00:04.4497|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:00:04.4677|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@CreatedDate".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+ClientConnectionId:76510a43-8ab4-4f36-a3ff-e8ebc638f591
+Error Number:137,State:2,Class:15
+2024-06-04 18:00:04.4677|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@CreatedDate".
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.AdminRegistration(AdminRegistrationModel adminRegistration) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 43
+   at E_Insurance.Controllers.UserManagementController.AdminRegistration(AdminRegistrationModel admin) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 32
+ClientConnectionId:76510a43-8ab4-4f36-a3ff-e8ebc638f591
+Error Number:137,State:2,Class:15
+2024-06-04 18:00:04.4677|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 18:00:04.4677|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 15.6472ms
+2024-06-04 18:00:04.4677|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 18:00:04.4677|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 400 - application/json;+charset=utf-8 19.7666ms
+2024-06-04 18:02:37.1134|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 18:02:37.2633|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 18:02:37.2633|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 18:02:37.2633|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 18:02:37.2633|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 18:02:37.2633|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 18:02:37.6509|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 18:02:37.8386|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 186.1222ms
+2024-06-04 18:02:37.8570|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 18:02:37.8570|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 18:02:37.8570|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.8229ms
+2024-06-04 18:02:37.8888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 31.7216ms
+2024-06-04 18:02:37.9634|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 18:02:38.0809|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 117.3673ms
+2024-06-04 18:02:50.1126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 162
+2024-06-04 18:02:50.1273|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 18:02:50.1437|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:02:50.4751|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "string"|System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.ParseMultipleAddresses(String data)
+   at System.Net.Mail.MailAddressCollection.ParseValue(String addresses)
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 244
+2024-06-04 18:02:50.5083|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 18:02:50.5083|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 368.3882ms
+2024-06-04 18:02:50.5083|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 18:02:50.5083|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 200 - application/json;+charset=utf-8 407.0049ms
+2024-06-04 18:03:55.5269|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 18:03:55.6635|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 18:03:55.6635|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 18:03:55.6635|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 18:03:55.6635|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 18:03:55.6635|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 18:03:56.2763|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 18:03:56.4894|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 212.1797ms
+2024-06-04 18:03:56.5151|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 18:03:56.5151|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 18:03:56.5151|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.3101ms
+2024-06-04 18:03:56.5436|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 28.4020ms
+2024-06-04 18:03:56.5933|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 18:03:56.7245|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 131.1416ms
+2024-06-04 18:04:25.5532|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/CustomerRegistration - application/json 216
+2024-06-04 18:04:25.5532|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 18:04:25.5868|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CustomerRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerRegistration(ModelLayer.RequestDTO.CustomerRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:04:26.0917|ERROR|RepositoryLayer.Service.RegistrationService|Error occurred while adding user|System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__CustomerR__Agent__3E52440B". The conflict occurred in database "E-Insurance-3", table "dbo.InsuranceAgentRegistration", column 'AgentId'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.CustomerRegistration(CustomerRegistrationModel Customer) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 78
+ClientConnectionId:d7155d9f-76bc-456d-9af6-47197f792e41
+Error Number:547,State:0,Class:16
+2024-06-04 18:04:26.1206|ERROR|E_Insurance.Controllers.UserManagementController|An error occurred while adding the user|System.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK__CustomerR__Agent__3E52440B". The conflict occurred in database "E-Insurance-3", table "dbo.InsuranceAgentRegistration", column 'AgentId'.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader()
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at System.Data.SqlClient.SqlCommand.EndExecuteNonQuery(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at RepositoryLayer.Service.RegistrationService.CustomerRegistration(CustomerRegistrationModel Customer) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 78
+   at E_Insurance.Controllers.UserManagementController.CustomerRegistration(CustomerRegistrationModel Customer) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\UserManagementController.cs:line 80
+ClientConnectionId:d7155d9f-76bc-456d-9af6-47197f792e41
+Error Number:547,State:0,Class:16
+2024-06-04 18:04:26.1206|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.CustomerRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 18:04:26.1432|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance) in 545.936ms
+2024-06-04 18:04:26.1432|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 18:04:26.1452|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/CustomerRegistration - 400 - application/json;+charset=utf-8 591.9831ms
+2024-06-04 18:04:57.0784|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - application/json 162
+2024-06-04 18:04:57.0784|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance)'
+2024-06-04 18:04:57.0914|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AgentRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AgentRegistration(ModelLayer.RequestDTO.InsuranceAgentRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:04:57.4998|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "string"|System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.ParseMultipleAddresses(String data)
+   at System.Net.Mail.MailAddressCollection.ParseValue(String addresses)
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 247
+2024-06-04 18:04:57.5061|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.InsuranceAgentRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 18:04:57.5061|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance) in 416.853ms
+2024-06-04 18:04:57.5061|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance)'
+2024-06-04 18:04:57.5061|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - 200 - application/json;+charset=utf-8 430.6970ms
+2024-06-04 18:05:19.2837|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/EmployeeRegistration - application/json 165
+2024-06-04 18:05:19.2837|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 18:05:19.2940|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "EmployeeRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EmployeeRegistration(ModelLayer.RequestDTO.EmployeeRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:05:19.3941|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "string"|System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.ParseMultipleAddresses(String data)
+   at System.Net.Mail.MailAddressCollection.ParseValue(String addresses)
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 247
+2024-06-04 18:05:19.3941|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.EmployeeRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 18:05:19.3978|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance) in 103.3649ms
+2024-06-04 18:05:19.3978|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-04 18:05:19.3978|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/EmployeeRegistration - 200 - application/json;+charset=utf-8 114.4613ms
+2024-06-04 18:07:02.9424|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/CustomerRegistration - application/json 216
+2024-06-04 18:07:02.9424|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 18:07:02.9424|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CustomerRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerRegistration(ModelLayer.RequestDTO.CustomerRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:07:02.9424|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "string"|System.FormatException: The specified string is not in the form required for an e-mail address.
+   at System.Net.Mail.MailAddressParser.TryReadCfwsAndThrowIfIncomplete(String data, Int32 index, Int32& outIndex, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseDomain(String data, Int32& index, String& domain, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.TryParseAddress(String data, Boolean expectMultipleAddresses, Int32& index, ParseAddressInfo& parseAddressInfo, Boolean throwExceptionIfFail)
+   at System.Net.Mail.MailAddressParser.ParseMultipleAddresses(String data)
+   at System.Net.Mail.MailAddressCollection.ParseValue(String addresses)
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\RegistrationService.cs:line 247
+2024-06-04 18:07:02.9424|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 18:07:02.9424|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance) in 12.6747ms
+2024-06-04 18:07:02.9424|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-04 18:07:02.9424|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/CustomerRegistration - 200 - application/json;+charset=utf-8 15.0294ms
+2024-06-04 18:08:03.3295|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 189
+2024-06-04 18:08:03.3295|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 18:08:03.3372|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:08:12.7366|INFO|RepositoryLayer.Service.RegistrationService|Welcome email sent to "pdshashank8@gmail.com"
+2024-06-04 18:08:12.7366|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-04 18:08:12.7366|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 9401.7439ms
+2024-06-04 18:08:12.7393|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-04 18:08:12.7393|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 200 - application/json;+charset=utf-8 9410.1465ms
+2024-06-04 18:25:38.8713|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-04 18:25:39.0061|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-04 18:25:39.0061|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-04 18:25:39.0061|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-04 18:25:39.0061|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-04 18:25:39.0061|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-04 18:25:39.3312|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 18:25:39.5043|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 172.8124ms
+2024-06-04 18:25:39.5437|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 18:25:39.5437|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 18:25:39.5437|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.5082ms
+2024-06-04 18:25:39.5725|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 28.7555ms
+2024-06-04 18:25:39.9272|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 18:25:40.0354|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 108.1424ms
+2024-06-04 18:26:21.5233|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 18:26:21.5416|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 18.2390ms
+2024-06-04 18:26:21.5878|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 18:26:21.5878|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 18:26:21.5878|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.4579ms
+2024-06-04 18:26:21.6086|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 20.6058ms
+2024-06-04 18:26:21.8129|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 18:26:21.8250|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 12.0860ms
+2024-06-04 18:30:32.9512|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-04 18:30:32.9608|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 9.5784ms
+2024-06-04 18:30:32.9994|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-04 18:30:32.9994|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-04 18:30:32.9994|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 0.4604ms
+2024-06-04 18:30:33.0066|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 7.0210ms
+2024-06-04 18:30:33.1098|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-04 18:30:33.1147|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 4.7868ms
+2024-06-04 18:31:06.3911|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=pdshashank8%40gmail.com&password=Password%40123&role=Admin - - 0
+2024-06-04 18:31:06.4066|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
+2024-06-04 18:31:06.4696|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(System.String, System.String, Microsoft.Extensions.Configuration.IConfiguration, System.String) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:31:06.5252|INFO|E_Insurance.Controllers.UserManagementController|Starting login process for email: pdshashank8@gmail.com
+2024-06-04 18:31:07.2435|INFO|E_Insurance.Controllers.UserManagementController|Login successful for email: pdshashank8@gmail.com
+2024-06-04 18:31:07.2435|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-04 18:31:07.2707|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance) in 790.8912ms
+2024-06-04 18:31:07.2714|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
+2024-06-04 18:31:07.2714|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=pdshashank8%40gmail.com&password=Password%40123&role=Admin - 200 - application/json;+charset=utf-8 880.9707ms
+2024-06-04 18:33:10.8484|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=string&password=string&role=Customer - - 0
+2024-06-04 18:33:10.8484|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
+2024-06-04 18:33:10.8484|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(System.String, System.String, Microsoft.Extensions.Configuration.IConfiguration, System.String) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-04 18:33:10.8484|INFO|E_Insurance.Controllers.UserManagementController|Starting login process for email: string
+2024-06-04 18:33:11.0118|INFO|E_Insurance.Controllers.UserManagementController|Login successful for email: string
+2024-06-04 18:33:11.0118|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-04 18:33:11.0118|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance) in 160.7259ms
+2024-06-04 18:33:11.0118|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
+2024-06-04 18:33:11.0118|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=string&password=string&role=Customer - 200 - application/json;+charset=utf-8 165.0642ms
