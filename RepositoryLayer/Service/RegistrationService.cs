@@ -95,16 +95,16 @@ namespace RepositoryLayer.Service
         {
             try
             {
-                // Check if customer model is null
+                
                 if (customer == null)
                 {
                     throw new ArgumentNullException(nameof(customer), "Customer registration model cannot be null.");
                 }
 
-                // Validate customer data
+                
                 ValidateCustomerData(customer);
 
-                // Perform registration
+               
                 string hashedPassword = HashPassword(customer.PasswordHash);
                 var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
 
