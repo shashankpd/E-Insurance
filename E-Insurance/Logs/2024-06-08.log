@@ -750,3 +750,34 @@ Error Number:207,State:1,Class:16
 2024-06-08 13:56:39.2524|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
 2024-06-08 13:56:39.2524|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
 2024-06-08 13:56:39.2524|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-08 13:57:17.4416|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-08 13:57:17.4893|WARN|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|The WebRootPath was not found: D:\C#\WebApi\Ensurance\E-Insurance\wwwroot. Static files may be unavailable.
+2024-06-08 13:57:17.5518|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-08 13:57:17.5518|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-08 13:57:17.5518|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-08 13:57:17.5518|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-08 13:57:17.5518|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-08 13:57:18.6362|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-08 13:57:18.8686|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 233.4114ms
+2024-06-08 13:57:18.9318|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-08 13:57:18.9318|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.7410ms
+2024-06-08 13:57:18.9318|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-08 13:57:18.9863|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 44.7965ms
+2024-06-08 13:57:19.0593|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-08 13:57:19.1868|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 127.4652ms
+2024-06-08 13:58:01.8080|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 177
+2024-06-08 13:58:01.8830|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-08 13:58:01.9222|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-08 13:58:17.6648|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "vashu@gmail.com"|System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 Client not authenticated to send mail. Error: 535 5.7.139 Authentication unsuccessful, account locked. Contact your administrator. [MA0PR01CA0103.INDPRD01.PROD.OUTLOOK.COM 2024-06-08T08:28:18.486Z 08DC87317E560258]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\RegistrationService.cs:line 434
+2024-06-08 13:58:17.7190|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-08 13:58:17.7833|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 15847.1132ms
+2024-06-08 13:58:17.7833|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-08 13:58:17.7833|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 201 - application/json;+charset=utf-8 15978.3843ms
