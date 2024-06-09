@@ -18,5 +18,8 @@ namespace ModelLayer.Entity
         public DateTime CreatedDate { get; set; }
         public DateTime? DateOfBirth { get; set; } // If needed
         public string? Address { get; set; } // Add this property
+
+        public int CustomerId { get; set; }  // Ensure this property exists
+
     }
 }
