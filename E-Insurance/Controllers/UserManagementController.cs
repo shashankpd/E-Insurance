@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using UserManagement.Controllers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace E_Insurance.Controllers
 {
@@ -71,7 +72,7 @@ namespace E_Insurance.Controllers
                 }
             }
         }
-
+        [Authorize(Roles = "admin")]
         [HttpPost("CustomerRegistration")]
         public async Task<IActionResult> CustomerRegistration([FromBody] CustomerRegistrationModel Customer)
         {

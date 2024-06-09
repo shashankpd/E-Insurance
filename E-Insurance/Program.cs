@@ -20,17 +20,16 @@ builder.Services.AddScoped<IRegistrationService, RegistrationService>();
 builder.Services.AddScoped<IPolicyCreationBL, PolicyCreationBL>();
 builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
 
-// Policy purchase
 builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
-builder.Services.AddScoped<ICustomerPolicyPurchaseService, CustomerPolicyPurchaseService>();
+builder.Services.AddScoped<CustomerPolicyPurchaseService, CustomerPolicyPurchaseService>();
 
+builder.Services.AddScoped<IRenewal,PolicyRenewalService>();
+builder.Services.AddScoped<IRenewalBl,IRenewalServiceBl>();
 // Payment
 builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
 builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
 
-/*builder.Services.AddScoped<IAgentCommission, AgentCommissionService>(); // Correct spelling
-builder.Services.AddScoped<IAgentComissionBl, AgentComissionServiceBl>(); // Corrected interface name
-*/
+
 builder.Services.AddControllers();
 
 // Add NLog Logger
