@@ -121,6 +121,7 @@ namespace E_Insurance.Controllers
             }
         }
 
+        [Authorize(Roles = "admin")]
         [HttpPost("AgentRegistration")]
         public async Task<IActionResult> AgentRegistration([FromBody] InsuranceAgentRegistrationModel Agent)
         {
