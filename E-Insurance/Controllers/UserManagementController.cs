@@ -72,6 +72,8 @@ namespace E_Insurance.Controllers
                 }
             }
         }
+        
+ /********************************************************************************************************************************************************************************/
         [Authorize(Roles = "admin")]
         [HttpPost("CustomerRegistration")]
         public async Task<IActionResult> CustomerRegistration([FromBody] CustomerRegistrationModel Customer)
@@ -120,6 +122,10 @@ namespace E_Insurance.Controllers
                 }
             }
         }
+
+
+
+/********************************************************************************************************************************************************************************/
 
         [Authorize(Roles = "admin")]
         [HttpPost("AgentRegistration")]
@@ -170,6 +176,7 @@ namespace E_Insurance.Controllers
             }
         }
 
+/********************************************************************************************************************************************************************************/
 
         [Authorize(Roles = "admin")]
         [HttpPost("EmployeeRegistration")]
@@ -219,6 +226,7 @@ namespace E_Insurance.Controllers
                 }
             }
         }
+ /********************************************************************************************************************************************************************************/
 
         [HttpPost("Login")]
         public async Task<IActionResult> UserLogin(string email, string password, [FromServices] IConfiguration configuration, string role)
