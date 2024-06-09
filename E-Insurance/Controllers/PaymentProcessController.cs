@@ -182,7 +182,7 @@ namespace E_Insurance.Controllers
         {
             try
             {
-                var premium = await _paymentProcessBL.CalculatePremium(request.PolicyId, request.CustomerAge, request.CoverageAmount, request.TermLength, request.PolicyType);
+                var premium = await _paymentProcessBL.CalculatePremium(request.PolicyId, request.CustomerAge, request.CoverageAmount,request.PolicyType,request.paymentFrequency,request.TermYears);
                 return Ok(new { Premium = premium });
             }
             catch (Exception ex)

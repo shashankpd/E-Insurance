@@ -39,9 +39,9 @@ namespace BusinessLayer.Service
         {
             return PaymentProcess.GetRecieptByPaymementId(PaymentId);
         }
-        public Task<decimal> CalculatePremium(int policyId, int customerAge, decimal coverageAmount, int termLength, string policyType)
+        public Task<decimal> CalculatePremium(int policyId, int customerAge, decimal coverageAmount, string policyType, string paymentFrequency, int TermYears)
         {
-            return PaymentProcess.CalculatePremium(policyId, customerAge, coverageAmount, termLength, policyType);
+            return PaymentProcess.CalculatePremium(policyId, customerAge, coverageAmount, policyType,paymentFrequency, TermYears);
         }
     }
 }

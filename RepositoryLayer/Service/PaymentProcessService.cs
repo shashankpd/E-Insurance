@@ -119,11 +119,11 @@ namespace RepositoryLayer.Service
             }
         }
 
-        public async Task<decimal> CalculatePremium(int policyId, int customerAge, decimal coverageAmount, int termLength, string policyType)
+        public async Task<decimal> CalculatePremium(int policyId, int customerAge, decimal coverageAmount, string policyType, string paymentFrequency,int TermYears)
         {
             try
             {
-                string cacheKey = $"premium:{policyId}:{customerAge}:{coverageAmount}:{termLength}:{policyType}";
+                string cacheKey = $"premium:{policyId}:{customerAge}:{coverageAmount}:{policyType}:{paymentFrequency}:{TermYears}";
 
                 var cachedPremium = await _cache.StringGetAsync(cacheKey);
 
@@ -137,8 +137,9 @@ namespace RepositoryLayer.Service
                 parameters.Add("PolicyId", policyId);
                 parameters.Add("CustomerAge", customerAge);
                 parameters.Add("CoverageAmount", coverageAmount);
-                parameters.Add("TermLength", termLength);
                 parameters.Add("PolicyType", policyType);
+                parameters.Add("paymentFrequency",paymentFrequency);
+                parameters.Add("TermYears", TermYears);
 
                 using (var connection = _context.CreateConnection())
                 {

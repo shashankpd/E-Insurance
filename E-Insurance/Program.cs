@@ -33,6 +33,11 @@ builder.Services.AddScoped<ICustomerPolicyPurchaseService, CustomerPolicyPurchas
 builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
 builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
 
+//AgentCommission
+
+builder.Services.AddScoped<IAgentCommissionBL, AgentCommissionBL>();
+builder.Services.AddScoped<IAgentCommisionService, AgentCommisionService>();
+
 builder.Services.AddControllers();
 
 // Add NLog Logger
