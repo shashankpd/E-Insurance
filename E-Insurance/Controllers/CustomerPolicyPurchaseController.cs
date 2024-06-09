@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿/*using Microsoft.AspNetCore.Mvc;
 using BusinessLayer.Interface;
 using ModelLayer.Entity;
 using System.Threading.Tasks;
@@ -129,3 +129,4 @@ namespace E_Insurance.Controllers
 
     }
 }
+*/

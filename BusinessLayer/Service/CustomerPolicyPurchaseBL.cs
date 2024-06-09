@@ -2,6 +2,7 @@
 using ModelLayer.Entity;
 using ModelLayer.Response;
 using RepositoryLayer.Interface;
+using RepositoryLayer.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +13,9 @@ namespace BusinessLayer.Service
 {
     public class CustomerPolicyPurchaseBL : ICustomerPolicyPurchaseBL
     {
-        private readonly ICustomerPolicyPurchaseService Policypurchase;
+        private readonly CustomerPolicyPurchaseService Policypurchase;
 
-        public CustomerPolicyPurchaseBL(ICustomerPolicyPurchaseService Policypurchase)
+        public CustomerPolicyPurchaseBL(CustomerPolicyPurchaseService Policypurchase)
         {
             this.Policypurchase = Policypurchase;
         }

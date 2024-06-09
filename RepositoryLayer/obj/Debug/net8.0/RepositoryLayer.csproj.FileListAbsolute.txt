@@ -29,3 +29,4 @@ D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.dll
 D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\refint\RepositoryLayer.dll
 D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.pdb
 D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\ref\RepositoryLayer.dll
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.sourcelink.json
