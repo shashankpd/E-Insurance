@@ -170,6 +170,8 @@ namespace E_Insurance.Controllers
             }
         }
 
+
+        [Authorize(Roles = "admin")]
         [HttpPost("EmployeeRegistration")]
         public async Task<IActionResult> EmployeeRegistration([FromBody] EmployeeRegistrationModel Employee)
         {
