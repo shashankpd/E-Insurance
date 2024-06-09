@@ -105,7 +105,7 @@ namespace E_Insurance.Controllers
             }
         }
 
-       /* [HttpPost("pay/{agentId}")]
+        [HttpPost("pay/{agentId}")]
         public async Task<IActionResult> PayCommission(int agentId)
         {
             try
@@ -130,7 +130,7 @@ namespace E_Insurance.Controllers
                     Message = "An error occurred while paying commission"
                 });
             }
-        }*/
+        }
 
     }
 }
