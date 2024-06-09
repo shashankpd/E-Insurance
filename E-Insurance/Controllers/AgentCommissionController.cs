@@ -69,7 +69,68 @@ namespace E_Insurance.Controllers
             }
         }
 
-       
+        [HttpGet("agentid")]
+        public async Task<IActionResult> ViewCommissions(int agentId)
+        {
+            try
+            {
+                var result = await AgentCommission.ViewCommissions(agentId);
+                if (result != null)
+                {
+                    var response = new ResponseModel<IEnumerable<Commision>>
+                    {
+                        Success = true,
+                        Message = "All Commissions retrieved successfully",
+                        Data = result
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return BadRequest(new ResponseModel<Commision>
+                    {
+                        Success = false,
+                        Message = "No Commissions found"
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An error occurred while retrieving Commission");
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<Commision>
+                {
+                    Success = false,
+                    Message = "An error occurred while retrieving Commission"
+                });
+            }
+        }
+
+       /* [HttpPost("pay/{agentId}")]
+        public async Task<IActionResult> PayCommission(int agentId)
+        {
+            try
+            {
+                await AgentCommission.PayCommission(agentId);
+                _logger.LogInformation($"Commission paid for AgentId: {agentId}");
+
+                var response = new ResponseModel<string>
+                {
+                    Success = true,
+                    Message = $"Commission paid for AgentId: {agentId}",
+                    Data = null
+                };
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error paying commission");
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = "An error occurred while paying commission"
+                });
+            }
+        }*/
 
     }
 }
