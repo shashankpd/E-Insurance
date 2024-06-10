@@ -1,14 +1,10 @@
 ﻿using BusinessLayer.Interface;
-<<<<<<< HEAD
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
-=======
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging; // Add this
 using ModelLayer.Entity;
 using ModelLayer.RequestDTO;
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 using Response;
 using System;
 using System.Threading.Tasks;
@@ -20,19 +16,12 @@ namespace E_Insurance.Controllers
     public class PaymentProcessController : ControllerBase
     {
         private readonly IPaymentProcessBL _paymentProcessBL;
-<<<<<<< HEAD
-
-        public PaymentProcessController(IPaymentProcessBL paymentProcessBL)
-        {
-            _paymentProcessBL = paymentProcessBL;
-=======
         private readonly ILogger<PaymentProcessController> _logger; // Add this
 
         public PaymentProcessController(IPaymentProcessBL paymentProcessBL, ILogger<PaymentProcessController> logger) // Modify the constructor
         {
             _paymentProcessBL = paymentProcessBL;
             _logger = logger; // Initialize the logger
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         }
 
         [HttpPost("payment")]
@@ -71,17 +60,7 @@ namespace E_Insurance.Controllers
             }
             catch (Exception ex)
             {
-<<<<<<< HEAD
-                
-                ILogger<PaymentProcessController> logger =
-                    new Logger<PaymentProcessController>(new LoggerFactory());
-                logger.LogError(ex, "An error occurred while processing the payment");
-
-               
-=======
                 _logger.LogError(ex, "An error occurred while processing the payment"); // Use the injected logger
-
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                 var response = new ResponseModel<string>
                 {
                     Success = false,
@@ -90,8 +69,6 @@ namespace E_Insurance.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, response);
             }
         }
-<<<<<<< HEAD
-=======
 
         [HttpGet]
         public async Task<IActionResult> GetAllPayments()
@@ -215,6 +192,5 @@ namespace E_Insurance.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { ErrorMessage = "An error occurred while calculating premium" });
             }
         }
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     }
 }
