@@ -1,10 +1,8 @@
 ﻿using Dapper;
 using ModelLayer.Entity;
-<<<<<<< HEAD
 using NLog;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
-=======
 using ModelLayer.RequestDTO;
 using NLog;
 using RepositoryLayer.Context;
@@ -21,18 +19,6 @@ using System.Threading.Tasks;
 namespace RepositoryLayer.Service
 {
     public class PaymentProcessService : IPaymentProcessService
-<<<<<<< HEAD
-
-    {
-        private readonly DapperContext _context;
-        private static readonly ILogger _logger = LogManager.GetCurrentClassLogger();
-
-        public PaymentProcessService(DapperContext context)
-        {
-            _context = context;
-        }
-        //start
-=======
     {
         private readonly DapperContext _context;
         private static readonly ILogger _logger = LogManager.GetCurrentClassLogger();
@@ -44,7 +30,6 @@ namespace RepositoryLayer.Service
             _context = context;
             _cache = redisConnection.GetDatabase();
         }
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
         public async Task<bool> AddPayment(Payment payment)
         {
@@ -77,8 +62,6 @@ namespace RepositoryLayer.Service
             }
         }
 
-<<<<<<< HEAD
-=======
         public async Task<IEnumerable<PaymentModel>> GetAllPayments()
         {
             try
@@ -180,7 +163,6 @@ namespace RepositoryLayer.Service
                 throw;
             }
         }
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
     }
 }
