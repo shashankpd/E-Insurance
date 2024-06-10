@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 ﻿using Dapper;
 using Microsoft.Extensions.Configuration;
 using ModelLayer.Entity;
+=======
+﻿using Microsoft.Extensions.Configuration;
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -22,6 +26,7 @@ namespace RepositoryLayer.Context
         }
         public IDbConnection CreateConnection()
             => new SqlConnection(_connectionString);
+<<<<<<< HEAD
 
         public CustomerPolicy GetCustomerPolicyById(int customerPolicyId)
         {
@@ -50,5 +55,7 @@ namespace RepositoryLayer.Context
             }
         }
 
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     }
 }

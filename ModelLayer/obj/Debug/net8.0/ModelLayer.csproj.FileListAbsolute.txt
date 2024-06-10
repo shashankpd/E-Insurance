@@ -11,6 +11,7 @@ C:\Users\SHASHANK\source\repos\E-Insurance\ModelLayer\obj\Debug\net8.0\refint\Mo
 C:\Users\SHASHANK\source\repos\E-Insurance\ModelLayer\obj\Debug\net8.0\ModelLayer.pdb
 C:\Users\SHASHANK\source\repos\E-Insurance\ModelLayer\obj\Debug\net8.0\ref\ModelLayer.dll
 C:\Users\SHASHANK\source\repos\E-Insurance\ModelLayer\obj\Debug\net8.0\ModelLayer.csproj.AssemblyReference.cache
+<<<<<<< HEAD
 D:\C#\WebApi\Ensurance\ModelLayer\bin\Debug\net8.0\ModelLayer.deps.json
 D:\C#\WebApi\Ensurance\ModelLayer\bin\Debug\net8.0\ModelLayer.dll
 D:\C#\WebApi\Ensurance\ModelLayer\bin\Debug\net8.0\ModelLayer.pdb
@@ -24,3 +25,5 @@ D:\C#\WebApi\Ensurance\ModelLayer\obj\Debug\net8.0\refint\ModelLayer.dll
 D:\C#\WebApi\Ensurance\ModelLayer\obj\Debug\net8.0\ModelLayer.pdb
 D:\C#\WebApi\Ensurance\ModelLayer\obj\Debug\net8.0\ref\ModelLayer.dll
 D:\C#\WebApi\Ensurance\ModelLayer\obj\Debug\net8.0\ModelLayer.sourcelink.json
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f

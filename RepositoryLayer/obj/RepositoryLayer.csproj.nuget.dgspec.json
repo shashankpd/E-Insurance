@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj": {}
   },
   "projects": {
@@ -15,6 +16,26 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\RepositoryLayer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj",
+        "projectName": "ModelLayer",
+        "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj",
+        "packagesPath": "C:\\Users\\SHASHANK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SHASHANK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +43,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
           "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,6 +94,13 @@
               "target": "Package",
               "version": "[5.3.11, )"
             },
+<<<<<<< HEAD
+=======
+            "StackExchange.Redis": {
+              "target": "Package",
+              "version": "[2.7.33, )"
+            },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
@@ -95,6 +126,7 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
@@ -110,6 +142,27 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\RepositoryLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectName": "RepositoryLayer",
+        "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\RepositoryLayer.csproj",
+        "packagesPath": "C:\\Users\\SHASHANK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SHASHANK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -117,15 +170,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
           "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+<<<<<<< HEAD
               "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj": {
                 "projectPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj"
+=======
+              "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj": {
+                "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj"
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
               }
             }
           }
@@ -198,7 +259,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         }
       }
     }

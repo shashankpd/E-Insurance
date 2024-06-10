@@ -780,6 +780,7 @@ Error Number:50000,State:1,Class:16
 2024-06-06 19:32:03.7311|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance) in 460.6446ms
 2024-06-06 19:32:03.7311|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance)'
 2024-06-06 19:32:03.7311|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PaymentProcess/payment - 201 - application/json;+charset=utf-8 465.9615ms
+<<<<<<< HEAD
 2024-06-06 23:56:37.5843|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
 2024-06-06 23:56:38.3977|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
 2024-06-06 23:56:38.3977|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
@@ -805,3 +806,5 @@ Error Number:50000,State:1,Class:16
 2024-06-06 23:56:41.2518|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 117.1500ms
 2024-06-06 23:56:41.4857|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
 2024-06-06 23:56:41.6635|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 177.6133ms
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f

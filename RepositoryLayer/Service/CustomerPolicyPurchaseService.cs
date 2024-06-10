@@ -10,7 +10,11 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer.Service
 {
+<<<<<<< HEAD
     public class CustomerPolicyPurchaseService :ICustomerPolicyPurchaseService
+=======
+    public class CustomerPolicyPurchaseService : ICustomerPolicyPurchaseService
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     {
         private readonly DapperContext _context;
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
@@ -19,6 +23,10 @@ namespace RepositoryLayer.Service
         {
             _context = context;
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         public async Task<bool> PolicyPurchase(PolicyPurchase policy)
         {
             try

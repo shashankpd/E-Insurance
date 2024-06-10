@@ -21,25 +21,39 @@ builder.Services.AddScoped<IRegistrationService, RegistrationService>();
 //policy creation
 
 builder.Services.AddScoped<IPolicyCreationBL, PolicyCreationBL>();
+<<<<<<< HEAD
 
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
 
 //policy purchase
 
 builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
+<<<<<<< HEAD
 builder.Services.AddScoped<ICustomerPolicyPurchaseService,CustomerPolicyPurchaseService>();
+=======
+builder.Services.AddScoped<ICustomerPolicyPurchaseService, CustomerPolicyPurchaseService>();
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
 //Payment
 
 builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
 builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
 
+<<<<<<< HEAD
 //agentcommision
 builder.Services.AddScoped<IAgentCommisionService, AgentCommisionService>();
 builder.Services.AddScoped<IAgentCommissionBL, AgentCommissionBL>();
 
 builder.Services.AddScoped<IRenewal, PolicyRenewalService>();
 builder.Services.AddScoped<IRenewalBl, IRenewalServiceBl>();
+=======
+//AgentCommission
+
+builder.Services.AddScoped<IAgentCommissionBL, AgentCommissionBL>();
+builder.Services.AddScoped<IAgentCommisionService, AgentCommisionService>();
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
 builder.Services.AddControllers();
 
@@ -149,6 +163,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+<<<<<<< HEAD
 
 
 
@@ -277,3 +292,5 @@ app.UseAuthorization();
 app.MapControllers();
 app.Run();
 */
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f

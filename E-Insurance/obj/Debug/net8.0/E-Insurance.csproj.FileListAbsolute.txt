@@ -57,6 +57,7 @@ C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Microsof
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\System.Net.Mail.Abstractions.dll
+<<<<<<< HEAD
 D:\C#\WebApi\Ensurance\E-Insurance\bin\Debug\net8.0\appsettings.Development.json
 D:\C#\WebApi\Ensurance\E-Insurance\bin\Debug\net8.0\appsettings.json
 D:\C#\WebApi\Ensurance\E-Insurance\bin\Debug\net8.0\nlog.config
@@ -118,3 +119,7 @@ D:\C#\WebApi\Ensurance\E-Insurance\obj\Debug\net8.0\ref\E-Insurance.dll
 D:\C#\WebApi\Ensurance\E-Insurance\obj\Debug\net8.0\E-Insurance.sourcelink.json
 D:\C#\WebApi\Ensurance\E-Insurance\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 D:\C#\WebApi\Ensurance\E-Insurance\bin\Debug\net8.0\StackExchange.Redis.dll
+=======
+C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\bin\Debug\net8.0\StackExchange.Redis.dll
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f

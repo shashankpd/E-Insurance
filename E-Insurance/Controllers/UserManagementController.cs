@@ -8,7 +8,10 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using UserManagement.Controllers;
+<<<<<<< HEAD
 using Microsoft.AspNetCore.Authorization;
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
 namespace E_Insurance.Controllers
 {
@@ -36,7 +39,11 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<AdminRegistrationModel>
                     {
                         Success = true,
+<<<<<<< HEAD
                         Message = "Admin Registration Successful"
+=======
+                        Message = "User Registration Successful"
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                     };
                     return CreatedAtAction(nameof(AdminRegistration), response);
                 }
@@ -72,9 +79,13 @@ namespace E_Insurance.Controllers
                 }
             }
         }
+<<<<<<< HEAD
         
  /********************************************************************************************************************************************************************************/
         [Authorize(Roles = "admin")]
+=======
+
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         [HttpPost("CustomerRegistration")]
         public async Task<IActionResult> CustomerRegistration([FromBody] CustomerRegistrationModel Customer)
         {
@@ -86,7 +97,11 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<AdminRegistrationModel>
                     {
                         Success = true,
+<<<<<<< HEAD
                         Message = "Customer Registration Successful"
+=======
+                        Message = "User Registration Successful"
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                     };
                     return CreatedAtAction(nameof(CustomerRegistration), response);
                 }
@@ -123,11 +138,14 @@ namespace E_Insurance.Controllers
             }
         }
 
+<<<<<<< HEAD
 
 
 /********************************************************************************************************************************************************************************/
 
         [Authorize(Roles = "admin")]
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         [HttpPost("AgentRegistration")]
         public async Task<IActionResult> AgentRegistration([FromBody] InsuranceAgentRegistrationModel Agent)
         {
@@ -139,7 +157,11 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<InsuranceAgentRegistrationModel>
                     {
                         Success = true,
+<<<<<<< HEAD
                         Message = "Agent Registration Successful"
+=======
+                        Message = "User Registration Successful"
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                     };
                     return CreatedAtAction(nameof(AgentRegistration), response);
                 }
@@ -176,9 +198,12 @@ namespace E_Insurance.Controllers
             }
         }
 
+<<<<<<< HEAD
 /********************************************************************************************************************************************************************************/
 
         [Authorize(Roles = "admin")]
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         [HttpPost("EmployeeRegistration")]
         public async Task<IActionResult> EmployeeRegistration([FromBody] EmployeeRegistrationModel Employee)
         {
@@ -190,7 +215,11 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<EmployeeRegistrationModel>
                     {
                         Success = true,
+<<<<<<< HEAD
                         Message = "Employee Registration Successful"
+=======
+                        Message = "User Registration Successful"
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                     };
                     return CreatedAtAction(nameof(EmployeeRegistration), response);
                 }
@@ -226,15 +255,25 @@ namespace E_Insurance.Controllers
                 }
             }
         }
+<<<<<<< HEAD
  /********************************************************************************************************************************************************************************/
 
         [HttpPost("Login")]
         public async Task<IActionResult> UserLogin(string email, string password, [FromServices] IConfiguration configuration, string role)
+=======
+
+        [HttpPost("Login")]
+        public async Task<IActionResult> UserLogin(string email, string password, [FromServices] IConfiguration configuration,string role)
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         {
             try
             {
                 _logger.LogInformation("Starting login process for email: {Email}", email);
+<<<<<<< HEAD
                 var details = await _user.UserLogin(email, password, configuration, role);
+=======
+                var details = await _user.UserLogin(email, password, configuration,role);
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
                 var response = new ResponseModel<string>
                 {
@@ -280,5 +319,8 @@ namespace E_Insurance.Controllers
         }
     }
 }
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f

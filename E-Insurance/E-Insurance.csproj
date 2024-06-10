@@ -14,6 +14,10 @@
     <PackageReference Include="NLog" Version="5.3.2" />
     <PackageReference Include="NLog.Extensions.Logging" Version="5.3.11" />
     <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
+<<<<<<< HEAD
+=======
+    <PackageReference Include="StackExchange.Redis" Version="2.7.33" />
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
     <PackageReference Include="System.Net.Mail.Abstractions" Version="1.1.21" />

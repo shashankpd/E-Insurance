@@ -13,4 +13,8 @@ namespace BusinessLayer.Interface
         public Task<IEnumerable<Commision>> ViewCommissions(int agentId);
         public Task PayCommission(int agentId);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
