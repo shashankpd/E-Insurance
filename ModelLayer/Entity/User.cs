@@ -20,6 +20,11 @@ namespace ModelLayer.Entity
         public string? Address { get; set; } // Add this property
 
         public int CustomerId { get; set; }  // Ensure this property exists
+        public int AgentId { get; set; }  // Ensure this property exists
+        public int AdminId { get; set; }  // Ensure this property exists
+        public int EmployeeId { get; set; }  // Ensure this property exists
+
+
 
     }
 }

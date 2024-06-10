@@ -43,5 +43,9 @@ namespace BusinessLayer.Service
         {
             return PaymentProcess.CalculatePremium(policyId, customerAge, coverageAmount, policyType,paymentFrequency, TermYears);
         }
+        public Task FinalizePurchase()
+        {
+            return PaymentProcess.FinalizePurchase();
+        }
     }
 }

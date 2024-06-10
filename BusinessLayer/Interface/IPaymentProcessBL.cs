@@ -19,6 +19,8 @@ namespace BusinessLayer.Interface
         public Task<IEnumerable<ReceiptDetails>> GetRecieptByPaymementId(int PaymentId);
 
         public Task<decimal> CalculatePremium(int policyId, int customerAge, decimal coverageAmount, string policyType, string paymentFrequency,int TermYears);
+        public Task FinalizePurchase();
+
 
 
 

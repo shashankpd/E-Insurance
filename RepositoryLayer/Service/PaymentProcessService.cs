@@ -8,6 +8,7 @@ using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -156,6 +157,24 @@ namespace RepositoryLayer.Service
             catch (Exception ex)
             {
                 _logger.Error(ex, "An error occurred while calculating premium");
+                throw;
+            }
+        }
+        public async Task FinalizePurchase()
+        {
+            try
+            {
+                using (var connection = _context.CreateConnection())
+                {
+                    await connection.ExecuteAsync("FinalizePurchase", commandType: CommandType.StoredProcedure);
+
+                    // Log success after updating
+                    _logger.Info("Purchase finalized successfully");
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.Error(ex, "An error occurred while finalizing purchase");
                 throw;
             }
         }

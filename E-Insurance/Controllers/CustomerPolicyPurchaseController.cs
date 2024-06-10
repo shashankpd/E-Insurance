@@ -6,6 +6,7 @@ using Response;
 using Microsoft.AspNetCore.Http;
 using BusinessLayer.Service;
 using ModelLayer.Response;
+using Microsoft.AspNetCore.Authorization;
 
 namespace E_Insurance.Controllers
 {
@@ -31,7 +32,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<PolicyPurchase>
                     {
                         Success = true,
-                        Message = "Policy purchased successfully",
+                        Message = "Customer Data stored successfully",
                         Data = policyPurchase
                     };
                     return Ok(response);
@@ -56,12 +57,26 @@ namespace E_Insurance.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet]
-        public async Task<IActionResult> GetCustomerPurchaseDetailsById(int customerId)
+        public async Task<IActionResult> GetCustomerPurchaseDetailsById()
         {
             try
             {
-                var result = await _policyPurchaseBL.GetCustomerPurchaseDetailsById(customerId);
+                // Get the CustomerId of the authenticated user from the claims in the JWT token
+                var customerIdClaim = User.FindFirst("CustomerId");
+
+                if (customerIdClaim == null)
+                {
+                    // Handle case where CustomerId claim is missing
+                    return Unauthorized("CustomerId claim is missing in the token.");
+                }
+
+                // Convert authenticated CustomerId to int if necessary
+                int authenticatedCustomerId = int.Parse(customerIdClaim.Value);
+
+                // Proceed with retrieving the customer purchase details
+                var result = await _policyPurchaseBL.GetCustomerPurchaseDetailsById(authenticatedCustomerId);
                 if (result != null)
                 {
                     var response = new ResponseModel<IEnumerable<CustomerPolicyDetails>>
@@ -74,22 +89,34 @@ namespace E_Insurance.Controllers
                 }
                 else
                 {
-                    return BadRequest(new ResponseModel<IEnumerable<CustomerPolicyDetails>>
+                    return NotFound(new ResponseModel<IEnumerable<CustomerPolicyDetails>>
                     {
                         Success = false,
-                        Message = "No Details found"
+                        Message = "No details found",
+                        Data = null
                     });
                 }
             }
-            catch (Exception ex)
+            catch (DatabaseException ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<CustomerPolicyDetails>
+                return NotFound(new ResponseModel<string>
                 {
                     Success = false,
-                    Message = "An error occurred while retrieving Customer Details"
+                    Message = ex.Message,
+                    Data = null
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = $"An error occurred: {ex.Message}",
+                    Data = null
                 });
             }
         }
+
         [HttpDelete("{customerPolicyId}")]
         public async Task<IActionResult> RemoveCustomerPolicy(int customerPolicyId)
         {

@@ -62,7 +62,7 @@ builder.Services.AddSingleton<ConnectionMultiplexer>(provider =>
 // Define the JWT bearer scheme
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "User Management", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "E-Insurance", Version = "v1" });
 
     var securityScheme = new OpenApiSecurityScheme
     {
