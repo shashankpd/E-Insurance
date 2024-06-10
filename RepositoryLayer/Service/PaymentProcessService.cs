@@ -8,7 +8,6 @@ using NLog;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using StackExchange.Redis;
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 using System;
 using System.Collections.Generic;
 using System.Data;
