@@ -75,11 +75,7 @@ namespace E_Insurance.Controllers
             try
             {
                 var result = await AgentCommission.ViewCommissions(agentId);
-<<<<<<< HEAD
                 if (result != null && result.Any())
-=======
-                if (result != null)
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                 {
                     var response = new ResponseModel<IEnumerable<Commision>>
                     {
@@ -91,44 +87,27 @@ namespace E_Insurance.Controllers
                 }
                 else
                 {
-<<<<<<< HEAD
+
                     return BadRequest(new ResponseModel<IEnumerable<Commision>>
                     {
                         Success = false,
                         Message = "No Commissions found",
                         Data = null // or an empty list depending on how you want to handle this case
-=======
-                    return BadRequest(new ResponseModel<Commision>
-                    {
-                        Success = false,
-                        Message = "No Commissions found"
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                     });
                 }
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while retrieving Commission");
-<<<<<<< HEAD
                 return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<IEnumerable<Commision>>
                 {
                     Success = false,
                     Message = "An error occurred while retrieving Commission",
                     Data = null // or an empty list depending on how you want to handle this case
-=======
-                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<Commision>
-                {
-                    Success = false,
-                    Message = "An error occurred while retrieving Commission"
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                 });
             }
         }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         [HttpPost("pay/{agentId}")]
         public async Task<IActionResult> PayCommission(int agentId)
         {
@@ -142,11 +121,7 @@ namespace E_Insurance.Controllers
                     Success = true,
                     Message = $"Commission paid for AgentId: {agentId}",
                     Data = null
-<<<<<<< HEAD
-                };
-=======
                 };  
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                 return Ok(response);
             }
             catch (Exception ex)
@@ -159,12 +134,5 @@ namespace E_Insurance.Controllers
                 });
             }
         }
-
-<<<<<<< HEAD
     }
 }
-
-=======
-    }    
-}
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
