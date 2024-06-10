@@ -363,8 +363,6 @@ namespace RepositoryLayer.Service
             var key = Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]);
             var issuer = _configuration["Jwt:Issuer"];
             var audience = _configuration["Jwt:Audience"];
-<<<<<<< HEAD
-=======
 
             var claims = new List<Claim>
     {
@@ -404,7 +402,6 @@ namespace RepositoryLayer.Service
                     throw new UnauthorizedAccessException("Invalid role.");
             }
 
->>>>>>> E-InsuranceBranch-A
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
