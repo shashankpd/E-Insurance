@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Interface;
 using ModelLayer.Entity;
 using ModelLayer.RequestDTO;
+using ModelLayer.Response;
 using RepositoryLayer.Interface;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace BusinessLayer.Service
         {
             return PolicyCreation.AddPolicy(Policy);
         }
-        public Task<IEnumerable<PolicyCreation>> GetAllPolicy()
+        public Task<IEnumerable<PolicyCreationResponse>> GetAllPolicy()
         {
             return PolicyCreation.GetAllPolicy();
         }

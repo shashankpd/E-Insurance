@@ -1,4 +1,5 @@
 ﻿using ModelLayer.Entity;
+using ModelLayer.Response;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace RepositoryLayer.Interface
     {
        public Task<bool> AddPolicy(PolicyCreation Policy);
 
-       public Task<IEnumerable<PolicyCreation>> GetAllPolicy();
+       public Task<IEnumerable<PolicyCreationResponse>> GetAllPolicy();
 
     }
 }

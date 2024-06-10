@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
+using ModelLayer.Response;
 using Response;
 using System;
 using System.Threading.Tasks;
@@ -72,7 +73,7 @@ namespace E_Insurance.Controllers
                 var result = await _policyCreation.GetAllPolicy();
                 if (result != null)
                 {
-                    var response = new ResponseModel<IEnumerable<PolicyCreation>>
+                    var response = new ResponseModel<IEnumerable<PolicyCreationResponse>>
                     {
                         Success = true,
                         Message = "Policies retrieved successfully",
@@ -82,7 +83,7 @@ namespace E_Insurance.Controllers
                 }
                 else
                 {
-                    return BadRequest(new ResponseModel<PolicyCreation>
+                    return BadRequest(new ResponseModel<PolicyCreationResponse>
                     {
                         Success = false,
                         Message = "No policies found"
@@ -91,7 +92,7 @@ namespace E_Insurance.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<PolicyCreation>
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<PolicyCreationResponse>
                 {
                     Success = false,
                     Message = "An error occurred while retrieving policies"

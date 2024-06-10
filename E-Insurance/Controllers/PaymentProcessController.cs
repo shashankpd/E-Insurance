@@ -192,5 +192,24 @@ namespace E_Insurance.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, new { ErrorMessage = "An error occurred while calculating premium" });
             }
         }
+
+        [HttpPost("finalize")]
+        public async Task<IActionResult> FinalizePurchase()
+        {
+            try
+            {
+                await _paymentProcessBL.FinalizePurchase();
+                return Ok("Purchase finalized successfully");
+            }
+            catch (InvalidOperationException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "An unexpected error occurred while finalizing the purchase");
+                return StatusCode(StatusCodes.Status500InternalServerError, "An unexpected error occurred while finalizing the purchase");
+            }
+        }
     }
 }

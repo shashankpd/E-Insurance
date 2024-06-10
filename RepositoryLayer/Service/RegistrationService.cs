@@ -363,6 +363,48 @@ namespace RepositoryLayer.Service
             var key = Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]);
             var issuer = _configuration["Jwt:Issuer"];
             var audience = _configuration["Jwt:Audience"];
+<<<<<<< HEAD
+=======
+
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+        new Claim(ClaimTypes.Email, user.Email),
+        new Claim(ClaimTypes.Role, role)
+    };
+
+            // Add specific claims based on the role
+            switch (role.ToLower())
+            {
+                case "customer":
+                    if (user.CustomerId != 0)
+                    {
+                        claims.Add(new Claim("CustomerId", user.CustomerId.ToString()));
+                    }
+                    break;
+                case "agent":
+                    if (user.AgentId != 0)
+                    {
+                        claims.Add(new Claim("AgentId", user.AgentId.ToString()));
+                    }
+                    break;
+                case "admin":
+                    if (user.AdminId != 0)
+                    {
+                        claims.Add(new Claim("AdminId", user.AdminId.ToString()));
+                    }
+                    break;
+                case "employee":
+                    if (user.EmployeeId != 0)
+                    {
+                        claims.Add(new Claim("EmployeeId", user.EmployeeId.ToString()));
+                    }
+                    break;
+                default:
+                    throw new UnauthorizedAccessException("Invalid role.");
+            }
+
+>>>>>>> E-InsuranceBranch-A
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
@@ -380,6 +422,8 @@ namespace RepositoryLayer.Service
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
+
 
         private string HashPassword(string password)
         {

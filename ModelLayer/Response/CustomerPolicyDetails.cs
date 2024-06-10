@@ -10,16 +10,18 @@ namespace ModelLayer.Response
     {
         public int CustomerPolicyId { get; set; }
         public string CustomerName { get; set; }
-        public int AgentId { get; set; }
-        public string PolicyName { get; set; }
-        public string Description { get; set; }
-        public string PolicyType { get; set; }
-        public DateTime PurchaseDate { get; set; }
-       // public decimal PremiumAmount { get; set; }
+
+        public string PolicyName { get; set; }       // Added PolicyName property
+
         public decimal CoverageAmount { get; set; }
-        public decimal Premium { get; set; }
-        public int TermLength { get; set; }
-        public int EntryAge { get; set; }
-        public string Status { get; set; }
+        public int PolicyTerm { get; set; } // Updated to match the alias in the SQL query
+        public string PolicyType { get; set; }
+        public string PaymentFrequency { get; set; }
+        public int PolicyId { get; set; }
+        public DateTime CalculationCreatedAt { get; set; }
+        public int CustomerAge { get; set; }
+        public decimal PremiumAmount { get; set; }
+        public string AgentName { get; set; }
+        public string AgentLocation { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using ModelLayer.Entity;
+using ModelLayer.Response;
 using NLog;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
@@ -46,11 +47,11 @@ namespace RepositoryLayer.Service
             }
         }
 
-        public async Task<IEnumerable<PolicyCreation>> GetAllPolicy()
+        public async Task<IEnumerable<PolicyCreationResponse>> GetAllPolicy()
         {
             try
             {
-                var policies = await _context.CreateConnection().QueryAsync<PolicyCreation>("ViewPolicy");
+                var policies = await _context.CreateConnection().QueryAsync<PolicyCreationResponse>("ViewPolicy");
 
                 _logger.Info($"Retrieved all policies");
 
