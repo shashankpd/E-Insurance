@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using UserManagement.Controllers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace E_Insurance.Controllers
 {
@@ -35,7 +36,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<AdminRegistrationModel>
                     {
                         Success = true,
-                        Message = "User Registration Successful"
+                        Message = "Admin Registration Successful"
                     };
                     return CreatedAtAction(nameof(AdminRegistration), response);
                 }
@@ -71,7 +72,9 @@ namespace E_Insurance.Controllers
                 }
             }
         }
-
+        
+ /********************************************************************************************************************************************************************************/
+        [Authorize(Roles = "admin")]
         [HttpPost("CustomerRegistration")]
         public async Task<IActionResult> CustomerRegistration([FromBody] CustomerRegistrationModel Customer)
         {
@@ -83,7 +86,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<AdminRegistrationModel>
                     {
                         Success = true,
-                        Message = "User Registration Successful"
+                        Message = "Customer Registration Successful"
                     };
                     return CreatedAtAction(nameof(CustomerRegistration), response);
                 }
@@ -120,6 +123,11 @@ namespace E_Insurance.Controllers
             }
         }
 
+
+
+/********************************************************************************************************************************************************************************/
+
+        [Authorize(Roles = "admin")]
         [HttpPost("AgentRegistration")]
         public async Task<IActionResult> AgentRegistration([FromBody] InsuranceAgentRegistrationModel Agent)
         {
@@ -131,7 +139,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<InsuranceAgentRegistrationModel>
                     {
                         Success = true,
-                        Message = "User Registration Successful"
+                        Message = "Agent Registration Successful"
                     };
                     return CreatedAtAction(nameof(AgentRegistration), response);
                 }
@@ -168,6 +176,9 @@ namespace E_Insurance.Controllers
             }
         }
 
+/********************************************************************************************************************************************************************************/
+
+        [Authorize(Roles = "admin")]
         [HttpPost("EmployeeRegistration")]
         public async Task<IActionResult> EmployeeRegistration([FromBody] EmployeeRegistrationModel Employee)
         {
@@ -179,7 +190,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<EmployeeRegistrationModel>
                     {
                         Success = true,
-                        Message = "User Registration Successful"
+                        Message = "Employee Registration Successful"
                     };
                     return CreatedAtAction(nameof(EmployeeRegistration), response);
                 }
@@ -215,6 +226,7 @@ namespace E_Insurance.Controllers
                 }
             }
         }
+ /********************************************************************************************************************************************************************************/
 
         [HttpPost("Login")]
         public async Task<IActionResult> UserLogin(string email, string password, [FromServices] IConfiguration configuration, string role)

@@ -115,3 +115,6 @@ D:\C#\WebApi\Ensurance\E-Insurance\obj\Debug\net8.0\refint\E-Insurance.dll
 D:\C#\WebApi\Ensurance\E-Insurance\obj\Debug\net8.0\E-Insurance.pdb
 D:\C#\WebApi\Ensurance\E-Insurance\obj\Debug\net8.0\E-Insurance.genruntimeconfig.cache
 D:\C#\WebApi\Ensurance\E-Insurance\obj\Debug\net8.0\ref\E-Insurance.dll
+D:\C#\WebApi\Ensurance\E-Insurance\obj\Debug\net8.0\E-Insurance.sourcelink.json
+D:\C#\WebApi\Ensurance\E-Insurance\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\C#\WebApi\Ensurance\E-Insurance\bin\Debug\net8.0\StackExchange.Redis.dll

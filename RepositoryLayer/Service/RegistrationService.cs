@@ -95,16 +95,16 @@ namespace RepositoryLayer.Service
         {
             try
             {
-                // Check if customer model is null
+                
                 if (customer == null)
                 {
                     throw new ArgumentNullException(nameof(customer), "Customer registration model cannot be null.");
                 }
 
-                // Validate customer data
+                
                 ValidateCustomerData(customer);
 
-                // Perform registration
+               
                 string hashedPassword = HashPassword(customer.PasswordHash);
                 var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
 
@@ -131,9 +131,9 @@ namespace RepositoryLayer.Service
             }
             catch (Exception ex)
             {
-                // Log error
+           
                 Logger.Error(ex, "Error occurred while adding customer: {Message}", ex.Message);
-                throw; // Rethrow the exception
+                throw; 
             }
         }
 
@@ -261,7 +261,7 @@ namespace RepositoryLayer.Service
                     throw new ArgumentException("Invalid phone number.", nameof(employee.PhoneNumber));
                 }
 
-                // Perform registration
+               
                 string hashedPassword = HashPassword(employee.PasswordHash);
                 var query = "INSERT INTO EmployeeRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
 

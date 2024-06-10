@@ -60,7 +60,7 @@ namespace E_Insurance.Controllers
                     new Logger<PaymentProcessController>(new LoggerFactory());
                 logger.LogError(ex, "An error occurred while processing the payment");
 
-                // Return a generic error message
+               
                 var response = new ResponseModel<string>
                 {
                     Success = false,

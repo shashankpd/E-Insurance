@@ -3,10 +3,12 @@ using BusinessLayer.Service;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using ModelLayer.Entity;
 using NLog.Web;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
+using StackExchange.Redis;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,21 +18,29 @@ builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddScoped<IRegistrationBusinessLogic, RegistrationBusinessLigic>();
 builder.Services.AddScoped<IRegistrationService, RegistrationService>();
 
-// Policy creation
+//policy creation
+
 builder.Services.AddScoped<IPolicyCreationBL, PolicyCreationBL>();
+
 builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
 
-// Policy purchase
-builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
-builder.Services.AddScoped<ICustomerPolicyPurchaseService, CustomerPolicyPurchaseService>();
+//policy purchase
 
-// Payment
+builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
+builder.Services.AddScoped<ICustomerPolicyPurchaseService,CustomerPolicyPurchaseService>();
+
+//Payment
+
 builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
 builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
 
-/*builder.Services.AddScoped<IAgentCommission, AgentCommissionService>(); // Correct spelling
-builder.Services.AddScoped<IAgentComissionBl, AgentComissionServiceBl>(); // Corrected interface name
-*/
+//agentcommision
+builder.Services.AddScoped<IAgentCommisionService, AgentCommisionService>();
+builder.Services.AddScoped<IAgentCommissionBL, AgentCommissionBL>();
+
+builder.Services.AddScoped<IRenewal, PolicyRenewalService>();
+builder.Services.AddScoped<IRenewalBl, IRenewalServiceBl>();
+
 builder.Services.AddControllers();
 
 // Add NLog Logger
@@ -40,8 +50,19 @@ builder.Logging.ClearProviders();
 builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
 builder.Host.UseNLog();
 builder.Services.AddSingleton<NLog.ILogger>(NLog.LogManager.GetCurrentClassLogger());
+//Nlog end
 
-// Adding JWT
+//config for Redis
+builder.Services.AddSingleton<ConnectionMultiplexer>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>(); // Retrieve the IConfiguration object
+    var redisConnectionString = configuration.GetConnectionString("Redis");
+    return ConnectionMultiplexer.Connect(redisConnectionString);
+});
+
+
+//Adding jwt
+// Define the JWT bearer scheme
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "User Management", Version = "v1" });
@@ -72,12 +93,14 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
 builder.Services.AddDistributedMemoryCache();
 
-// JWT
+//jwt
+
+// Add JWT authentication
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]));
+
 
 builder.Services.AddAuthentication(options =>
 {
@@ -94,11 +117,17 @@ builder.Services.AddAuthentication(options =>
         ValidIssuer = jwtSettings["Issuer"],
         ValidAudience = jwtSettings["Audience"],
         ValidateLifetime = true,
+
+
+
         ClockSkew = TimeSpan.Zero,
         ValidateIssuerSigningKey = true,
         IssuerSigningKey = key
     };
 });
+
+//jwt end
+
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -113,15 +142,138 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Configure middleware
 app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
 
-app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
 
+
+
+/*
+using BusinessLayer.Interface;
+using BusinessLayer.Service;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using ModelLayer.Entity;
+using NLog.Web;
+using RepositoryLayer.Context;
+using RepositoryLayer.Interface;
+using RepositoryLayer.Service;
+using StackExchange.Redis;
+using System.Text;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddScoped<IRegistrationBusinessLogic, RegistrationBusinessLigic>();
+builder.Services.AddScoped<IRegistrationService, RegistrationService>();
+
+// policy creation
+builder.Services.AddScoped<IPolicyCreationBL, PolicyCreationBL>();
+builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
+
+// payment
+builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
+builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
+
+// agent commission
+builder.Services.AddScoped<IAgentCommisionService, AgentCommisionService>();
+builder.Services.AddScoped<IAgentCommissionBL, AgentCommissionBL>();
+
+// policy renewal
+builder.Services.AddScoped<IRenewal, PolicyRenewalService>();
+builder.Services.AddScoped<IRenewalBl,IRenewalServiceBl>();
+
+builder.Services.AddControllers();
+
+// Add NLog Logger
+var logpath = Path.Combine(Directory.GetCurrentDirectory(), "Logs");
+NLog.GlobalDiagnosticsContext.Set("LogDirectory", logpath);
+builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+builder.Host.UseNLog();
+builder.Services.AddSingleton<NLog.ILogger>(NLog.LogManager.GetCurrentClassLogger());
+
+// config for Redis
+builder.Services.AddSingleton<ConnectionMultiplexer>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var redisConnectionString = configuration.GetConnectionString("Redis");
+    return ConnectionMultiplexer.Connect(redisConnectionString);
+});
+
+// Adding JWT
+var jwtSettings = builder.Configuration.GetSection("Jwt");
+var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]));
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = true;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidIssuer = jwtSettings["Issuer"],
+        ValidAudience = jwtSettings["Audience"],
+        ValidateLifetime = true,
+        ClockSkew = TimeSpan.Zero,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = key
+    };
+});
+
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "User Management", Version = "v1" });
+
+    var securityScheme = new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Description = "JWT Authorization header using the Bearer scheme",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Reference = new OpenApiReference
+        {
+            Type = ReferenceType.SecurityScheme,
+            Id = JwtBearerDefaults.AuthenticationScheme
+        }
+    };
+
+    c.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, securityScheme);
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        { securityScheme, Array.Empty<string>() }
+    });
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapControllers();
+app.Run();
+*/
