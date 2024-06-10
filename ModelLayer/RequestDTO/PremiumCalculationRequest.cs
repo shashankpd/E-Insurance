@@ -11,7 +11,8 @@ namespace ModelLayer.RequestDTO
         public int PolicyId { get; set; }
         public int CustomerAge { get; set; }
         public decimal CoverageAmount { get; set; }
-        public int TermLength { get; set; }
         public string PolicyType { get; set; }
+        public  string paymentFrequency { get; set; }
+        public  int TermYears { get; set; }
     }
 }

@@ -125,7 +125,5 @@ namespace E_Insurance.Controllers
                 });
             }
         }
-
-
     }
 }

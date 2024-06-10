@@ -16,6 +16,7 @@ using System.Security.Claims;
 using System.Net.Mail;
 using System.Net;
 using ModelLayer.RequestDTO;
+using RepositoryLayer.NestedMethods;
 
 namespace RepositoryLayer.Service
 {
@@ -35,8 +36,26 @@ namespace RepositoryLayer.Service
         {
             try
             {
+                if (!NestedMethodsClass.IsValidGmailAddress(adminRegistration.Email))
+                {
+                    Logger.Warn("Invalid email address: {Email}", adminRegistration.Email);
+                    throw new ArgumentException("Invalid email address.");
+                }
+
+                if (!NestedMethodsClass.IsStrongPassword(adminRegistration.PasswordHash))
+                {
+                    Logger.Warn("Weak password provided for email: {Email}", adminRegistration.Email);
+                    throw new ArgumentException("Weak password.");
+                }
+
+                if (!NestedMethodsClass.IsValidPhoneNumber(adminRegistration.PhoneNumber))
+                {
+                    Logger.Warn("Invalid phone number: {PhoneNumber}", adminRegistration.PhoneNumber);
+                    throw new ArgumentException("Invalid phone number.");
+                }
+
                 string hashedPassword = HashPassword(adminRegistration.PasswordHash);
-                var query = "INSERT INTO AdminRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
+                var query = "INSERT INTO AdminRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
 
                 using (var connection = _context.CreateConnection())
                 {
@@ -59,108 +78,49 @@ namespace RepositoryLayer.Service
                     return false;
                 }
             }
+            catch (ArgumentException ex)
+            {
+                Logger.Warn(ex, "Error occurred while adding user: {Message}", ex.Message);
+                throw;
+            }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error occurred while adding user");
+                Logger.Error(ex, "Error occurred while adding user: {Message}", ex.Message);
                 throw;
             }
         }
 
-        public async Task<bool> CustomerRegistration(CustomerRegistrationModel Customer)
+        public async Task<bool> CustomerRegistration(CustomerRegistrationModel customer)
         {
             try
             {
-                string hashedPassword = HashPassword(Customer.PasswordHash);
-                var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
-
-                using (var connection = _context.CreateConnection())
+                
+                if (customer == null)
                 {
-                    var affectedRows = await connection.ExecuteAsync(query, new
-                    {
-                        Customer.Name,
-                        Customer.Email,
-                        PasswordHash = hashedPassword,
-                        Customer.PhoneNumber,
-                        Customer.Role,
-                        CreatedDate = DateTime.Now,
-                       
-                       
-                    });
-
-                    if (affectedRows > 0)
-                    {
-                        await SendWelcomeEmail(Customer.Email, Customer.Name, Customer.PasswordHash);
-                        return true;
-                    }
-
-                    return false;
+                    throw new ArgumentNullException(nameof(customer), "Customer registration model cannot be null.");
                 }
-            }
-            catch (Exception ex)
-            {
-                Logger.Error(ex, "Error occurred while adding user");
-                throw;
-            }
-        }
 
-        public async Task<bool> AgentRegistration(InsuranceAgentRegistrationModel Agent)
-        {
-            try
-            {
-                string hashedPassword = HashPassword(Agent.PasswordHash);
-                var query = "INSERT INTO InsuranceAgentRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate,Location) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate,@Location)";
+                
+                ValidateCustomerData(customer);
 
+               
+                string hashedPassword = HashPassword(customer.PasswordHash);
+                var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
                 using (var connection = _context.CreateConnection())
                 {
                     var affectedRows = await connection.ExecuteAsync(query, new
                     {
-                        Agent.Name,
-                        Agent.Email,
+                        customer.Name,
+                        customer.Email,
                         PasswordHash = hashedPassword,
-                        Agent.PhoneNumber,
-                        Agent.Role,
-                        CreatedDate = DateTime.Now,
-                        Agent.Location
-                    });
-
-                    if (affectedRows > 0)
-                    {
-                        await SendWelcomeEmail(Agent.Email, Agent.Name, Agent.PasswordHash);
-                        return true;
-                    }
-
-                    return false;
-                }
-            }
-            catch (Exception ex)
-            {
-                Logger.Error(ex, "Error occurred while adding user");
-                throw;
-            }
-        }
-
-        public async Task<bool> EmployeeRegistration(EmployeeRegistrationModel Employee)
-        {
-            try
-            {
-                string hashedPassword = HashPassword(Employee.PasswordHash);
-                var query = "INSERT INTO EmployeeRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
-
-                using (var connection = _context.CreateConnection())
-                {
-                    var affectedRows = await connection.ExecuteAsync(query, new
-                    {
-                        Employee.Name,
-                        Employee.Email,
-                        PasswordHash = hashedPassword,
-                        Employee.PhoneNumber,
-                        Employee.Role,
+                        customer.PhoneNumber,
+                        customer.Role,
                         CreatedDate = DateTime.Now
                     });
 
                     if (affectedRows > 0)
                     {
-                        await SendWelcomeEmail(Employee.Email, Employee.Name, Employee.PasswordHash);
+                        await SendWelcomeEmail(customer.Email, customer.Name, customer.PasswordHash);
                         return true;
                     }
 
@@ -169,7 +129,182 @@ namespace RepositoryLayer.Service
             }
             catch (Exception ex)
             {
-                Logger.Error(ex, "Error occurred while adding user");
+           
+                Logger.Error(ex, "Error occurred while adding customer: {Message}", ex.Message);
+                throw; 
+            }
+        }
+
+        private void ValidateCustomerData(CustomerRegistrationModel customer)
+        {
+            if (string.IsNullOrWhiteSpace(customer.Name))
+            {
+                throw new ArgumentException("Name cannot be empty.", nameof(customer.Name));
+            }
+
+            if (!NestedMethodsClass.IsValidGmailAddress(customer.Email))
+            {
+                throw new ArgumentException("Invalid email address.", nameof(customer.Email));
+            }
+
+            if (!NestedMethodsClass.IsStrongPassword(customer.PasswordHash))
+            {
+                throw new ArgumentException("Weak password. Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.", nameof(customer.PasswordHash));
+            }
+
+            if (!NestedMethodsClass.IsValidPhoneNumber(customer.PhoneNumber))
+            {
+                throw new ArgumentException("Invalid phone number.", nameof(customer.PhoneNumber));
+            }
+        }
+
+        public async Task<bool> AgentRegistration(InsuranceAgentRegistrationModel agent)
+        {
+            try
+            {
+                if (agent == null)
+                {
+                    throw new ArgumentNullException(nameof(agent), "Agent registration model cannot be null.");
+                }
+
+                if (string.IsNullOrWhiteSpace(agent.Name))
+                {
+                    throw new ArgumentException("Name cannot be empty.", nameof(agent.Name));
+                }
+
+                if (!NestedMethodsClass.IsValidGmailAddress(agent.Email))
+                {
+                    throw new ArgumentException("Invalid email address.", nameof(agent.Email));
+                }
+
+                if (!NestedMethodsClass.IsStrongPassword(agent.PasswordHash))
+                {
+                    throw new ArgumentException("Weak password. Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.", nameof(agent.PasswordHash));
+                }
+
+                if (!NestedMethodsClass.IsValidPhoneNumber(agent.PhoneNumber))
+                {
+                    throw new ArgumentException("Invalid phone number.", nameof(agent.PhoneNumber));
+                }
+
+                // Perform registration
+                string hashedPassword = HashPassword(agent.PasswordHash);
+                var query = "INSERT INTO InsuranceAgentRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
+
+                using (var connection = _context.CreateConnection())
+                {
+                    var affectedRows = await connection.ExecuteAsync(query, new
+                    {
+                        agent.Name,
+                        agent.Email,
+                        PasswordHash = hashedPassword,
+                        agent.PhoneNumber,
+                        agent.Role,
+                        CreatedDate = DateTime.Now
+                    });
+
+                    if (affectedRows > 0)
+                    {
+                        await SendWelcomeEmail(agent.Email, agent.Name, agent.PasswordHash);
+                        return true;
+                    }
+
+                    return false;
+                }
+            }
+            catch (ArgumentNullException ex)
+            {
+                Logger.Warn(ex, "Error occurred while adding agent: {Message}", ex.Message);
+                throw;
+            }
+            catch (ArgumentException ex)
+            {
+                Logger.Warn(ex, "Error occurred while adding agent: {Message}", ex.Message);
+                throw;
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, "Error occurred while adding agent: {Message}", ex.Message);
+                throw;
+            }
+        }
+
+
+
+        public async Task<bool> EmployeeRegistration(EmployeeRegistrationModel employee)
+        {
+            try
+            {
+                if (employee == null)
+                {
+                    throw new ArgumentNullException(nameof(employee), "Employee registration model cannot be null.");
+                }
+
+                if (string.IsNullOrWhiteSpace(employee.Name))
+                {
+                    throw new ArgumentException("Name cannot be empty.", nameof(employee.Name));
+                }
+
+                if (!NestedMethodsClass.IsValidGmailAddress(employee.Email))
+                {
+                    throw new ArgumentException("Invalid email address.", nameof(employee.Email));
+                }
+
+                if (!NestedMethodsClass.IsStrongPassword(employee.PasswordHash))
+                {
+                    throw new ArgumentException("Weak password. Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one digit, and one special character.", nameof(employee.PasswordHash));
+                }
+
+                if (!NestedMethodsClass.IsValidPhoneNumber(employee.PhoneNumber))
+                {
+                    throw new ArgumentException("Invalid phone number.", nameof(employee.PhoneNumber));
+                }
+
+               
+                string hashedPassword = HashPassword(employee.PasswordHash);
+                var query = "INSERT INTO EmployeeRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
+
+
+                using (var connection = _context.CreateConnection())
+                {
+                    var affectedRows = await connection.ExecuteAsync(query, new
+                    {
+
+                        employee.Name,
+                        employee.Email,
+                        PasswordHash = hashedPassword,
+                        employee.PhoneNumber,
+                        employee.Role,
+
+                        CreatedDate = DateTime.Now
+                    });
+
+                    if (affectedRows > 0)
+                    {
+
+                        await SendWelcomeEmail(employee.Email, employee.Name, employee.PasswordHash);
+
+                        return true;
+                    }
+
+                    return false;
+                }
+            }
+
+            catch (ArgumentNullException ex)
+            {
+                Logger.Warn(ex, "Error occurred while adding employee: {Message}", ex.Message);
+                throw;
+            }
+            catch (ArgumentException ex)
+            {
+                Logger.Warn(ex, "Error occurred while adding employee: {Message}", ex.Message);
+                throw;
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, "Error occurred while adding employee: {Message}", ex.Message);
+
                 throw;
             }
         }
@@ -228,7 +363,6 @@ namespace RepositoryLayer.Service
             var key = Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]);
             var issuer = _configuration["Jwt:Issuer"];
             var audience = _configuration["Jwt:Audience"];
-
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
@@ -256,6 +390,7 @@ namespace RepositoryLayer.Service
             }
         }
 
+
         private string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -280,6 +415,7 @@ namespace RepositoryLayer.Service
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
+
 
         private async Task SendWelcomeEmail(string email, string username, string password)
         {

@@ -14,3 +14,22 @@ C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\obj\Debug\net8.0\Repo
 C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\obj\Debug\net8.0\refint\RepositoryLayer.dll
 C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.pdb
 C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\obj\Debug\net8.0\ref\RepositoryLayer.dll
+<<<<<<< HEAD
+D:\C#\WebApi\Ensurance\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.deps.json
+D:\C#\WebApi\Ensurance\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.dll
+D:\C#\WebApi\Ensurance\RepositoryLayer\bin\Debug\net8.0\RepositoryLayer.pdb
+D:\C#\WebApi\Ensurance\RepositoryLayer\bin\Debug\net8.0\ModelLayer.dll
+D:\C#\WebApi\Ensurance\RepositoryLayer\bin\Debug\net8.0\ModelLayer.pdb
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.AssemblyReference.cache
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfoInputs.cache
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.AssemblyInfo.cs
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\Reposito.A0A61804.Up2Date
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.dll
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\refint\RepositoryLayer.dll
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.pdb
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\ref\RepositoryLayer.dll
+D:\C#\WebApi\Ensurance\RepositoryLayer\obj\Debug\net8.0\RepositoryLayer.sourcelink.json
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f

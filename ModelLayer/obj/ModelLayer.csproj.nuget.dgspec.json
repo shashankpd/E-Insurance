@@ -1,6 +1,22 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj": {}
+  },
+  "projects": {
+    "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj",
+        "projectName": "ModelLayer",
+        "projectPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj",
+        "packagesPath": "C:\\Users\\MICROSOFT\\.nuget\\packages\\",
+        "outputPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
     "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj": {}
   },
   "projects": {
@@ -19,6 +35,7 @@
         "configFilePaths": [
           "C:\\Users\\SHASHANK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +43,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
+          "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -73,10 +94,13 @@
               "target": "Package",
               "version": "[5.3.11, )"
             },
+<<<<<<< HEAD
+=======
             "StackExchange.Redis": {
               "target": "Package",
               "version": "[2.7.33, )"
             },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.6, )"
@@ -102,7 +126,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         }
       }
     }

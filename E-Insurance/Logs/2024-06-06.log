@@ -780,3 +780,31 @@ Error Number:50000,State:1,Class:16
 2024-06-06 19:32:03.7311|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance) in 460.6446ms
 2024-06-06 19:32:03.7311|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance)'
 2024-06-06 19:32:03.7311|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PaymentProcess/payment - 201 - application/json;+charset=utf-8 465.9615ms
+<<<<<<< HEAD
+2024-06-06 23:56:37.5843|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-06 23:56:38.3977|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-06 23:56:38.3977|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-06 23:56:38.3977|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-06 23:56:38.3977|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-06 23:56:38.3977|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-06 23:56:39.0966|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger - - -
+2024-06-06 23:56:40.9761|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger - 301 0 - 1880.2807ms
+2024-06-06 23:56:40.9761|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-06 23:56:41.1204|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 139.4224ms
+2024-06-06 23:56:41.1204|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui.css - - -
+2024-06-06 23:56:41.1338|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui-bundle.js - - -
+2024-06-06 23:56:41.1338|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-06 23:56:41.1338|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui-standalone-preset.js - - -
+2024-06-06 23:56:41.1338|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-06 23:56:41.1338|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.6596ms
+2024-06-06 23:56:41.1626|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-06 23:56:41.1626|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-06 23:56:41.1645|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui.css - 200 143943 text/css 38.2843ms
+2024-06-06 23:56:41.1645|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 30.3410ms
+2024-06-06 23:56:41.1645|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-06 23:56:41.1791|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 45.1415ms
+2024-06-06 23:56:41.2518|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 117.1500ms
+2024-06-06 23:56:41.4857|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-06 23:56:41.6635|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 177.6133ms
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f

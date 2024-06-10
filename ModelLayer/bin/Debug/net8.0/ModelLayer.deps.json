@@ -14,7 +14,10 @@
           "NLog": "5.3.2",
           "NLog.Extensions.Logging": "5.3.11",
           "NLog.Web.AspNetCore": "5.3.11",
+<<<<<<< HEAD
+=======
           "StackExchange.Redis": "2.7.33",
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "System.Data.SqlClient": "4.8.6",
           "System.Net.Mail.Abstractions": "1.1.21"
         },
@@ -181,6 +184,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "Pipelines.Sockets.Unofficial/2.2.8": {
         "dependencies": {
           "System.IO.Pipelines": "5.0.1"
@@ -192,6 +197,7 @@
           }
         }
       },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "dependencies": {
           "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
@@ -226,6 +232,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "StackExchange.Redis/2.7.33": {
         "dependencies": {
           "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
@@ -238,6 +246,7 @@
           }
         }
       },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       "System.Data.SqlClient/4.8.6": {
         "dependencies": {
           "Microsoft.Win32.Registry": "4.7.0",
@@ -277,7 +286,10 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "System.IO.Pipelines/5.0.1": {},
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       "System.Net.Mail.Abstractions/1.1.21": {
         "runtime": {
           "lib/netstandard2.0/System.Net.Mail.Abstractions.dll": {
@@ -448,6 +460,8 @@
       "path": "nlog.web.aspnetcore/5.3.11",
       "hashPath": "nlog.web.aspnetcore.5.3.11.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
     "Pipelines.Sockets.Unofficial/2.2.8": {
       "type": "package",
       "serviceable": true,
@@ -455,6 +469,7 @@
       "path": "pipelines.sockets.unofficial/2.2.8",
       "hashPath": "pipelines.sockets.unofficial.2.2.8.nupkg.sha512"
     },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -483,6 +498,8 @@
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
     "StackExchange.Redis/2.7.33": {
       "type": "package",
       "serviceable": true,
@@ -490,6 +507,7 @@
       "path": "stackexchange.redis/2.7.33",
       "hashPath": "stackexchange.redis.2.7.33.nupkg.sha512"
     },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     "System.Data.SqlClient/4.8.6": {
       "type": "package",
       "serviceable": true,
@@ -504,6 +522,8 @@
       "path": "system.identitymodel.tokens.jwt/7.1.2",
       "hashPath": "system.identitymodel.tokens.jwt.7.1.2.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
     "System.IO.Pipelines/5.0.1": {
       "type": "package",
       "serviceable": true,
@@ -511,6 +531,7 @@
       "path": "system.io.pipelines/5.0.1",
       "hashPath": "system.io.pipelines.5.0.1.nupkg.sha512"
     },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     "System.Net.Mail.Abstractions/1.1.21": {
       "type": "package",
       "serviceable": true,

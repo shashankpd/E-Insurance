@@ -365,6 +365,8 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+<<<<<<< HEAD
+=======
       "Pipelines.Sockets.Unofficial/2.2.8": {
         "type": "package",
         "dependencies": {
@@ -381,6 +383,7 @@
           }
         }
       },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       "runtime.native.System.Data.SqlClient.sni/4.7.0": {
         "type": "package",
         "dependencies": {
@@ -416,6 +419,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "StackExchange.Redis/2.7.33": {
         "type": "package",
         "dependencies": {
@@ -433,6 +438,7 @@
           }
         }
       },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       "System.Data.SqlClient/4.8.6": {
         "type": "package",
         "dependencies": {
@@ -478,6 +484,8 @@
           }
         }
       },
+<<<<<<< HEAD
+=======
       "System.IO.Pipelines/5.0.1": {
         "type": "package",
         "compile": {
@@ -491,6 +499,7 @@
           }
         }
       },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       "System.Net.Mail.Abstractions/1.1.21": {
         "type": "package",
         "compile": {
@@ -1169,6 +1178,8 @@
         "nlog.web.aspnetcore.nuspec"
       ]
     },
+<<<<<<< HEAD
+=======
     "Pipelines.Sockets.Unofficial/2.2.8": {
       "sha512": "zG2FApP5zxSx6OcdJQLbZDk2AVlN2BNQD6MorwIfV6gVj0RRxWPEp2LXAxqDGZqeNV1Zp0BNPcNaey/GXmTdvQ==",
       "type": "package",
@@ -1192,6 +1203,7 @@
         "pipelines.sockets.unofficial.nuspec"
       ]
     },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     "runtime.native.System.Data.SqlClient.sni/4.7.0": {
       "sha512": "9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
       "type": "package",
@@ -1255,6 +1267,8 @@
         "version.txt"
       ]
     },
+<<<<<<< HEAD
+=======
     "StackExchange.Redis/2.7.33": {
       "sha512": "2kCX5fvhEE824a4Ab5Imyi8DRuGuTxyklXV01kegkRpsWJcPmO6+GAQ+HegKxvXAxlXZ8yaRspvWJ8t3mMClfQ==",
       "type": "package",
@@ -1276,6 +1290,7 @@
         "stackexchange.redis.nuspec"
       ]
     },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     "System.Data.SqlClient/4.8.6": {
       "sha512": "2Ij/LCaTQRyAi5lAv7UUTV9R2FobC8xN9mE0fXBZohum/xLl8IZVmE98Rq5ugQHjCgTBRKqpXRb4ORulRdA6Ig==",
       "type": "package",
@@ -1385,6 +1400,8 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+<<<<<<< HEAD
+=======
     "System.IO.Pipelines/5.0.1": {
       "sha512": "qEePWsaq9LoEEIqhbGe6D5J8c9IqQOUuTzzV6wn1POlfdLkJliZY3OlB0j0f17uMWlqZYjH7txj+2YbyrIA8Yg==",
       "type": "package",
@@ -1411,6 +1428,7 @@
         "version.txt"
       ]
     },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     "System.Net.Mail.Abstractions/1.1.21": {
       "sha512": "ai5VFcfdYVmOciq3AUD5i9oy7LE2zZFUouWDBHlFufzkUXsw9xnEW4DgtJNbmMVqHV9Mt5aJKoHRdie7+bNi5w==",
       "type": "package",
@@ -1532,18 +1550,35 @@
       "NLog >= 5.3.2",
       "NLog.Extensions.Logging >= 5.3.11",
       "NLog.Web.AspNetCore >= 5.3.11",
+<<<<<<< HEAD
+=======
       "StackExchange.Redis >= 2.7.33",
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       "System.Data.SqlClient >= 4.8.6",
       "System.Net.Mail.Abstractions >= 1.1.21"
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
+    "C:\\Users\\MICROSOFT\\.nuget\\packages\\": {}
+=======
     "C:\\Users\\SHASHANK\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj",
+      "projectName": "ModelLayer",
+      "projectPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj",
+      "packagesPath": "C:\\Users\\MICROSOFT\\.nuget\\packages\\",
+      "outputPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
       "projectUniqueName": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj",
       "projectName": "ModelLayer",
       "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj",
@@ -1556,6 +1591,7 @@
       "configFilePaths": [
         "C:\\Users\\SHASHANK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1563,6 +1599,10 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+<<<<<<< HEAD
+        "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1610,10 +1650,13 @@
             "target": "Package",
             "version": "[5.3.11, )"
           },
+<<<<<<< HEAD
+=======
           "StackExchange.Redis": {
             "target": "Package",
             "version": "[2.7.33, )"
           },
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.8.6, )"
@@ -1639,7 +1682,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+>>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       }
     }
   }

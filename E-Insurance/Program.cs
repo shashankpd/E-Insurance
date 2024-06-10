@@ -26,12 +26,18 @@ builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
 //policy purchase
 
 builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
-builder.Services.AddScoped<ICustomerPolicyPurchaseService, CustomerPolicyPurchaseService>();
-
+builder.Services.AddScoped<ICustomerPolicyPurchaseService,CustomerPolicyPurchaseService>();
 //Payment
 
 builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
 builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
+
+//agentcommision
+builder.Services.AddScoped<IAgentCommisionService, AgentCommisionService>();
+builder.Services.AddScoped<IAgentCommissionBL, AgentCommissionBL>();
+
+builder.Services.AddScoped<IRenewal, PolicyRenewalService>();
+builder.Services.AddScoped<IRenewalBl, IRenewalServiceBl>();
 
 builder.Services.AddControllers();
 

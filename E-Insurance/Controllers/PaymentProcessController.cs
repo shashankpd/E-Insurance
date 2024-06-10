@@ -1,5 +1,7 @@
 ﻿using BusinessLayer.Interface;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using ModelLayer.Entity;
 using Microsoft.Extensions.Logging; // Add this
 using ModelLayer.Entity;
 using ModelLayer.RequestDTO;
@@ -59,7 +61,6 @@ namespace E_Insurance.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while processing the payment"); // Use the injected logger
-
                 var response = new ResponseModel<string>
                 {
                     Success = false,
@@ -182,7 +183,7 @@ namespace E_Insurance.Controllers
         {
             try
             {
-                var premium = await _paymentProcessBL.CalculatePremium(request.PolicyId, request.CustomerAge, request.CoverageAmount, request.TermLength, request.PolicyType);
+                var premium = await _paymentProcessBL.CalculatePremium(request.PolicyId, request.CustomerAge, request.CoverageAmount,request.PolicyType,request.paymentFrequency,request.TermYears);
                 return Ok(new { Premium = premium });
             }
             catch (Exception ex)
