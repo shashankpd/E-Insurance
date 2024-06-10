@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace RepositoryLayer.Service
 {
-    public class CustomerPolicyPurchaseService : ICustomerPolicyPurchaseService
+    public class CustomerPolicyPurchaseService :ICustomerPolicyPurchaseService
     {
         private readonly DapperContext _context;
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
@@ -19,7 +19,6 @@ namespace RepositoryLayer.Service
         {
             _context = context;
         }
-
         public async Task<bool> PolicyPurchase(PolicyPurchase policy)
         {
             try

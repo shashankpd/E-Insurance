@@ -8,20 +8,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+    
 namespace BusinessLayer.Service
 {
     public class CustomerPolicyPurchaseBL : ICustomerPolicyPurchaseBL
     {
-        private readonly CustomerPolicyPurchaseService Policypurchase;
+        private readonly ICustomerPolicyPurchaseService Policypurchase;
 
-        public CustomerPolicyPurchaseBL(CustomerPolicyPurchaseService Policypurchase)
+        public CustomerPolicyPurchaseBL(ICustomerPolicyPurchaseService Policy)
         {
-            this.Policypurchase = Policypurchase;
-        }
-
-        //start
-
+            Policypurchase = Policy;        
+        }       
         public Task<bool> PolicyPurchase(PolicyPurchase policy)
         {
             return Policypurchase.PolicyPurchase(policy);

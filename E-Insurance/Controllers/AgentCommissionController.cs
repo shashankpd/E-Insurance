@@ -75,7 +75,7 @@ namespace E_Insurance.Controllers
             try
             {
                 var result = await AgentCommission.ViewCommissions(agentId);
-                if (result != null)
+                if (result != null && result.Any())
                 {
                     var response = new ResponseModel<IEnumerable<Commision>>
                     {
@@ -87,23 +87,26 @@ namespace E_Insurance.Controllers
                 }
                 else
                 {
-                    return BadRequest(new ResponseModel<Commision>
+                    return BadRequest(new ResponseModel<IEnumerable<Commision>>
                     {
                         Success = false,
-                        Message = "No Commissions found"
+                        Message = "No Commissions found",
+                        Data = null // or an empty list depending on how you want to handle this case
                     });
                 }
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while retrieving Commission");
-                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<Commision>
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<IEnumerable<Commision>>
                 {
                     Success = false,
-                    Message = "An error occurred while retrieving Commission"
+                    Message = "An error occurred while retrieving Commission",
+                    Data = null // or an empty list depending on how you want to handle this case
                 });
             }
         }
+
 
         [HttpPost("pay/{agentId}")]
         public async Task<IActionResult> PayCommission(int agentId)
@@ -134,3 +137,4 @@ namespace E_Insurance.Controllers
 
     }
 }
+

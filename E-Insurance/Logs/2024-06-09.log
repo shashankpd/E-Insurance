@@ -248,3 +248,767 @@
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 2024-06-09 12:28:02.4927|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - 500 - text/plain;+charset=utf-8 2.6637ms
+2024-06-09 14:12:50.2253|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 14:12:50.4380|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 14:12:50.4380|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 14:12:50.4380|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 14:12:50.4380|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 14:12:50.4380|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 14:12:50.8165|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 14:12:51.1689|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 349.2057ms
+2024-06-09 14:12:51.1689|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 14:12:51.1689|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 14:12:51.1689|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.8986ms
+2024-06-09 14:12:51.2287|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 50.5087ms
+2024-06-09 14:12:51.3259|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 14:12:51.4373|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 111.3339ms
+2024-06-09 14:13:06.7342|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 14:13:06.7439|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 9.6213ms
+2024-06-09 14:13:06.7439|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 14:13:06.7439|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 14:13:06.7439|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 0.8319ms
+2024-06-09 14:13:06.7711|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 14.0586ms
+2024-06-09 14:13:06.8322|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 14:13:06.8455|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 13.1834ms
+2024-06-09 14:14:04.5754|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - application/json 180
+2024-06-09 14:14:04.5754|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (admin)
+2024-06-09 14:14:04.5754|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-06-09 14:14:04.5754|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - 401 0 - 10.3088ms
+2024-06-09 14:15:41.0387|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - application/json 177
+2024-06-09 14:15:41.0431|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-09 14:15:41.0754|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AdminRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminRegistration(ModelLayer.RequestDTO.AdminRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-09 14:15:55.4285|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "pooja@gmail.com"|System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 Client not authenticated to send mail. Error: 535 5.7.139 Authentication unsuccessful, account locked. Contact your administrator. [PN3PR01CA0187.INDPRD01.PROD.OUTLOOK.COM 2024-06-09T08:45:55.779Z 08DC8736A37B2779]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\RegistrationService.cs:line 434
+2024-06-09 14:15:55.4624|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-09 14:15:55.4994|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance) in 14414.5856ms
+2024-06-09 14:15:55.4994|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AdminRegistration (E-Insurance)'
+2024-06-09 14:15:55.4994|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AdminRegistration - 201 - application/json;+charset=utf-8 14463.5744ms
+2024-06-09 14:16:31.5624|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=pooja%40gmail.com&password=Pooja%40123&role=admin - - 0
+2024-06-09 14:16:31.5624|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
+2024-06-09 14:16:31.5836|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(System.String, System.String, Microsoft.Extensions.Configuration.IConfiguration, System.String) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-09 14:16:31.5923|INFO|E_Insurance.Controllers.UserManagementController|Starting login process for email: pooja@gmail.com
+2024-06-09 14:16:31.7554|INFO|E_Insurance.Controllers.UserManagementController|Login successful for email: pooja@gmail.com
+2024-06-09 14:16:31.7554|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-09 14:16:31.7554|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance) in 173.4325ms
+2024-06-09 14:16:31.7554|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
+2024-06-09 14:16:31.7554|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=pooja%40gmail.com&password=Pooja%40123&role=admin - 200 - application/json;+charset=utf-8 194.9796ms
+2024-06-09 14:17:46.9959|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - application/json 174
+2024-06-09 14:17:47.0542|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance)'
+2024-06-09 14:17:47.0585|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AgentRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AgentRegistration(ModelLayer.RequestDTO.InsuranceAgentRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-09 14:18:02.1366|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "menu@gmail.com"|System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 Client not authenticated to send mail. Error: 535 5.7.139 Authentication unsuccessful, account locked. Contact your administrator. [PN0PR01CA0006.INDPRD01.PROD.OUTLOOK.COM 2024-06-09T08:48:02.475Z 08DC87C27A0650D9]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\RegistrationService.cs:line 434
+2024-06-09 14:18:02.1366|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.InsuranceAgentRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-09 14:18:02.1366|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance) in 15081.3014ms
+2024-06-09 14:18:02.1366|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.AgentRegistration (E-Insurance)'
+2024-06-09 14:18:02.1366|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/AgentRegistration - 201 - application/json;+charset=utf-8 15144.2370ms
+2024-06-09 14:19:36.8536|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/CustomerRegistration - application/json 183
+2024-06-09 14:19:36.8536|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-09 14:19:36.8536|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CustomerRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CustomerRegistration(ModelLayer.RequestDTO.CustomerRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-09 14:19:53.8113|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "prabha@gmail.com"|System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 Client not authenticated to send mail. Error: 535 5.7.139 Authentication unsuccessful, account locked. Contact your administrator. [PN3PR01CA0038.INDPRD01.PROD.OUTLOOK.COM 2024-06-09T08:49:54.143Z 08DC87B7AEC46ACC]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\RegistrationService.cs:line 434
+2024-06-09 14:19:53.8113|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.AdminRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-09 14:19:53.8113|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance) in 16952.1731ms
+2024-06-09 14:19:53.8113|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.CustomerRegistration (E-Insurance)'
+2024-06-09 14:19:53.8113|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/CustomerRegistration - 201 - application/json;+charset=utf-8 16959.5220ms
+2024-06-09 14:21:13.8888|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/EmployeeRegistration - application/json 180
+2024-06-09 14:21:13.8888|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-09 14:21:13.9049|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "EmployeeRegistration", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EmployeeRegistration(ModelLayer.RequestDTO.EmployeeRegistrationModel) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-09 14:21:28.1421|ERROR|RepositoryLayer.Service.RegistrationService|Exception caught while sending welcome email to "lekha@gmail.com"|System.Net.Mail.SmtpException: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.57 Client not authenticated to send mail. Error: 535 5.7.139 Authentication unsuccessful, account locked. Contact your administrator. [PNYP287CA0025.INDP287.PROD.OUTLOOK.COM 2024-06-09T08:51:28.486Z 08DC8798781A1579]
+   at System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   at System.Net.Mail.MailCommand.EndSend(IAsyncResult result)
+   at System.Net.Mail.SendMailAsyncResult.SendMailFromCompleted(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at System.Net.Mail.SendMailAsyncResult.End(IAsyncResult result)
+   at System.Net.Mail.SmtpClient.SendMailCallback(IAsyncResult result)
+--- End of stack trace from previous location ---
+   at RepositoryLayer.Service.RegistrationService.SendWelcomeEmail(String email, String username, String password) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\RegistrationService.cs:line 434
+2024-06-09 14:21:28.1421|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.RequestDTO.EmployeeRegistrationModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-09 14:21:28.1421|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance) in 14239.4562ms
+2024-06-09 14:21:28.1421|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.EmployeeRegistration (E-Insurance)'
+2024-06-09 14:21:28.1421|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/EmployeeRegistration - 201 - application/json;+charset=utf-8 14255.9432ms
+2024-06-09 14:23:52.4164|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyCreation/policy - application/json 189
+2024-06-09 14:23:52.4164|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyCreationController.AddPolicy (E-Insurance)'
+2024-06-09 14:23:52.4164|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddPolicy", controller = "PolicyCreation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPolicy(ModelLayer.Entity.PolicyCreation) on controller E_Insurance.Controllers.PolicyCreationController (E-Insurance).
+2024-06-09 14:23:52.4519|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-06-09 14:23:52.4682|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyCreationController.AddPolicy (E-Insurance) in 46.2773ms
+2024-06-09 14:23:52.4682|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyCreationController.AddPolicy (E-Insurance)'
+2024-06-09 14:23:52.4682|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyCreation/policy - 400 - application/problem+json;+charset=utf-8 51.9743ms
+2024-06-09 14:25:05.6730|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyCreation/policy - application/json 187
+2024-06-09 14:25:05.6730|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyCreationController.AddPolicy (E-Insurance)'
+2024-06-09 14:25:05.6730|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddPolicy", controller = "PolicyCreation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPolicy(ModelLayer.Entity.PolicyCreation) on controller E_Insurance.Controllers.PolicyCreationController (E-Insurance).
+2024-06-09 14:25:05.7175|INFO|RepositoryLayer.Service.PolicyCreationService|Policy created successfully: life insurance
+2024-06-09 14:25:05.7175|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'Response.ResponseModel`1[[ModelLayer.Entity.PolicyCreation, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-06-09 14:25:05.7175|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyCreationController.AddPolicy (E-Insurance) in 43.8551ms
+2024-06-09 14:25:05.7175|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyCreationController.AddPolicy (E-Insurance)'
+2024-06-09 14:25:05.7175|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyCreation/policy - 201 - application/json;+charset=utf-8 46.4530ms
+2024-06-09 14:25:14.1177|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/PolicyCreation - - -
+2024-06-09 14:25:14.1177|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyCreationController.GetAllPolicy (E-Insurance)'
+2024-06-09 14:25:14.1177|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllPolicy", controller = "PolicyCreation"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPolicy() on controller E_Insurance.Controllers.PolicyCreationController (E-Insurance).
+2024-06-09 14:25:14.1479|INFO|RepositoryLayer.Service.PolicyCreationService|Retrieved all policies
+2024-06-09 14:25:14.1479|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Entity.PolicyCreation, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-09 14:25:14.1514|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyCreationController.GetAllPolicy (E-Insurance) in 28.2613ms
+2024-06-09 14:25:14.1514|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyCreationController.GetAllPolicy (E-Insurance)'
+2024-06-09 14:25:14.1514|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/PolicyCreation - 200 - application/json;+charset=utf-8 33.9429ms
+2024-06-09 14:26:17.4697|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PaymentProcess/payment - application/json 91
+2024-06-09 14:26:17.4697|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance)'
+2024-06-09 14:26:17.4697|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddPayment", controller = "PaymentProcess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPayment(ModelLayer.Entity.Payment) on controller E_Insurance.Controllers.PaymentProcessController (E-Insurance).
+2024-06-09 14:26:17.5012|INFO|RepositoryLayer.Service.PaymentProcessService|Attempting to validate payment: CustomerPolicyId=1, PaymentDate=09-06-2024 08:56:05, Amount=12000
+2024-06-09 14:26:17.5012|WARN|RepositoryLayer.Service.PaymentProcessService|Payment validation failed
+2024-06-09 14:26:17.5012|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-09 14:26:17.5012|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance) in 32.9711ms
+2024-06-09 14:26:17.5012|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance)'
+2024-06-09 14:26:17.5012|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PaymentProcess/payment - 400 - application/json;+charset=utf-8 37.3610ms
+2024-06-09 14:37:58.4247|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 14:37:58.5614|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 14:37:58.5614|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 14:37:58.5614|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 14:37:58.5614|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 14:37:58.5614|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 14:37:59.0004|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 14:37:59.2639|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 261.9524ms
+2024-06-09 14:37:59.2786|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 14:37:59.2786|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.5195ms
+2024-06-09 14:37:59.2909|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 14:37:59.3271|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 36.2451ms
+2024-06-09 14:37:59.7007|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 14:37:59.8105|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 109.7576ms
+2024-06-09 14:39:02.9556|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PaymentProcess/payment - application/json 90
+2024-06-09 14:39:02.9660|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance)'
+2024-06-09 14:39:02.9895|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "AddPayment", controller = "PaymentProcess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AddPayment(ModelLayer.Entity.Payment) on controller E_Insurance.Controllers.PaymentProcessController (E-Insurance).
+2024-06-09 14:39:03.0417|INFO|RepositoryLayer.Service.PaymentProcessService|Attempting to validate payment: CustomerPolicyId=1, PaymentDate=09-06-2024 09:08:34, Amount=1200
+2024-06-09 14:39:03.2479|WARN|RepositoryLayer.Service.PaymentProcessService|Payment validation failed
+2024-06-09 14:39:03.2479|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-09 14:39:03.2702|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance) in 271.4233ms
+2024-06-09 14:39:03.2702|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PaymentProcessController.AddPayment (E-Insurance)'
+2024-06-09 14:39:03.2702|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PaymentProcess/payment - 400 - application/json;+charset=utf-8 316.5317ms
+2024-06-09 14:39:57.4353|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 14:39:57.4470|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 11.6772ms
+2024-06-09 14:39:57.4470|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 14:39:57.4470|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 14:39:57.4470|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 0.9173ms
+2024-06-09 14:39:57.4711|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 11.5874ms
+2024-06-09 14:39:57.5823|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 14:39:57.5900|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 7.6261ms
+2024-06-09 14:40:30.6501|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - application/json 60
+2024-06-09 14:40:30.6501|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-09 14:40:30.6501|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CalculateCommission", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateCommission(ModelLayer.RequestDTO.CommissionCalculationRequest) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-09 14:40:30.6670|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance) in 10.4459ms
+2024-06-09 14:40:30.6670|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-09 14:40:30.6670|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.ArgumentNullException: Value cannot be null. (Parameter 'configuration')
+   at StackExchange.Redis.ConfigurationOptions.DoParse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 912
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration, Boolean ignoreUnknown) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 718
+   at StackExchange.Redis.ConfigurationOptions.Parse(String configuration) in /_/src/StackExchange.Redis/ConfigurationOptions.cs:line 708
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 663
+   at Program.<>c.<<Main>$>b__0_0(IServiceProvider provider) in D:\C#\WebApi\Ensurance\E-Insurance\Program.cs:line 57
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method17(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-09 14:40:30.7121|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - 500 - text/plain;+charset=utf-8 61.9316ms
+2024-06-09 14:46:39.7086|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 14:46:39.8432|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 14:46:39.8432|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 14:46:39.8432|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 14:46:39.8432|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 14:46:39.8432|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 14:46:40.1565|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 14:46:40.4087|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 248.3592ms
+2024-06-09 14:46:40.4087|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 14:46:40.4175|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 14:46:40.4175|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.9447ms
+2024-06-09 14:46:40.4529|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 35.2882ms
+2024-06-09 14:46:40.5419|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 14:46:40.7056|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 163.5646ms
+2024-06-09 14:48:11.3797|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 14:48:11.5629|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 14:48:11.5629|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 14:48:11.5629|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 14:48:11.5629|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 14:48:11.5629|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 14:48:11.7821|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 14:48:12.0188|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 236.2787ms
+2024-06-09 14:48:12.0363|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 14:48:12.0363|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.2580ms
+2024-06-09 14:48:12.0477|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 14:48:12.0813|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 33.6070ms
+2024-06-09 14:48:12.2813|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 14:48:12.4244|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 143.1114ms
+2024-06-09 14:48:24.1098|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 14:48:24.1225|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 12.6183ms
+2024-06-09 14:48:24.1225|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 14:48:24.1225|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 14:48:24.1334|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 1.1330ms
+2024-06-09 14:48:24.1334|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 9.5008ms
+2024-06-09 14:48:24.1909|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 14:48:24.2003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 9.3201ms
+2024-06-09 14:48:48.1044|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - application/json 59
+2024-06-09 14:48:48.1044|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-09 14:48:48.1300|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CalculateCommission", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateCommission(ModelLayer.RequestDTO.CommissionCalculationRequest) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-09 14:48:48.3947|ERROR|RepositoryLayer.Service.AgentCommisionService|Error calculating commission|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommissionRate', table 'E_Insurance.dbo.Commissions'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\AgentCommisionService.cs:line 146
+ClientConnectionId:11e2f8f3-272b-460c-b3ba-ed9ef1b559b4
+Error Number:515,State:2,Class:16
+2024-06-09 14:48:48.4287|ERROR|E_Insurance.Controllers.AgentCommissionController|An error occurred while processing the Commission Calculation|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommissionRate', table 'E_Insurance.dbo.Commissions'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\AgentCommisionService.cs:line 146
+   at E_Insurance.Controllers.AgentCommissionController.CalculateCommission(CommissionCalculationRequest request) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\AgentCommissionController.cs:line 169
+ClientConnectionId:11e2f8f3-272b-460c-b3ba-ed9ef1b559b4
+Error Number:515,State:2,Class:16
+2024-06-09 14:48:48.4464|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-09 14:48:48.4464|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance) in 319.1901ms
+2024-06-09 14:48:48.4464|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-09 14:48:48.4464|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - 500 - application/json;+charset=utf-8 356.5077ms
+2024-06-09 15:00:43.7006|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 15:00:43.8563|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 15:00:43.8563|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 15:00:43.8563|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 15:00:43.8563|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 15:00:43.8563|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 15:00:44.3910|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 15:00:44.6174|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 226.5627ms
+2024-06-09 15:00:44.6401|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 15:00:44.6401|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.6743ms
+2024-06-09 15:00:44.6522|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 15:00:44.6788|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 26.5951ms
+2024-06-09 15:00:45.0544|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 15:00:45.1425|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 88.0219ms
+2024-06-09 15:01:08.5775|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - application/json 61
+2024-06-09 15:01:08.5943|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-09 15:01:08.6497|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CalculateCommission", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateCommission(ModelLayer.RequestDTO.CommissionCalculationRequest) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-09 15:01:09.1476|ERROR|RepositoryLayer.Service.AgentCommisionService|Error calculating commission|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommissionRate', table 'E_Insurance.dbo.Commissions'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\AgentCommisionService.cs:line 145
+ClientConnectionId:451c3977-d92d-4c49-91c4-2012f784dae6
+Error Number:515,State:2,Class:16
+2024-06-09 15:01:09.2094|ERROR|E_Insurance.Controllers.AgentCommissionController|An error occurred while processing the Commission Calculation|System.Exception: Error calculating commission
+ ---> System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommissionRate', table 'E_Insurance.dbo.Commissions'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\AgentCommisionService.cs:line 145
+ClientConnectionId:451c3977-d92d-4c49-91c4-2012f784dae6
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\AgentCommisionService.cs:line 164
+   at E_Insurance.Controllers.AgentCommissionController.CalculateCommission(CommissionCalculationRequest request) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\AgentCommissionController.cs:line 171
+2024-06-09 15:01:09.2327|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-09 15:01:09.2548|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance) in 588.9856ms
+2024-06-09 15:01:09.2548|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-09 15:01:09.2548|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - 500 - application/json;+charset=utf-8 679.2784ms
+2024-06-09 20:04:48.7922|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 20:04:49.7468|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 20:04:49.7468|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 20:04:49.7468|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 20:04:49.7468|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 20:04:49.7468|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 20:04:50.5725|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 20:04:52.4686|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 1894.9340ms
+2024-06-09 20:04:52.4835|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 20:04:52.4835|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 20:04:52.4835|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 6.5687ms
+2024-06-09 20:04:52.5290|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 40.0024ms
+2024-06-09 20:04:52.6026|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 20:04:52.7244|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 121.7493ms
+2024-06-09 20:05:11.3572|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=1 - - 0
+2024-06-09 20:05:11.3682|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 20:05:11.4002|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 20:05:11.4002|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 3.6821ms
+2024-06-09 20:05:11.4158|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 20:05:11.4158|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.InvalidOperationException: Unable to resolve service for type 'BusinessLayer.Interface.IRenewalBl' while attempting to activate 'E_Insurance.Controllers.PolicyRenewalController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-09 20:05:11.5986|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=1 - 500 - text/plain;+charset=utf-8 241.4345ms
+2024-06-09 21:58:17.3707|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 21:58:18.1068|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 21:58:18.1068|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 21:58:18.1068|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 21:58:18.1068|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 21:58:18.1068|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 21:58:18.8501|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 21:58:20.9510|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 2100.1390ms
+2024-06-09 21:58:20.9510|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 21:58:20.9625|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.2693ms
+2024-06-09 21:58:20.9625|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 21:58:21.0242|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 55.5678ms
+2024-06-09 21:58:21.0699|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 21:58:21.2016|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 131.6679ms
+2024-06-09 21:58:40.3709|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=1 - - 0
+2024-06-09 21:58:40.3906|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 21:58:40.4459|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 21:58:40.4656|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 4.3328ms
+2024-06-09 21:58:40.4656|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 21:58:40.4656|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|System.InvalidOperationException: Unable to resolve service for type 'BusinessLayer.Interface.IRenewalBl' while attempting to activate 'E_Insurance.Controllers.PolicyRenewalController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-09 21:58:40.5242|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=1 - 500 - text/plain;+charset=utf-8 153.2610ms
+2024-06-09 22:58:01.7640|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 22:58:02.6867|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 22:58:02.6867|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 22:58:02.6867|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 22:58:02.6867|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 22:58:02.6867|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 22:58:03.4837|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 22:58:04.2511|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 768.8808ms
+2024-06-09 22:58:04.3008|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 22:58:04.3008|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 22:58:04.3117|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 10.7987ms
+2024-06-09 22:58:04.4209|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 118.0230ms
+2024-06-09 22:58:04.5547|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 22:58:04.8007|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 245.8516ms
+2024-06-09 22:58:30.3370|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=1 - - 0
+2024-06-09 22:58:31.3327|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 22:58:31.3790|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 22:58:31.4734|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 1: The method or operation is not implemented.
+2024-06-09 22:58:31.4801|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 22:58:31.4801|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 100.9386ms
+2024-06-09 22:58:31.4801|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 22:58:31.4801|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=1 - 400 - text/plain;+charset=utf-8 1153.7635ms
+2024-06-09 23:06:06.6064|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:06:06.7459|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:06:06.7459|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:06:06.7459|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:06:06.7459|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:06:06.7459|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:06:07.1071|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:06:07.3386|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 230.1512ms
+2024-06-09 23:06:07.3386|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:06:07.3386|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:06:07.3386|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.9154ms
+2024-06-09 23:06:07.3708|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 27.9939ms
+2024-06-09 23:06:07.5020|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:06:07.6168|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 114.6807ms
+2024-06-09 23:07:14.3172|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=1 - - 0
+2024-06-09 23:07:14.3557|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:07:14.3752|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:07:14.3979|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 1: The method or operation is not implemented.
+2024-06-09 23:07:14.3979|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:07:14.4151|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 30.3602ms
+2024-06-09 23:07:14.4151|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:07:14.4151|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=1 - 400 - text/plain;+charset=utf-8 98.3270ms
+2024-06-09 23:14:21.4968|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:14:21.4968|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:14:21.4968|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:14:21.4968|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 2: The method or operation is not implemented.
+2024-06-09 23:14:21.4968|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:14:21.4968|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 2.0741ms
+2024-06-09 23:14:21.4968|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:14:21.4968|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 400 - text/plain;+charset=utf-8 6.2119ms
+2024-06-09 23:15:54.4466|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:15:54.6159|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:15:54.6165|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:15:54.6165|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:15:54.6165|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:15:54.6165|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:15:54.8048|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:15:55.0392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 233.3582ms
+2024-06-09 23:15:55.0733|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:15:55.0733|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 6.1687ms
+2024-06-09 23:15:55.1329|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:15:55.1798|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 46.9507ms
+2024-06-09 23:15:55.8533|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:15:55.9816|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 128.2571ms
+2024-06-09 23:16:06.9706|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:16:06.9766|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 5.9338ms
+2024-06-09 23:16:06.9934|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:16:06.9934|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:16:06.9934|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 1.4032ms
+2024-06-09 23:16:06.9934|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 6.9531ms
+2024-06-09 23:16:07.0811|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:16:07.0990|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 17.8703ms
+2024-06-09 23:16:07.3003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:16:07.3049|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 4.4739ms
+2024-06-09 23:16:07.3207|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:16:07.3207|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:16:07.3207|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 0.5313ms
+2024-06-09 23:16:07.3355|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 14.8231ms
+2024-06-09 23:16:07.3927|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:16:07.4066|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 13.6985ms
+2024-06-09 23:16:07.5649|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:16:07.5649|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 3.1597ms
+2024-06-09 23:16:07.5871|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:16:07.5871|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:16:07.5871|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 0.5748ms
+2024-06-09 23:16:07.5871|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 7.7122ms
+2024-06-09 23:16:07.6598|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:16:07.6730|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 13.0698ms
+2024-06-09 23:16:07.8107|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:16:07.8107|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 2.7434ms
+2024-06-09 23:16:07.8342|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:16:07.8366|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:16:07.8366|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 0.6308ms
+2024-06-09 23:16:07.8366|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 6.4496ms
+2024-06-09 23:16:07.9093|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:16:07.9222|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 12.7746ms
+2024-06-09 23:16:08.0942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:16:08.0942|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 5.0726ms
+2024-06-09 23:16:08.1240|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:16:08.1240|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:16:08.1240|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.5187ms
+2024-06-09 23:16:08.1410|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 16.2312ms
+2024-06-09 23:16:08.2091|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:16:08.2250|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 15.7131ms
+2024-06-09 23:16:15.9730|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:16:16.0211|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:16:16.0452|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:16:16.0662|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 2: The method or operation is not implemented.
+2024-06-09 23:16:16.0731|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:16:16.0731|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 28.4636ms
+2024-06-09 23:16:16.0731|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:16:16.0731|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 400 - text/plain;+charset=utf-8 110.5041ms
+2024-06-09 23:20:15.9122|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:20:16.0621|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:20:16.0621|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:20:16.0621|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:20:16.0621|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:20:16.0621|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:20:16.5956|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:20:16.8955|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 298.2003ms
+2024-06-09 23:20:16.9009|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:20:16.9009|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 6.5209ms
+2024-06-09 23:20:16.9171|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:20:16.9981|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 80.9235ms
+2024-06-09 23:20:17.1236|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:20:17.3024|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 178.8242ms
+2024-06-09 23:20:31.8059|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:20:31.8417|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:20:31.8572|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:20:31.8724|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 2: The method or operation is not implemented.
+2024-06-09 23:20:31.8724|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:20:31.8858|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 22.5649ms
+2024-06-09 23:20:31.8858|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:20:31.8858|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 400 - text/plain;+charset=utf-8 80.6259ms
+2024-06-09 23:21:45.7785|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:21:45.9338|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:21:45.9338|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:21:45.9338|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:21:45.9338|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:21:45.9338|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:21:46.2647|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:21:46.5243|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 258.8523ms
+2024-06-09 23:21:46.5243|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:21:46.5399|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.8284ms
+2024-06-09 23:21:46.5399|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:21:46.5963|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 51.2886ms
+2024-06-09 23:21:46.7314|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:21:46.9179|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 186.4230ms
+2024-06-09 23:21:56.8142|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:21:56.8412|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:21:56.8561|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:21:56.8776|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 2: The method or operation is not implemented.
+2024-06-09 23:21:56.8825|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:21:56.8825|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 26.6703ms
+2024-06-09 23:21:56.8825|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:21:56.8825|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 400 - text/plain;+charset=utf-8 76.2343ms
+2024-06-09 23:24:41.0858|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:24:41.2379|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:24:41.2379|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:24:41.2379|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:24:41.2408|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:24:41.2408|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:24:41.7277|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:24:42.0063|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 276.7403ms
+2024-06-09 23:24:42.0111|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:24:42.0111|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.8521ms
+2024-06-09 23:24:42.0255|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:24:42.0703|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 44.8029ms
+2024-06-09 23:24:42.1741|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:24:42.3739|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 199.7830ms
+2024-06-09 23:24:50.6515|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:24:50.6835|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:24:50.7022|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:24:50.7150|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 2: The method or operation is not implemented.
+2024-06-09 23:24:50.7150|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:24:50.7259|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 18.1983ms
+2024-06-09 23:24:50.7259|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:24:50.7259|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 400 - text/plain;+charset=utf-8 74.7617ms
+2024-06-09 23:27:42.3331|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:27:42.5124|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:27:42.5124|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:27:42.5124|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:27:42.5124|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:27:42.5124|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:27:43.0688|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:27:43.3392|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 268.1793ms
+2024-06-09 23:27:43.3581|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:27:43.3581|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.7966ms
+2024-06-09 23:27:43.3961|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:27:43.4387|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 42.5890ms
+2024-06-09 23:27:43.6536|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:27:43.7686|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 114.9673ms
+2024-06-09 23:28:03.3334|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:28:03.4751|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:28:03.4800|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:28:03.4800|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:28:03.4800|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:28:03.4800|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:28:41.7678|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:28:41.9242|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:28:41.9242|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:28:41.9242|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:28:41.9242|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:28:41.9242|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:28:42.3378|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:28:42.5451|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 207.2487ms
+2024-06-09 23:28:42.5451|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:28:42.5451|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 4.7710ms
+2024-06-09 23:28:42.5602|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:28:42.5995|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 39.2380ms
+2024-06-09 23:28:42.6843|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:28:42.8247|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 140.3933ms
+2024-06-09 23:28:52.8679|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:28:52.8950|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:28:52.9086|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:28:52.9303|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 98
+2024-06-09 23:28:53.0991|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:28:53.1057|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 190.8005ms
+2024-06-09 23:28:53.1057|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:28:53.1057|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 400 - text/plain;+charset=utf-8 238.0793ms
+2024-06-09 23:42:53.3193|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=3 - - 0
+2024-06-09 23:42:53.3193|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:42:53.3193|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:42:53.3193|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 3|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 98
+2024-06-09 23:42:53.3193|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:42:53.3193|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 1.6679ms
+2024-06-09 23:42:53.3193|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:42:53.3193|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=3 - 400 - text/plain;+charset=utf-8 5.0784ms
+2024-06-09 23:48:42.5624|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:48:42.6959|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:48:42.6959|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:48:42.6959|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:48:42.6959|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:48:42.6959|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:48:42.9882|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:48:43.1700|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 180.0153ms
+2024-06-09 23:48:43.2024|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:48:43.2024|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 2.9553ms
+2024-06-09 23:48:43.2136|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:48:43.2356|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 21.9886ms
+2024-06-09 23:48:43.6251|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:48:43.7390|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 113.8379ms
+2024-06-09 23:49:16.3719|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=3 - - 0
+2024-06-09 23:49:16.4079|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:16.4256|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:49:16.4409|ERROR|E_Insurance.Controllers.PolicyRenewalController|An error occurred while renewing policy with ID 3|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 91
+   at BusinessLayer.Service.IRenewalServiceBl.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\BusinessLayer\Service\IRenewalServiceBl.cs:line 56
+   at E_Insurance.Controllers.PolicyRenewalController.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\PolicyRenewalController.cs:line 80
+2024-06-09 23:49:16.4772|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-06-09 23:49:16.4772|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 52.1109ms
+2024-06-09 23:49:16.4772|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:16.4772|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=3 - 500 - text/plain;+charset=utf-8 113.3767ms
+2024-06-09 23:49:23.9126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:49:23.9126|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:23.9126|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:49:23.9126|ERROR|E_Insurance.Controllers.PolicyRenewalController|An error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 91
+   at BusinessLayer.Service.IRenewalServiceBl.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\BusinessLayer\Service\IRenewalServiceBl.cs:line 56
+   at E_Insurance.Controllers.PolicyRenewalController.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\PolicyRenewalController.cs:line 80
+2024-06-09 23:49:23.9126|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-06-09 23:49:23.9126|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 5.3841ms
+2024-06-09 23:49:23.9126|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:23.9126|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 500 - text/plain;+charset=utf-8 10.0302ms
+2024-06-09 23:49:51.3605|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:49:51.3605|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:51.3605|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:49:51.3669|ERROR|E_Insurance.Controllers.PolicyRenewalController|An error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 91
+   at BusinessLayer.Service.IRenewalServiceBl.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\BusinessLayer\Service\IRenewalServiceBl.cs:line 56
+   at E_Insurance.Controllers.PolicyRenewalController.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\PolicyRenewalController.cs:line 80
+2024-06-09 23:49:51.3669|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-06-09 23:49:51.3669|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 3.1822ms
+2024-06-09 23:49:51.3669|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:51.3669|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 500 - text/plain;+charset=utf-8 7.4296ms
+2024-06-09 23:49:52.6823|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:49:52.6823|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:52.6823|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:49:52.6823|ERROR|E_Insurance.Controllers.PolicyRenewalController|An error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 91
+   at BusinessLayer.Service.IRenewalServiceBl.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\BusinessLayer\Service\IRenewalServiceBl.cs:line 56
+   at E_Insurance.Controllers.PolicyRenewalController.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\PolicyRenewalController.cs:line 80
+2024-06-09 23:49:52.6823|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-06-09 23:49:52.6823|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 0.6704ms
+2024-06-09 23:49:52.6823|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:52.6823|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 500 - text/plain;+charset=utf-8 1.4110ms
+2024-06-09 23:49:52.8531|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:49:52.8531|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:52.8531|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:49:52.8531|ERROR|E_Insurance.Controllers.PolicyRenewalController|An error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 91
+   at BusinessLayer.Service.IRenewalServiceBl.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\BusinessLayer\Service\IRenewalServiceBl.cs:line 56
+   at E_Insurance.Controllers.PolicyRenewalController.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\PolicyRenewalController.cs:line 80
+2024-06-09 23:49:52.8531|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-06-09 23:49:52.8531|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 0.5336ms
+2024-06-09 23:49:52.8531|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:52.8531|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 500 - text/plain;+charset=utf-8 1.1628ms
+2024-06-09 23:49:53.0586|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:49:53.0586|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:53.0586|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:49:53.0586|ERROR|E_Insurance.Controllers.PolicyRenewalController|An error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 91
+   at BusinessLayer.Service.IRenewalServiceBl.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\BusinessLayer\Service\IRenewalServiceBl.cs:line 56
+   at E_Insurance.Controllers.PolicyRenewalController.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\PolicyRenewalController.cs:line 80
+2024-06-09 23:49:53.0586|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-06-09 23:49:53.0586|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 1.2617ms
+2024-06-09 23:49:53.0586|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:53.0586|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 500 - text/plain;+charset=utf-8 2.5363ms
+2024-06-09 23:49:53.2718|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:49:53.2718|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:53.2725|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:49:53.2725|ERROR|E_Insurance.Controllers.PolicyRenewalController|An error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 91
+   at BusinessLayer.Service.IRenewalServiceBl.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\BusinessLayer\Service\IRenewalServiceBl.cs:line 56
+   at E_Insurance.Controllers.PolicyRenewalController.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\PolicyRenewalController.cs:line 80
+2024-06-09 23:49:53.2725|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-06-09 23:49:53.2725|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 1.9044ms
+2024-06-09 23:49:53.2725|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:53.2725|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 500 - text/plain;+charset=utf-8 2.9675ms
+2024-06-09 23:49:53.7123|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:49:53.7123|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:53.7123|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:49:53.7123|ERROR|E_Insurance.Controllers.PolicyRenewalController|An error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 91
+   at BusinessLayer.Service.IRenewalServiceBl.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\BusinessLayer\Service\IRenewalServiceBl.cs:line 56
+   at E_Insurance.Controllers.PolicyRenewalController.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\E-Insurance\Controllers\PolicyRenewalController.cs:line 80
+2024-06-09 23:49:53.7123|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.String'.
+2024-06-09 23:49:53.7123|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 0.9225ms
+2024-06-09 23:49:53.7123|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:49:53.7123|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 500 - text/plain;+charset=utf-8 1.9652ms
+2024-06-09 23:51:12.8817|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\MICROSOFT\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-09 23:51:13.0645|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-09 23:51:13.0645|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-09 23:51:13.0645|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-09 23:51:13.0645|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-09 23:51:13.0645|INFO|Microsoft.Hosting.Lifetime|Content root path: D:\C#\WebApi\Ensurance\E-Insurance
+2024-06-09 23:51:13.4948|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-09 23:51:13.7003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 205.2991ms
+2024-06-09 23:51:13.7003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-09 23:51:13.7003|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 3.4207ms
+2024-06-09 23:51:13.7129|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-09 23:51:13.7384|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 25.4298ms
+2024-06-09 23:51:13.8172|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-09 23:51:13.9186|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 101.3293ms
+2024-06-09 23:51:23.9199|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - - 0
+2024-06-09 23:51:23.9488|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:51:23.9679|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RenewPolicy", controller = "PolicyRenewal"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RenewPolicy(Int32) on controller E_Insurance.Controllers.PolicyRenewalController (E-Insurance).
+2024-06-09 23:51:23.9848|ERROR|RepositoryLayer.Service.PolicyRenewalService|Error occurred while renewing policy with ID 2|System.NotImplementedException: The method or operation is not implemented.
+   at RepositoryLayer.Context.DapperContext.GetCustomerPolicyById(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Context\DapperContext.cs:line 27
+   at RepositoryLayer.Service.PolicyRenewalService.RenewPolicy(Int32 customerPolicyId) in D:\C#\WebApi\Ensurance\RepositoryLayer\Service\PolicyRenewalService.cs:line 98
+2024-06-09 23:51:24.0000|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing BadRequestObjectResult, writing value of type 'System.String'.
+2024-06-09 23:51:24.0075|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance) in 32.6091ms
+2024-06-09 23:51:24.0075|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyRenewalController.RenewPolicy (E-Insurance)'
+2024-06-09 23:51:24.0075|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/PolicyRenewal/renew?customerPolicyId=2 - 400 - text/plain;+charset=utf-8 88.0364ms

@@ -36,7 +36,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<AdminRegistrationModel>
                     {
                         Success = true,
-                        Message = "User Registration Successful"
+                        Message = "Admin Registration Successful"
                     };
                     return CreatedAtAction(nameof(AdminRegistration), response);
                 }
@@ -86,7 +86,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<AdminRegistrationModel>
                     {
                         Success = true,
-                        Message = "User Registration Successful"
+                        Message = "Customer Registration Successful"
                     };
                     return CreatedAtAction(nameof(CustomerRegistration), response);
                 }
@@ -139,7 +139,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<InsuranceAgentRegistrationModel>
                     {
                         Success = true,
-                        Message = "User Registration Successful"
+                        Message = "Agent Registration Successful"
                     };
                     return CreatedAtAction(nameof(AgentRegistration), response);
                 }
@@ -190,7 +190,7 @@ namespace E_Insurance.Controllers
                     var response = new ResponseModel<EmployeeRegistrationModel>
                     {
                         Success = true,
-                        Message = "User Registration Successful"
+                        Message = "Employee Registration Successful"
                     };
                     return CreatedAtAction(nameof(EmployeeRegistration), response);
                 }

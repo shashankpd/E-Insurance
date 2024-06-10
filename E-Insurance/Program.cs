@@ -26,10 +26,10 @@ builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
 
 //policy purchase
 
-/*builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
-builder.Services.AddScoped<ICustomerPolicyPurchaseService, CustomerPolicyPurchaseService>();
+builder.Services.AddScoped<ICustomerPolicyPurchaseBL, CustomerPolicyPurchaseBL>();
+builder.Services.AddScoped<ICustomerPolicyPurchaseService,CustomerPolicyPurchaseService>();
 
-*///Payment
+//Payment
 
 builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
 builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
@@ -37,6 +37,9 @@ builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
 //agentcommision
 builder.Services.AddScoped<IAgentCommisionService, AgentCommisionService>();
 builder.Services.AddScoped<IAgentCommissionBL, AgentCommissionBL>();
+
+builder.Services.AddScoped<IRenewal, PolicyRenewalService>();
+builder.Services.AddScoped<IRenewalBl, IRenewalServiceBl>();
 
 builder.Services.AddControllers();
 
@@ -146,3 +149,131 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
+
+/*
+using BusinessLayer.Interface;
+using BusinessLayer.Service;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using ModelLayer.Entity;
+using NLog.Web;
+using RepositoryLayer.Context;
+using RepositoryLayer.Interface;
+using RepositoryLayer.Service;
+using StackExchange.Redis;
+using System.Text;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddScoped<IRegistrationBusinessLogic, RegistrationBusinessLigic>();
+builder.Services.AddScoped<IRegistrationService, RegistrationService>();
+
+// policy creation
+builder.Services.AddScoped<IPolicyCreationBL, PolicyCreationBL>();
+builder.Services.AddScoped<IPolicyCreationService, PolicyCreationService>();
+
+// payment
+builder.Services.AddScoped<IPaymentProcessBL, PaymentProcessBL>();
+builder.Services.AddScoped<IPaymentProcessService, PaymentProcessService>();
+
+// agent commission
+builder.Services.AddScoped<IAgentCommisionService, AgentCommisionService>();
+builder.Services.AddScoped<IAgentCommissionBL, AgentCommissionBL>();
+
+// policy renewal
+builder.Services.AddScoped<IRenewal, PolicyRenewalService>();
+builder.Services.AddScoped<IRenewalBl,IRenewalServiceBl>();
+
+builder.Services.AddControllers();
+
+// Add NLog Logger
+var logpath = Path.Combine(Directory.GetCurrentDirectory(), "Logs");
+NLog.GlobalDiagnosticsContext.Set("LogDirectory", logpath);
+builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
+builder.Host.UseNLog();
+builder.Services.AddSingleton<NLog.ILogger>(NLog.LogManager.GetCurrentClassLogger());
+
+// config for Redis
+builder.Services.AddSingleton<ConnectionMultiplexer>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var redisConnectionString = configuration.GetConnectionString("Redis");
+    return ConnectionMultiplexer.Connect(redisConnectionString);
+});
+
+// Adding JWT
+var jwtSettings = builder.Configuration.GetSection("Jwt");
+var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:SecretKey"]));
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.RequireHttpsMetadata = true;
+    options.SaveToken = true;
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidIssuer = jwtSettings["Issuer"],
+        ValidAudience = jwtSettings["Audience"],
+        ValidateLifetime = true,
+        ClockSkew = TimeSpan.Zero,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = key
+    };
+});
+
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "User Management", Version = "v1" });
+
+    var securityScheme = new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Description = "JWT Authorization header using the Bearer scheme",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Reference = new OpenApiReference
+        {
+            Type = ReferenceType.SecurityScheme,
+            Id = JwtBearerDefaults.AuthenticationScheme
+        }
+    };
+
+    c.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme, securityScheme);
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        { securityScheme, Array.Empty<string>() }
+    });
+});
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
+app.MapControllers();
+app.Run();
+*/

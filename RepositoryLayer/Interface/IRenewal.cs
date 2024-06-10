@@ -9,7 +9,7 @@ namespace RepositoryLayer.Interface
 {
    public interface IRenewal
     {
-        CustomerPolicy GetCustomerPolicyById(int customerPolicyId);
+        public CustomerPolicy GetCustomerPolicyById(int customerPolicyId);
         bool RenewPolicy(int customerPolicyId);
     }
 }
