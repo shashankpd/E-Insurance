@@ -16,10 +16,7 @@ using System.Security.Claims;
 using System.Net.Mail;
 using System.Net;
 using ModelLayer.RequestDTO;
-<<<<<<< HEAD
 using RepositoryLayer.NestedMethods;
-=======
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
 namespace RepositoryLayer.Service
 {
@@ -39,7 +36,6 @@ namespace RepositoryLayer.Service
         {
             try
             {
-<<<<<<< HEAD
                 if (!NestedMethodsClass.IsValidGmailAddress(adminRegistration.Email))
                 {
                     Logger.Warn("Invalid email address: {Email}", adminRegistration.Email);
@@ -60,10 +56,6 @@ namespace RepositoryLayer.Service
 
                 string hashedPassword = HashPassword(adminRegistration.PasswordHash);
                 var query = "INSERT INTO AdminRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
-=======
-                string hashedPassword = HashPassword(adminRegistration.PasswordHash);
-                var query = "INSERT INTO AdminRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
                 using (var connection = _context.CreateConnection())
                 {
@@ -86,7 +78,6 @@ namespace RepositoryLayer.Service
                     return false;
                 }
             }
-<<<<<<< HEAD
             catch (ArgumentException ex)
             {
                 Logger.Warn(ex, "Error occurred while adding user: {Message}", ex.Message);
@@ -95,16 +86,9 @@ namespace RepositoryLayer.Service
             catch (Exception ex)
             {
                 Logger.Error(ex, "Error occurred while adding user: {Message}", ex.Message);
-=======
-            catch (Exception ex)
-            {
-                Logger.Error(ex, "Error occurred while adding user");
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                 throw;
             }
         }
-
-<<<<<<< HEAD
 
         public async Task<bool> CustomerRegistration(CustomerRegistrationModel customer)
         {
@@ -122,45 +106,21 @@ namespace RepositoryLayer.Service
                
                 string hashedPassword = HashPassword(customer.PasswordHash);
                 var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
-=======
-        public async Task<bool> CustomerRegistration(CustomerRegistrationModel Customer)
-        {
-            try
-            {
-                string hashedPassword = HashPassword(Customer.PasswordHash);
-                var query = "INSERT INTO CustomerRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
-
                 using (var connection = _context.CreateConnection())
                 {
                     var affectedRows = await connection.ExecuteAsync(query, new
                     {
-<<<<<<< HEAD
                         customer.Name,
                         customer.Email,
                         PasswordHash = hashedPassword,
                         customer.PhoneNumber,
                         customer.Role,
                         CreatedDate = DateTime.Now
-=======
-                        Customer.Name,
-                        Customer.Email,
-                        PasswordHash = hashedPassword,
-                        Customer.PhoneNumber,
-                        Customer.Role,
-                        CreatedDate = DateTime.Now,
-                       
-                       
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                     });
 
                     if (affectedRows > 0)
                     {
-<<<<<<< HEAD
                         await SendWelcomeEmail(customer.Email, customer.Name, customer.PasswordHash);
-=======
-                        await SendWelcomeEmail(Customer.Email, Customer.Name, Customer.PasswordHash);
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                         return true;
                     }
 
@@ -169,7 +129,6 @@ namespace RepositoryLayer.Service
             }
             catch (Exception ex)
             {
-<<<<<<< HEAD
            
                 Logger.Error(ex, "Error occurred while adding customer: {Message}", ex.Message);
                 throw; 
@@ -231,56 +190,28 @@ namespace RepositoryLayer.Service
                 // Perform registration
                 string hashedPassword = HashPassword(agent.PasswordHash);
                 var query = "INSERT INTO InsuranceAgentRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
-=======
-                Logger.Error(ex, "Error occurred while adding user");
-                throw;
-            }
-        }
-
-        public async Task<bool> AgentRegistration(InsuranceAgentRegistrationModel Agent)
-        {
-            try
-            {
-                string hashedPassword = HashPassword(Agent.PasswordHash);
-                var query = "INSERT INTO InsuranceAgentRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate,Location) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate,@Location)";
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 
                 using (var connection = _context.CreateConnection())
                 {
                     var affectedRows = await connection.ExecuteAsync(query, new
                     {
-<<<<<<< HEAD
                         agent.Name,
                         agent.Email,
                         PasswordHash = hashedPassword,
                         agent.PhoneNumber,
                         agent.Role,
                         CreatedDate = DateTime.Now
-=======
-                        Agent.Name,
-                        Agent.Email,
-                        PasswordHash = hashedPassword,
-                        Agent.PhoneNumber,
-                        Agent.Role,
-                        CreatedDate = DateTime.Now,
-                        Agent.Location
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                     });
 
                     if (affectedRows > 0)
                     {
-<<<<<<< HEAD
                         await SendWelcomeEmail(agent.Email, agent.Name, agent.PasswordHash);
-=======
-                        await SendWelcomeEmail(Agent.Email, Agent.Name, Agent.PasswordHash);
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                         return true;
                     }
 
                     return false;
                 }
             }
-<<<<<<< HEAD
             catch (ArgumentNullException ex)
             {
                 Logger.Warn(ex, "Error occurred while adding agent: {Message}", ex.Message);
@@ -294,16 +225,11 @@ namespace RepositoryLayer.Service
             catch (Exception ex)
             {
                 Logger.Error(ex, "Error occurred while adding agent: {Message}", ex.Message);
-=======
-            catch (Exception ex)
-            {
-                Logger.Error(ex, "Error occurred while adding user");
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                 throw;
             }
         }
 
-<<<<<<< HEAD
+
 
         public async Task<bool> EmployeeRegistration(EmployeeRegistrationModel employee)
         {
@@ -337,49 +263,34 @@ namespace RepositoryLayer.Service
                
                 string hashedPassword = HashPassword(employee.PasswordHash);
                 var query = "INSERT INTO EmployeeRegistration (Name, Email, PasswordHash, PhoneNumber, Role, CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role, @CreatedDate)";
-=======
-        public async Task<bool> EmployeeRegistration(EmployeeRegistrationModel Employee)
-        {
-            try
-            {
-                string hashedPassword = HashPassword(Employee.PasswordHash);
-                var query = "INSERT INTO EmployeeRegistration (Name, Email, PasswordHash, PhoneNumber, Role,CreatedDate) VALUES (@Name, @Email, @PasswordHash, @PhoneNumber, @Role,@CreatedDate)";
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
+
 
                 using (var connection = _context.CreateConnection())
                 {
                     var affectedRows = await connection.ExecuteAsync(query, new
                     {
-<<<<<<< HEAD
+
                         employee.Name,
                         employee.Email,
                         PasswordHash = hashedPassword,
                         employee.PhoneNumber,
                         employee.Role,
-=======
-                        Employee.Name,
-                        Employee.Email,
-                        PasswordHash = hashedPassword,
-                        Employee.PhoneNumber,
-                        Employee.Role,
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
+
                         CreatedDate = DateTime.Now
                     });
 
                     if (affectedRows > 0)
                     {
-<<<<<<< HEAD
+
                         await SendWelcomeEmail(employee.Email, employee.Name, employee.PasswordHash);
-=======
-                        await SendWelcomeEmail(Employee.Email, Employee.Name, Employee.PasswordHash);
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
+
                         return true;
                     }
 
                     return false;
                 }
             }
-<<<<<<< HEAD
+
             catch (ArgumentNullException ex)
             {
                 Logger.Warn(ex, "Error occurred while adding employee: {Message}", ex.Message);
@@ -393,19 +304,11 @@ namespace RepositoryLayer.Service
             catch (Exception ex)
             {
                 Logger.Error(ex, "Error occurred while adding employee: {Message}", ex.Message);
-=======
-            catch (Exception ex)
-            {
-                Logger.Error(ex, "Error occurred while adding user");
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
+
                 throw;
             }
         }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         public async Task<string> UserLogin(string email, string password, IConfiguration configuration, string role)
         {
             try
@@ -460,8 +363,6 @@ namespace RepositoryLayer.Service
             var key = Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]);
             var issuer = _configuration["Jwt:Issuer"];
             var audience = _configuration["Jwt:Audience"];
-
-<<<<<<< HEAD
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity(new Claim[]
@@ -470,23 +371,6 @@ namespace RepositoryLayer.Service
             new Claim(ClaimTypes.Email, user.Email),
             new Claim(ClaimTypes.Role, role)
                 }),
-=======
-            var claims = new List<Claim>
-    {
-        new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
-        new Claim(ClaimTypes.Email, user.Email),
-        new Claim(ClaimTypes.Role, role)
-    };
-
-            if (role.ToLower() == "customer")
-            {
-                claims.Add(new Claim("CustomerId", user.CustomerId.ToString()));
-            }
-
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(claims),
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
                 Expires = DateTime.UtcNow.AddDays(7),
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
                 Issuer = issuer,
@@ -506,7 +390,7 @@ namespace RepositoryLayer.Service
             }
         }
 
-<<<<<<< HEAD
+
         private string GenerateJwtToken(User user)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
@@ -531,9 +415,7 @@ namespace RepositoryLayer.Service
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
         }
-=======
-        
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
+
 
         private async Task SendWelcomeEmail(string email, string username, string password)
         {
@@ -569,7 +451,3 @@ namespace RepositoryLayer.Service
         }
     }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
