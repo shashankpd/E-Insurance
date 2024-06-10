@@ -13,10 +13,6 @@ namespace BusinessLayer.Service
     public class CustomerPolicyPurchaseBL : ICustomerPolicyPurchaseBL
     {
         private readonly ICustomerPolicyPurchaseService Policypurchase;
-        public CustomerPolicyPurchaseBL(ICustomerPolicyPurchaseService Policy)
-        {
-            Policypurchase = Policy;        
-        }       
         public CustomerPolicyPurchaseBL(ICustomerPolicyPurchaseService Policypurchase)
         {
             this.Policypurchase = Policypurchase;

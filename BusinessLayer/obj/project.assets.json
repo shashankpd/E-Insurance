@@ -556,10 +556,7 @@
           "NLog": "5.3.2",
           "NLog.Extensions.Logging": "5.3.11",
           "NLog.Web.AspNetCore": "5.3.11",
-<<<<<<< HEAD
-=======
           "StackExchange.Redis": "2.7.33",
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "System.Data.SqlClient": "4.8.6",
           "System.Net.Mail.Abstractions": "1.1.21"
         },
@@ -1585,40 +1582,22 @@
       "Dapper >= 2.1.35",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.6",
       "Microsoft.Extensions.Configuration >= 8.0.0",
-      "ModelLayer >= 1.0.0",
       "NLog >= 5.3.2",
       "NLog.Extensions.Logging >= 5.3.11",
       "NLog.Web.AspNetCore >= 5.3.11",
       "RepositoryLayer >= 1.0.0",
-<<<<<<< HEAD
-=======
       "StackExchange.Redis >= 2.7.33",
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       "System.Data.SqlClient >= 4.8.6",
       "System.Net.Mail.Abstractions >= 1.1.21"
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\MICROSOFT\\.nuget\\packages\\": {}
-=======
     "C:\\Users\\SHASHANK\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\BusinessLayer.csproj",
-      "projectName": "BusinessLayer",
-      "projectPath": "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\BusinessLayer.csproj",
-      "packagesPath": "C:\\Users\\MICROSOFT\\.nuget\\packages\\",
-      "outputPath": "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
       "projectUniqueName": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
       "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\BusinessLayer\\BusinessLayer.csproj",
@@ -1631,7 +1610,6 @@
       "configFilePaths": [
         "C:\\Users\\SHASHANK\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1639,29 +1617,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-<<<<<<< HEAD
-        "C:\\Program Files\\dotnet\\library-packs": {},
-=======
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj": {
-              "projectPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj"
-            },
-            "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj": {
-              "projectPath": "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj"
-=======
-            "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj": {
-              "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj"
-            },
             "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\RepositoryLayer.csproj": {
               "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\RepositoryLayer.csproj"
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
             }
           }
         }
@@ -1705,13 +1668,10 @@
             "target": "Package",
             "version": "[5.3.11, )"
           },
-<<<<<<< HEAD
-=======
           "StackExchange.Redis": {
             "target": "Package",
             "version": "[2.7.33, )"
           },
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "System.Data.SqlClient": {
             "target": "Package",
             "version": "[4.8.6, )"
@@ -1737,11 +1697,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
       }
     }
   }

@@ -1,22 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "D:\\C#\\WebApi\\Ensurance\\E-Insurance\\E-Insurance.csproj": {}
-  },
-  "projects": {
-    "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\BusinessLayer.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\BusinessLayer.csproj",
-        "projectName": "BusinessLayer",
-        "projectPath": "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\MICROSOFT\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
     "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\E-Insurance\\E-Insurance.csproj": {}
   },
   "projects": {
@@ -35,7 +19,6 @@
         "configFilePaths": [
           "C:\\Users\\SHASHANK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,335 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-<<<<<<< HEAD
-          "C:\\Program Files\\dotnet\\library-packs": {},
-=======
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-<<<<<<< HEAD
-              "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj"
-              },
-              "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj": {
-                "projectPath": "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.35, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "NLog": {
-              "target": "Package",
-              "version": "[5.3.2, )"
-            },
-            "NLog.Extensions.Logging": {
-              "target": "Package",
-              "version": "[5.3.11, )"
-            },
-            "NLog.Web.AspNetCore": {
-              "target": "Package",
-              "version": "[5.3.11, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.6, )"
-            },
-            "System.Net.Mail.Abstractions": {
-              "target": "Package",
-              "version": "[1.1.21, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\C#\\WebApi\\Ensurance\\E-Insurance\\E-Insurance.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\C#\\WebApi\\Ensurance\\E-Insurance\\E-Insurance.csproj",
-        "projectName": "E-Insurance",
-        "projectPath": "D:\\C#\\WebApi\\Ensurance\\E-Insurance\\E-Insurance.csproj",
-        "packagesPath": "C:\\Users\\MICROSOFT\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\WebApi\\Ensurance\\E-Insurance\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\BusinessLayer.csproj": {
-                "projectPath": "D:\\C#\\WebApi\\Ensurance\\BusinessLayer\\BusinessLayer.csproj"
-              },
-              "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj"
-              },
-              "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj": {
-                "projectPath": "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.35, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "NLog": {
-              "target": "Package",
-              "version": "[5.3.2, )"
-            },
-            "NLog.Extensions.Logging": {
-              "target": "Package",
-              "version": "[5.3.11, )"
-            },
-            "NLog.Web.AspNetCore": {
-              "target": "Package",
-              "version": "[5.3.11, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.6, )"
-            },
-            "System.Net.Mail.Abstractions": {
-              "target": "Package",
-              "version": "[1.1.21, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj",
-        "projectName": "ModelLayer",
-        "projectPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj",
-        "packagesPath": "C:\\Users\\MICROSOFT\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        }
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Dapper": {
-              "target": "Package",
-              "version": "[2.1.35, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "Microsoft.Extensions.Configuration": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "NLog": {
-              "target": "Package",
-              "version": "[5.3.2, )"
-            },
-            "NLog.Extensions.Logging": {
-              "target": "Package",
-              "version": "[5.3.11, )"
-            },
-            "NLog.Web.AspNetCore": {
-              "target": "Package",
-              "version": "[5.3.11, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.6, )"
-            },
-            "System.Net.Mail.Abstractions": {
-              "target": "Package",
-              "version": "[1.1.21, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj",
-        "projectName": "RepositoryLayer",
-        "projectPath": "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\RepositoryLayer.csproj",
-        "packagesPath": "C:\\Users\\MICROSOFT\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\WebApi\\Ensurance\\RepositoryLayer\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\MICROSOFT\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "D:\\C#\\WebApi\\Ensurance\\ModelLayer\\ModelLayer.csproj"
-=======
-              "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj": {
-                "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\ModelLayer\\ModelLayer.csproj"
-              },
               "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\RepositoryLayer.csproj": {
                 "projectPath": "C:\\Users\\SHASHANK\\source\\repos\\E-Insurance\\RepositoryLayer\\RepositoryLayer.csproj"
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
               }
             }
           }
@@ -444,9 +106,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
@@ -775,7 +434,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
         }
       }
     }

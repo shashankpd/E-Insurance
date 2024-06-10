@@ -302,10 +302,7 @@
           "NLog": "5.3.2",
           "NLog.Extensions.Logging": "5.3.11",
           "NLog.Web.AspNetCore": "5.3.11",
-<<<<<<< HEAD
-=======
           "StackExchange.Redis": "2.7.33",
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
           "System.Data.SqlClient": "4.8.6",
           "System.Net.Mail.Abstractions": "1.1.21"
         },

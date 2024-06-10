@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RepositoryLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c939ed38d32aa0e8f205198a65d64060b22306bf")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8f36c31932ca112838d3cdbd58da90ef010442e")]
->>>>>>> E-InsuranceBranch-A
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e97b472a635e46c96929dcd9b75edd19254161a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("RepositoryLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RepositoryLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
