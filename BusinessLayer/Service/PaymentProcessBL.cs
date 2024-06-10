@@ -1,9 +1,6 @@
 ﻿using BusinessLayer.Interface;
 using ModelLayer.Entity;
-<<<<<<< HEAD
-=======
 using ModelLayer.RequestDTO;
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
 using RepositoryLayer.Interface;
 using System;
 using System.Collections.Generic;
@@ -28,8 +25,6 @@ namespace BusinessLayer.Service
         {
             return PaymentProcess.AddPayment(Payment);
         }
-<<<<<<< HEAD
-=======
         public Task<IEnumerable<PaymentModel>> GetAllPayments()
         {
             return PaymentProcess.GetAllPayments();
@@ -48,6 +43,5 @@ namespace BusinessLayer.Service
         {
             return PaymentProcess.CalculatePremium(policyId, customerAge, coverageAmount, policyType,paymentFrequency, TermYears);
         }
->>>>>>> c8ef75a48d6d0f2109f56342f5abb787d9323a7f
     }
 }
