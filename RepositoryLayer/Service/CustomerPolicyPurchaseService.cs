@@ -95,6 +95,26 @@ namespace RepositoryLayer.Service
             }
         }
 
+        public async Task<IEnumerable<CustomerPolicyDetails>> GetAllPurchases()
+        {
+            try
+            {
+                var policies = await _context.CreateConnection().QueryAsync<CustomerPolicyDetails>(
+                    "ViewAllCustomerPolicies",
+                    commandType: CommandType.StoredProcedure
+                );
+
+                Logger.Info("Retrieved all policies");
+
+                return policies;
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, "An error occurred while retrieving policies");
+                throw;
+            }
+        }
+
 
 
 

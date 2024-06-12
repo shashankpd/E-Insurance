@@ -12,11 +12,11 @@ namespace E_Insurance.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PolicyPurchaseController : ControllerBase
+    public class policypurchaseController : ControllerBase
     {
         private readonly ICustomerPolicyPurchaseBL _policyPurchaseBL;
 
-        public PolicyPurchaseController(ICustomerPolicyPurchaseBL policyPurchaseBL)
+        public policypurchaseController(ICustomerPolicyPurchaseBL policyPurchaseBL)
         {
             _policyPurchaseBL = policyPurchaseBL;
         }
@@ -35,7 +35,7 @@ namespace E_Insurance.Controllers
                         Message = "Customer Data stored successfully",
                         Data = policyPurchase
                     };
-                    return Ok(response);
+                    return CreatedAtAction(nameof(PurchasePolicy), response);
                 }
                 else
                 {
@@ -153,6 +153,52 @@ namespace E_Insurance.Controllers
             }
         }
 
+        [HttpGet("allpurchases")]
+        public async Task<IActionResult>GetAllPurchases()
+        {
+            try
+            {
+                // Proceed with retrieving the customer purchase details using the provided customerId
+                var result = await _policyPurchaseBL.GetAllPurchases();
+                if (result != null)
+                {
+                    var response = new ResponseModel<IEnumerable<CustomerPolicyDetails>>
+                    {
+                        Success = true,
+                        Message = "Customer details retrieved successfully",
+                        Data = result
+                    };
+                    return Ok(response);
+                }
+                else
+                {
+                    return NotFound(new ResponseModel<IEnumerable<CustomerPolicyDetails>>
+                    {
+                        Success = false,
+                        Message = "No details found",
+                        Data = null
+                    });
+                }
+            }
+            catch (DatabaseException ex)
+            {
+                return NotFound(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = ex.Message,
+                    Data = null
+                });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(new ResponseModel<string>
+                {
+                    Success = false,
+                    Message = $"An error occurred: {ex.Message}",
+                    Data = null
+                });
+            }
+        }
 
 
 

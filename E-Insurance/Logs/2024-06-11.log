@@ -1,0 +1,278 @@
+2024-06-11 10:37:24.8582|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-11 10:37:26.2414|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-11 10:37:26.2414|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-11 10:37:26.2511|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-11 10:37:26.2511|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-11 10:37:26.2511|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-11 10:37:27.5610|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger - - -
+2024-06-11 10:37:28.5579|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger - 301 0 - 981.1247ms
+2024-06-11 10:37:28.6056|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-11 10:37:28.9423|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 336.5748ms
+2024-06-11 10:37:28.9634|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui.css - - -
+2024-06-11 10:37:28.9796|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui-bundle.js - - -
+2024-06-11 10:37:28.9847|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui-standalone-preset.js - - -
+2024-06-11 10:37:28.9847|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-11 10:37:29.0055|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-11 10:37:29.0300|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 24.4418ms
+2024-06-11 10:37:29.1135|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-11 10:37:29.1135|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui.css - 200 143943 text/css 150.7184ms
+2024-06-11 10:37:29.1291|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-11 10:37:29.1291|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 144.8932ms
+2024-06-11 10:37:29.1929|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-11 10:37:29.1929|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 213.6945ms
+2024-06-11 10:37:29.2116|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 220.5651ms
+2024-06-11 10:37:29.6551|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-11 10:37:30.0453|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 390.1147ms
+2024-06-11 10:58:01.1384|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=1 - - -
+2024-06-11 10:58:01.1558|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 10:58:01.2291|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ViewCommissions", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewCommissions(Int32) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-11 10:58:05.9333|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance) in 4688.0139ms
+2024-06-11 10:58:05.9333|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 10:58:06.0341|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request.|StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter writer, Nullable`1 serverType, EndPointCollection endpoints) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 723
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 685
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 663
+   at Program.<>c.<<Main>$>b__0_0(IServiceProvider provider) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Program.cs:line 57
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-06-11 10:58:06.4522|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=1 - 500 - text/plain;+charset=utf-8 5314.2352ms
+2024-06-11 10:58:22.6172|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=1 - - -
+2024-06-11 10:58:22.6172|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 10:58:22.6172|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ViewCommissions", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewCommissions(Int32) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-11 10:58:24.1818|INFO|RepositoryLayer.Service.AgentCommisionService|Commissions viewed for AgentId: 1
+2024-06-11 10:58:24.1954|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Entity.Commision, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 10:58:24.2174|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance) in 1594.4382ms
+2024-06-11 10:58:24.2174|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 10:58:24.2174|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=1 - 200 - application/json;+charset=utf-8 1601.6805ms
+2024-06-11 10:58:30.7950|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=2 - - -
+2024-06-11 10:58:30.7950|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 10:58:30.7950|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ViewCommissions", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewCommissions(Int32) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-11 10:58:30.8079|INFO|RepositoryLayer.Service.AgentCommisionService|Commissions viewed for AgentId: 2
+2024-06-11 10:58:30.8079|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Entity.Commision, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 10:58:30.8079|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance) in 12.7939ms
+2024-06-11 10:58:30.8079|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 10:58:30.8079|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=2 - 200 - application/json;+charset=utf-8 14.6152ms
+2024-06-11 10:58:36.0328|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=3 - - -
+2024-06-11 10:58:36.0328|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 10:58:36.0328|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ViewCommissions", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewCommissions(Int32) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-11 10:58:36.0518|INFO|RepositoryLayer.Service.AgentCommisionService|Commissions viewed for AgentId: 3
+2024-06-11 10:58:36.0518|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Entity.Commision, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 10:58:36.0518|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance) in 27.7527ms
+2024-06-11 10:58:36.0518|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 10:58:36.0518|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=3 - 200 - application/json;+charset=utf-8 30.0277ms
+2024-06-11 17:50:29.7447|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\SHASHANK\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-06-11 17:50:30.7820|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7264
+2024-06-11 17:50:30.7820|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5206
+2024-06-11 17:50:30.7820|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-06-11 17:50:30.7820|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-06-11 17:50:30.7820|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance
+2024-06-11 17:50:33.2371|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger - - -
+2024-06-11 17:50:33.8329|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger - 301 0 - 599.9599ms
+2024-06-11 17:50:33.8418|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/index.html - - -
+2024-06-11 17:50:34.0463|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/index.html - 200 - text/html;charset=utf-8 204.3881ms
+2024-06-11 17:50:34.0682|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui.css - - -
+2024-06-11 17:50:34.0777|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui-bundle.js - - -
+2024-06-11 17:50:34.0777|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/swagger-ui-standalone-preset.js - - -
+2024-06-11 17:50:34.0777|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - - -
+2024-06-11 17:50:34.0777|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/_vs/browserLink - - -
+2024-06-11 17:50:34.0777|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript;+charset=utf-8 5.9054ms
+2024-06-11 17:50:34.1164|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-06-11 17:50:34.1164|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui.css - 200 143943 text/css 48.7710ms
+2024-06-11 17:50:34.1247|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-06-11 17:50:34.1247|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 47.2950ms
+2024-06-11 17:50:34.1665|INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-06-11 17:50:34.1684|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 90.0597ms
+2024-06-11 17:50:34.2283|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 148.9291ms
+2024-06-11 17:50:34.5430|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - - -
+2024-06-11 17:50:34.7336|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 190.5484ms
+2024-06-11 17:58:18.4920|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/PolicyPurchase - - -
+2024-06-11 17:58:18.5028|INFO|Microsoft.AspNetCore.Authorization.DefaultAuthorizationService|Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-06-11 17:58:18.5028|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|AuthenticationScheme: Bearer was challenged.
+2024-06-11 17:58:18.5028|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/PolicyPurchase - 401 0 - 16.1124ms
+2024-06-11 17:58:54.1086|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=dileep%40gmail.com&password=Password%40123&role=Customer - - 0
+2024-06-11 17:58:54.1086|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
+2024-06-11 17:58:54.1602|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "UserLogin", controller = "UserManagement"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserLogin(System.String, System.String, Microsoft.Extensions.Configuration.IConfiguration, System.String) on controller E_Insurance.Controllers.UserManagementController (E-Insurance).
+2024-06-11 17:58:54.2249|INFO|E_Insurance.Controllers.UserManagementController|Starting login process for email: dileep@gmail.com
+2024-06-11 17:58:55.0376|INFO|E_Insurance.Controllers.UserManagementController|Login successful for email: dileep@gmail.com
+2024-06-11 17:58:55.0376|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 17:58:55.0542|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance) in 885.6084ms
+2024-06-11 17:58:55.0542|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.UserManagementController.UserLogin (E-Insurance)'
+2024-06-11 17:58:55.0542|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/UserManagement/Login?email=dileep%40gmail.com&password=Password%40123&role=Customer - 200 - application/json;+charset=utf-8 946.4427ms
+2024-06-11 17:59:23.6846|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/PolicyPurchase - - -
+2024-06-11 17:59:23.7432|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PolicyPurchaseController.GetCustomerPurchaseDetailsById (E-Insurance)'
+2024-06-11 17:59:23.7467|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCustomerPurchaseDetailsById", controller = "PolicyPurchase"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetCustomerPurchaseDetailsById() on controller E_Insurance.Controllers.PolicyPurchaseController (E-Insurance).
+2024-06-11 17:59:23.7710|INFO|RepositoryLayer.Service.CustomerPolicyPurchaseService|Retrieved all policies
+2024-06-11 17:59:23.7710|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Response.CustomerPolicyDetails, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 17:59:23.7841|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PolicyPurchaseController.GetCustomerPurchaseDetailsById (E-Insurance) in 37.2786ms
+2024-06-11 17:59:23.7841|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PolicyPurchaseController.GetCustomerPurchaseDetailsById (E-Insurance)'
+2024-06-11 17:59:23.7841|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/PolicyPurchase - 200 - application/json;+charset=utf-8 99.8699ms
+2024-06-11 18:05:27.1066|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/PaymentProcess/getbycustomerid?CustomerId=1 - - -
+2024-06-11 18:05:27.1066|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PaymentProcessController.GetPaymentById (E-Insurance)'
+2024-06-11 18:05:27.1066|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetPaymentById", controller = "PaymentProcess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentById(Int32) on controller E_Insurance.Controllers.PaymentProcessController (E-Insurance).
+2024-06-11 18:05:27.4856|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.RequestDTO.PaymentModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 18:05:27.4856|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PaymentProcessController.GetPaymentById (E-Insurance) in 376.4607ms
+2024-06-11 18:05:27.4856|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PaymentProcessController.GetPaymentById (E-Insurance)'
+2024-06-11 18:05:27.4856|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/PaymentProcess/getbycustomerid?CustomerId=1 - 200 - application/json;+charset=utf-8 384.0359ms
+2024-06-11 18:19:42.8092|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - - -
+2024-06-11 18:19:42.8092|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Failed to validate the token.|Microsoft.IdentityModel.Tokens.SecurityTokenSignatureKeyNotFoundException: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignature(JsonWebToken jwtToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateSignatureAndIssuerSecurityKey(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-06-11 18:19:43.2203|INFO|Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler|Bearer was not authenticated. Failure message: IDX10503: Signature validation failed. Token does not have a kid. Keys tried: '[PII of type 'System.Text.StringBuilder' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. Number of keys in TokenValidationParameters: '1'. 
+Number of keys in Configuration: '0'. 
+Exceptions caught:
+ '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+token: '[PII of type 'Microsoft.IdentityModel.JsonWebTokens.JsonWebToken' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'. See https://aka.ms/IDX10503 for details.
+2024-06-11 18:19:43.2203|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - 404 0 - 412.6525ms
+2024-06-11 18:19:43.2203|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7264/api/PolicyPurchase%0A, Response status code: 404
+2024-06-11 18:20:05.6600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - - -
+2024-06-11 18:20:05.6600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - 404 0 - 4.9366ms
+2024-06-11 18:20:05.6600|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7264/api/PolicyPurchase%0A, Response status code: 404
+2024-06-11 18:21:11.7697|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - - -
+2024-06-11 18:21:11.7697|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - 404 0 - 1.2530ms
+2024-06-11 18:21:11.7697|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7264/api/PolicyPurchase%0A, Response status code: 404
+2024-06-11 18:21:46.1740|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - - -
+2024-06-11 18:21:46.1740|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - 404 0 - 2.8757ms
+2024-06-11 18:21:46.1740|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7264/api/PolicyPurchase%0A, Response status code: 404
+2024-06-11 18:22:19.3489|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - - -
+2024-06-11 18:22:19.3489|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7264/api/PolicyPurchase
+ - 404 0 - 1.7403ms
+2024-06-11 18:22:19.3489|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7264/api/PolicyPurchase%0A, Response status code: 404
+2024-06-11 18:24:04.5864|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/PaymentProcess - - -
+2024-06-11 18:24:04.5864|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PaymentProcessController.GetAllPayments (E-Insurance)'
+2024-06-11 18:24:04.5941|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetAllPayments", controller = "PaymentProcess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllPayments() on controller E_Insurance.Controllers.PaymentProcessController (E-Insurance).
+2024-06-11 18:24:04.5941|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.RequestDTO.PaymentModel, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 18:24:04.6097|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PaymentProcessController.GetAllPayments (E-Insurance) in 15.5424ms
+2024-06-11 18:24:04.6097|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PaymentProcessController.GetAllPayments (E-Insurance)'
+2024-06-11 18:24:04.6097|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/PaymentProcess - 200 - application/json;+charset=utf-8 23.4650ms
+2024-06-11 18:24:42.9754|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/PaymentProcess/generateReceipt/1 - - -
+2024-06-11 18:24:42.9754|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.PaymentProcessController.GetRecieptByPaymementId (E-Insurance)'
+2024-06-11 18:24:42.9829|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetRecieptByPaymementId", controller = "PaymentProcess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRecieptByPaymementId(Int32) on controller E_Insurance.Controllers.PaymentProcessController (E-Insurance).
+2024-06-11 18:24:43.0013|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Entity.ReceiptDetails, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 18:24:43.0013|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.PaymentProcessController.GetRecieptByPaymementId (E-Insurance) in 22.1127ms
+2024-06-11 18:24:43.0013|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.PaymentProcessController.GetRecieptByPaymementId (E-Insurance)'
+2024-06-11 18:24:43.0013|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/PaymentProcess/generateReceipt/1 - 200 - application/json;+charset=utf-8 29.9772ms
+2024-06-11 18:28:15.5891|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - application/json 61
+2024-06-11 18:28:15.5891|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-11 18:28:15.5992|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CalculateCommission", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateCommission(ModelLayer.RequestDTO.CommissionCalculationRequest) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-11 18:28:15.6765|ERROR|RepositoryLayer.Service.AgentCommisionService|Error calculating commission|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommissionRate', table 'E-Insurance-3.dbo.Commissions'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\AgentCommissionService.cs:line 37
+ClientConnectionId:1f3acc63-f150-407e-836c-1833a350412b
+Error Number:515,State:2,Class:16
+2024-06-11 18:28:15.7888|ERROR|E_Insurance.Controllers.AgentCommissionController|An error occurred while processing the Commission Calculation|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommissionRate', table 'E-Insurance-3.dbo.Commissions'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\AgentCommissionService.cs:line 37
+   at E_Insurance.Controllers.AgentCommissionController.CalculateCommission(CommissionCalculationRequest request) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\AgentCommissionController.cs:line 30
+ClientConnectionId:1f3acc63-f150-407e-836c-1833a350412b
+Error Number:515,State:2,Class:16
+2024-06-11 18:28:15.7989|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 18:28:15.7989|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance) in 199.7938ms
+2024-06-11 18:28:15.7989|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-11 18:28:15.7989|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - 500 - application/json;+charset=utf-8 210.2573ms
+2024-06-11 18:28:34.1937|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - application/json 61
+2024-06-11 18:28:34.1937|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-11 18:28:34.1937|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CalculateCommission", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateCommission(ModelLayer.RequestDTO.CommissionCalculationRequest) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-11 18:28:34.2072|ERROR|RepositoryLayer.Service.AgentCommisionService|Error calculating commission|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommissionRate', table 'E-Insurance-3.dbo.Commissions'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\AgentCommissionService.cs:line 37
+ClientConnectionId:1f3acc63-f150-407e-836c-1833a350412b
+Error Number:515,State:2,Class:16
+2024-06-11 18:28:34.2072|ERROR|E_Insurance.Controllers.AgentCommissionController|An error occurred while processing the Commission Calculation|System.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'CommissionRate', table 'E-Insurance-3.dbo.Commissions'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at RepositoryLayer.Service.AgentCommisionService.CalculateCommission(Int32 agentId, Int32 policyId, Decimal premiumAmount) in C:\Users\SHASHANK\source\repos\E-Insurance\RepositoryLayer\Service\AgentCommissionService.cs:line 37
+   at E_Insurance.Controllers.AgentCommissionController.CalculateCommission(CommissionCalculationRequest request) in C:\Users\SHASHANK\source\repos\E-Insurance\E-Insurance\Controllers\AgentCommissionController.cs:line 30
+ClientConnectionId:1f3acc63-f150-407e-836c-1833a350412b
+Error Number:515,State:2,Class:16
+2024-06-11 18:28:34.2072|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'Response.ResponseModel`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 18:28:34.2072|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance) in 13.389ms
+2024-06-11 18:28:34.2072|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-11 18:28:34.2072|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - 500 - application/json;+charset=utf-8 15.3985ms
+2024-06-11 18:29:05.2074|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - application/json 61
+2024-06-11 18:29:05.2074|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-11 18:29:05.2074|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "CalculateCommission", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CalculateCommission(ModelLayer.RequestDTO.CommissionCalculationRequest) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-11 18:29:05.2190|INFO|RepositoryLayer.Service.AgentCommisionService|Commission calculated for AgentId: 3, PolicyId: 3, PremiumAmount: 20000
+2024-06-11 18:29:05.2190|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing CreatedAtActionResult, writing value of type 'Response.ResponseModel`1[[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 18:29:05.2443|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance) in 35.1368ms
+2024-06-11 18:29:05.2443|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.CalculateCommission (E-Insurance)'
+2024-06-11 18:29:05.2443|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/AgentCommission/commission - 201 - application/json;+charset=utf-8 37.2200ms
+2024-06-11 18:29:49.2419|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=3 - - -
+2024-06-11 18:29:49.2419|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 18:29:49.2469|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "ViewCommissions", controller = "AgentCommission"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ViewCommissions(Int32) on controller E_Insurance.Controllers.AgentCommissionController (E-Insurance).
+2024-06-11 18:29:49.2469|INFO|RepositoryLayer.Service.AgentCommisionService|Commissions viewed for AgentId: 3
+2024-06-11 18:29:49.2469|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'Response.ResponseModel`1[[System.Collections.Generic.IEnumerable`1[[ModelLayer.Entity.Commision, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-06-11 18:29:49.2469|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance) in 12.2901ms
+2024-06-11 18:29:49.2469|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.AgentCommissionController.ViewCommissions (E-Insurance)'
+2024-06-11 18:29:49.2469|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/AgentCommission/agentid?agentId=3 - 200 - application/json;+charset=utf-8 17.7281ms

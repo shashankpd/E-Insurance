@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Interface;
 using BusinessLayer.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Entity;
@@ -10,12 +11,12 @@ namespace E_Insurance.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AgentCommissionController : ControllerBase
+    public class agentcommissionController : ControllerBase
     {
         private readonly IAgentCommissionBL AgentCommission;
-        private readonly ILogger<AgentCommissionController> _logger; // Add this
+        private readonly ILogger<agentcommissionController> _logger; // Add this
 
-        public AgentCommissionController(IAgentCommissionBL agentCommission, ILogger<AgentCommissionController> logger)
+        public agentcommissionController(IAgentCommissionBL agentCommission, ILogger<agentcommissionController> logger)
         {
             AgentCommission = agentCommission;
             _logger = logger;
@@ -69,38 +70,54 @@ namespace E_Insurance.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("agentid")]
-        public async Task<IActionResult> ViewCommissions(int agentId)
+        public async Task<IActionResult> ViewCommissions()
         {
             try
             {
-                var result = await AgentCommission.ViewCommissions(agentId);
+                // Get the AgentId of the authenticated user from the claims in the JWT token
+                var agentIdClaim = User.FindFirst("AgentId");
+
+                if (agentIdClaim == null)
+                {
+                    // Handle case where AgentId claim is missing
+                    return Unauthorized("AgentId claim is missing in the token.");
+                }
+
+                // Convert authenticated AgentId to int if necessary
+                int authenticatedAgentId = int.Parse(agentIdClaim.Value);
+
+                // Proceed with retrieving the commissions for the authenticated agent
+                var result = await AgentCommission.ViewCommissions(authenticatedAgentId);
                 if (result != null)
                 {
                     var response = new ResponseModel<IEnumerable<Commision>>
                     {
                         Success = true,
-                        Message = "All Commissions retrieved successfully",
+                        Message = "All commissions retrieved successfully",
                         Data = result
                     };
                     return Ok(response);
                 }
                 else
                 {
-                    return BadRequest(new ResponseModel<Commision>
+                    return NotFound(new ResponseModel<IEnumerable<Commision>>
                     {
                         Success = false,
-                        Message = "No Commissions found"
+                        Message = "No commissions found",
+                        Data = null
                     });
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "An error occurred while retrieving Commission");
-                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<Commision>
+                _logger.LogError(ex, "An error occurred while retrieving commissions");
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<string>
                 {
                     Success = false,
-                    Message = "An error occurred while retrieving Commission"
+                    Message = "An error occurred while retrieving commissions",
+                    Data = null
                 });
             }
         }

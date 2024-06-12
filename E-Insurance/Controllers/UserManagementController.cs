@@ -13,18 +13,18 @@ namespace E_Insurance.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserManagementController : ControllerBase
+    public class usermanagementController : ControllerBase
     {
         private readonly IRegistrationBusinessLogic _user;
-        private readonly ILogger<UserManagementController> _logger;
+        private readonly ILogger<usermanagementController> _logger;
 
-        public UserManagementController(IRegistrationBusinessLogic user, ILogger<UserManagementController> logger)
+        public usermanagementController(IRegistrationBusinessLogic user, ILogger<usermanagementController> logger)
         {
             _user = user;
             _logger = logger;
         }
 
-        [HttpPost("AdminRegistration")]
+        [HttpPost("adminregistration")]
         public async Task<IActionResult> AdminRegistration([FromBody] AdminRegistrationModel admin)
         {
             try
@@ -72,7 +72,7 @@ namespace E_Insurance.Controllers
             }
         }
 
-        [HttpPost("CustomerRegistration")]
+        [HttpPost("customerregistration")]
         public async Task<IActionResult> CustomerRegistration([FromBody] CustomerRegistrationModel Customer)
         {
             try
@@ -120,7 +120,7 @@ namespace E_Insurance.Controllers
             }
         }
 
-        [HttpPost("AgentRegistration")]
+        [HttpPost("agentregistration")]
         public async Task<IActionResult> AgentRegistration([FromBody] InsuranceAgentRegistrationModel Agent)
         {
             try
@@ -168,7 +168,7 @@ namespace E_Insurance.Controllers
             }
         }
 
-        [HttpPost("EmployeeRegistration")]
+        [HttpPost("employeeregistration")]
         public async Task<IActionResult> EmployeeRegistration([FromBody] EmployeeRegistrationModel Employee)
         {
             try
@@ -216,7 +216,7 @@ namespace E_Insurance.Controllers
             }
         }
 
-        [HttpPost("Login")]
+        [HttpPost("login")]
         public async Task<IActionResult> UserLogin(string email, string password, [FromServices] IConfiguration configuration,string role)
         {
             try

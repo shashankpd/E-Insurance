@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging; // Add this
 using ModelLayer.Entity;
@@ -11,12 +12,12 @@ namespace E_Insurance.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PaymentProcessController : ControllerBase
+    public class paymentprocessController : ControllerBase
     {
         private readonly IPaymentProcessBL _paymentProcessBL;
-        private readonly ILogger<PaymentProcessController> _logger; // Add this
+        private readonly ILogger<paymentprocessController> _logger; // Add this
 
-        public PaymentProcessController(IPaymentProcessBL paymentProcessBL, ILogger<PaymentProcessController> logger) // Modify the constructor
+        public paymentprocessController(IPaymentProcessBL paymentProcessBL, ILogger<paymentprocessController> logger) // Modify the constructor
         {
             _paymentProcessBL = paymentProcessBL;
             _logger = logger; // Initialize the logger
@@ -105,12 +106,26 @@ namespace E_Insurance.Controllers
             }
         }
 
+        [Authorize]
         [HttpGet("getbycustomerid")]
-        public async Task<IActionResult> GetPaymentById(int CustomerId)
+        public async Task<IActionResult> GetPaymentById()
         {
             try
             {
-                var result = await _paymentProcessBL.GetPaymentById(CustomerId);
+                // Get the CustomerId of the authenticated user from the claims in the JWT token
+                var customerIdClaim = User.FindFirst("CustomerId");
+
+                if (customerIdClaim == null)
+                {
+                    // Handle case where CustomerId claim is missing
+                    return Unauthorized("CustomerId claim is missing in the token.");
+                }
+
+                // Convert authenticated CustomerId to int if necessary
+                int authenticatedCustomerId = int.Parse(customerIdClaim.Value);
+
+                // Proceed with retrieving the payment details
+                var result = await _paymentProcessBL.GetPaymentById(authenticatedCustomerId);
                 if (result != null)
                 {
                     var response = new ResponseModel<IEnumerable<PaymentModel>>
@@ -123,25 +138,27 @@ namespace E_Insurance.Controllers
                 }
                 else
                 {
-                    return BadRequest(new ResponseModel<PaymentModel>
+                    return NotFound(new ResponseModel<IEnumerable<PaymentModel>>
                     {
                         Success = false,
-                        Message = "No Payments found"
+                        Message = "No Payments found",
+                        Data = null
                     });
                 }
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "An error occurred while retrieving Payments");
-                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<PaymentModel>
+                return StatusCode(StatusCodes.Status500InternalServerError, new ResponseModel<string>
                 {
                     Success = false,
-                    Message = "An error occurred while retrieving Payments"
+                    Message = "An error occurred while retrieving Payments",
+                    Data = null
                 });
             }
         }
 
-        [HttpGet("generateReceipt/{paymentId}")]
+        [HttpGet("generatereceipt/{paymentId}")]
         public async Task<IActionResult> GetRecieptByPaymementId(int paymentId)
         {
             try
