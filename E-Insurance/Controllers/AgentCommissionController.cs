@@ -106,7 +106,6 @@ namespace E_Insurance.Controllers
                     {
                         Success = false,
                         Message = "No commissions found",
-                        Data = null
                     });
                 }
             }
@@ -117,7 +116,7 @@ namespace E_Insurance.Controllers
                 {
                     Success = false,
                     Message = "An error occurred while retrieving commissions",
-                    Data = null
+                   
                 });
             }
         }
@@ -134,7 +133,7 @@ namespace E_Insurance.Controllers
                 {
                     Success = true,
                     Message = $"Commission paid for AgentId: {agentId}",
-                    Data = null
+                    Data = "sucess"
                 };  
                 return Ok(response);
             }

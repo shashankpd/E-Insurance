@@ -1,4 +1,4 @@
-use [E-Insurance-3];
+use [E-Insurance-3]
 
 
 CREATE TABLE AdminRegistration (
@@ -34,7 +34,10 @@ CREATE TABLE InsuranceAgentRegistration (
     PhoneNumber VARCHAR(20),
 	Role VARCHAR(20),
     CreatedDate DATETIME NOT NULL
+	Location VARCHAR(255) NULL;
 );
+
+ALTER TABLE InsuranceAgentRegistration ADD Location VARCHAR(255) NULL;
 
 CREATE TABLE EmployeeRegistration (
     EmployeeId INT IDENTITY(1,1) PRIMARY KEY,
@@ -93,7 +96,59 @@ CREATE TABLE Payments (
     CONSTRAINT FK_CustomerPolicyId FOREIGN KEY (CustomerPolicyId) REFERENCES CustomerPolicies(CustomerPolicyId)
 );
 
-	drop table Payments
+8.-- Agent Commission table
+
+CREATE TABLE Commissions (
+    CommissionId INT IDENTITY(1,1) PRIMARY KEY,
+    AgentId INT,
+    PolicyId INT,
+    CommissionRate DECIMAL(5, 2) NOT NULL,
+    CommissionAmount DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATE NOT NULL,
+    FOREIGN KEY (AgentId) REFERENCES InsuranceAgentRegistration(AgentId),
+    FOREIGN KEY (PolicyId) REFERENCES Policies(PolicyId)
+);
+
+9.-- AgentPolicyCommissionRates table
+
+CREATE TABLE AgentPolicyCommissionRates (
+    AgentPolicyCommissionRateId INT IDENTITY(1,1) PRIMARY KEY,
+    AgentId INT,
+    PolicyId INT,
+    CommissionRate DECIMAL(5, 2) NOT NULL,
+    FOREIGN KEY (AgentId) REFERENCES InsuranceAgentRegistration(AgentId),
+    FOREIGN KEY (PolicyId) REFERENCES Policies(PolicyId)
+);
+
+INSERT INTO AgentPolicyCommissionRates (AgentId, PolicyId, CommissionRate)
+VALUES (3, 3, 0.05); 
+
+10.--CommissionPayments Table
+
+CREATE TABLE CommissionPayments (
+    PaymentId INT IDENTITY(1,1) PRIMARY KEY,
+    AgentId INT,
+    Amount DECIMAL(10, 2) NOT NULL,
+    PaymentDate DATE NOT NULL,
+    FOREIGN KEY (AgentId) REFERENCES InsuranceAgentRegistration(AgentId)
+);
+
+EXEC sp_CalculateCommission @AgentId = 3, @PolicyId = 1, @PremiumAmount = 5000.00;
+
+11.---premum calculation table----
+
+CREATE TABLE PremiumCalculations (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    PolicyId INT,
+    CustomerAge INT,
+    CoverageAmount DECIMAL(18, 2),
+    PolicyType NVARCHAR(50),
+    PaymentFrequency NVARCHAR(50),
+    TermYears INT,
+    PremiumAmount DECIMAL(10, 2),
+    Status NVARCHAR(50) DEFAULT 'Pending',
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
 
 
 
@@ -104,11 +159,15 @@ select * from InsuranceAgentRegistration;
 select * from Policies;
 select * from CustomerPolicies;
 select * from Payments;
+select * from Commissions;
+select * from AgentPolicyCommissionRates;
+select * from CommissionPayments;
+select * from PremiumCalculations;
 
 
 
 
--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 ------stored procedure for policy creation------
 
 ALTER PROCEDURE CreatePolicy
@@ -156,7 +215,7 @@ EXEC CreatePolicy
 
 	EXEC ViewPolicy 
     
-------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 
 ----stored procedure for policy purchase------------
 
@@ -180,35 +239,68 @@ END;
 
 -----stored procedure for view customers purchase details----------
 
-CREATE PROCEDURE ViewCustomerPolicies
+ALTER PROCEDURE ViewCustomerPolicies
     @CustomerId INT
 AS
 BEGIN
     SELECT 
-        cp.CustomerPolicyId, 
-        c.Name AS CustomerName, 
-        a.AgentId, 
+        cp.CustomerPolicyId,
+        c.Name AS CustomerName,
+        p.PolicyName,          -- Include PolicyName from Policies table
+        pc.CoverageAmount, 
+        pc.TermYears AS PolicyTerm, 
+        pc.PolicyType, 
+        pc.PaymentFrequency, 
+        pc.PolicyId,
+        pc.CreatedAt AS CalculationCreatedAt,
+        pc.CustomerAge, 
+        pc.PremiumAmount,
         a.Name AS AgentName, 
-        p.PolicyName, 
-        p.Description, 
-        p.PolicyType, 
-        cp.PurchaseDate, 
-        p.CoverageAmount, 
-        p.Premium, 
-        p.TermLength, 
-        p.EntryAge, 
-        p.Status
+        ISNULL(a.Location, 'N/A') AS AgentLocation  -- Handle null locations
     FROM 
         CustomerPolicies cp
     INNER JOIN 
-        CustomerRegistration c ON cp.CustomerId = c.CustomerId
+        PremiumCalculations pc ON cp.PolicyId = pc.PolicyId
     LEFT JOIN 
         InsuranceAgentRegistration a ON cp.AgentId = a.AgentId
     INNER JOIN 
-        Policies p ON cp.PolicyId = p.PolicyId
+        CustomerRegistration c ON cp.CustomerId = c.CustomerId
+    INNER JOIN 
+        Policies p ON cp.PolicyId = p.PolicyId    -- Join with Policies table to get PolicyName
     WHERE 
         cp.CustomerId = @CustomerId;
 END;
+----stored Procedure for gitting details of all the  customers-------
+CREATE PROCEDURE ViewCustomerPolicies
+AS
+BEGIN
+    SELECT 
+        cp.CustomerPolicyId,
+        c.Name AS CustomerName,
+        p.PolicyName,          -- Include PolicyName from Policies table
+        pc.CoverageAmount, 
+        pc.TermYears AS PolicyTerm, 
+        pc.PolicyType, 
+        pc.PaymentFrequency, 
+        pc.PolicyId,
+        pc.CreatedAt AS CalculationCreatedAt,
+        pc.CustomerAge, 
+        pc.PremiumAmount,
+        a.Name AS AgentName, 
+        ISNULL(a.Location, 'N/A') AS AgentLocation  -- Handle null locations
+    FROM 
+        CustomerPolicies cp
+    INNER JOIN 
+        PremiumCalculations pc ON cp.PolicyId = pc.PolicyId
+    LEFT JOIN 
+        InsuranceAgentRegistration a ON cp.AgentId = a.AgentId
+    INNER JOIN 
+        CustomerRegistration c ON cp.CustomerId = c.CustomerId
+    INNER JOIN 
+        Policies p ON cp.PolicyId = p.PolicyId    -- Join with Policies table to get PolicyName
+    
+END;
+
 
 ----stored procedure for canceling the customers particular policy------
 
@@ -221,7 +313,7 @@ BEGIN
     WHERE CustomerPolicyId = @CustomerPolicyId;
 END;
 
-------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 -----stored procedure for adding Payment--------------
 
 ALTER PROCEDURE sp_ValidatePayment
@@ -259,4 +351,214 @@ BEGIN
 END;
 
 EXEC sp_ValidatePayment 1, '2024-06-06', 100.00;
+
+-----------stored procedure for getallpayments---------------
+
+CREATE PROCEDURE sp_GetAllPayments
+AS
+BEGIN
+    -- Select all records from the Payments table
+    SELECT PaymentId, CustomerPolicyId, PaymentDate, Amount, Status
+    FROM Payments;
+END;
+
+-----stored procedure for getpaymentbyId,using customerid,joined to get customerid from customerplicy table which is refrencing customer id-----------
+
+CREATE PROCEDURE sp_GetPaymentsByCustomerId
+    @CustomerId INT
+AS
+BEGIN
+    SELECT 
+        p.PaymentId, 
+        p.CustomerPolicyId, 
+        p.PaymentDate, 
+        p.Amount, 
+        p.Status
+    FROM 
+        Payments p
+    INNER JOIN 
+        CustomerPolicies cp ON p.CustomerPolicyId = cp.CustomerPolicyId
+    WHERE 
+        cp.CustomerId = @CustomerId;
+END;
+
+-----Stored Pocedure for genrating Reciept after payment-------------
+
+ALTER PROCEDURE sp_GenerateReceipt
+    @PaymentId INT
+AS
+BEGIN
+    SELECT 
+        p.PaymentId,
+        cp.CustomerPolicyId,
+        cp.FirstName AS CustomerName,
+        c.Email AS CustomerEmail,
+        a.Name AS AgentName,
+        pol.PolicyName,
+        pol.CoverageAmount,
+        p.PaymentDate,
+        p.Amount,
+        p.Status
+    FROM 
+        Payments p
+    INNER JOIN 
+        CustomerPolicies cp ON p.CustomerPolicyId = cp.CustomerPolicyId
+    INNER JOIN 
+        CustomerRegistration c ON cp.CustomerId = c.CustomerId
+    LEFT JOIN 
+        InsuranceAgentRegistration a ON cp.AgentId = a.AgentId
+    INNER JOIN 
+        Policies pol ON cp.PolicyId = pol.PolicyId
+    WHERE 
+        p.PaymentId = @PaymentId;
+END;
+
+------Stored Procedure for Calculating premiums----------
+
+ALTER PROCEDURE CalculatePremium
+    @PolicyId INT,
+    @CustomerAge INT,
+    @CoverageAmount DECIMAL(18, 2),
+    @PolicyType NVARCHAR(50),
+    @PaymentFrequency NVARCHAR(50),
+    @TermYears INT
+AS
+BEGIN
+    DECLARE @Premium DECIMAL(10, 2)
+    DECLARE @MonthlyRate DECIMAL(5, 4)
+    DECLARE @TotalPremium DECIMAL(10, 2)
+
+    -- Determine the monthly rate based on the policy type
+    IF @PolicyType = 'Health'
+    BEGIN
+        SET @MonthlyRate = 0.02 / 12 -- Annual rate divided by 12 for monthly rate
+    END
+    ELSE IF @PolicyType = 'Life'
+    BEGIN
+        SET @MonthlyRate = 0.01 / 12 -- Annual rate divided by 12 for monthly rate
+    END
+    ELSE
+    BEGIN
+        SET @MonthlyRate = 0.005 / 12 -- Annual rate divided by 12 for monthly rate
+    END
+
+    -- Calculate the total premium based on the term length
+    SET @TotalPremium = @CoverageAmount * @MonthlyRate * @TermYears * 12 + (@CustomerAge / 10.0)
+
+    -- Adjust the premium based on the payment frequency
+    IF @PaymentFrequency = 'Monthly'
+    BEGIN
+        SET @Premium = @TotalPremium / (@TermYears * 12)
+    END
+    ELSE IF @PaymentFrequency = 'Half-Yearly'
+    BEGIN
+        SET @Premium = @TotalPremium / (@TermYears * 2)
+    END
+    ELSE IF @PaymentFrequency = 'Yearly'
+    BEGIN
+        SET @Premium = @TotalPremium / @TermYears
+    END
+    ELSE
+    BEGIN
+        RAISERROR('Invalid Payment Frequency', 16, 1)
+        RETURN
+    END
+
+    -- Insert the calculated premium into the PremiumCalculations table
+    INSERT INTO PremiumCalculations (PolicyId, CustomerAge, CoverageAmount, PolicyType, PaymentFrequency, TermYears, PremiumAmount, Status)
+    VALUES (@PolicyId, @CustomerAge, @CoverageAmount, @PolicyType, @PaymentFrequency, @TermYears, @Premium, 'Pending')
+
+    -- Return the calculated premium
+    SELECT @Premium AS Premium;
+END;
+
+------stored procedure for finalizing the purchase-------
+
+CREATE PROCEDURE FinalizePurchase
+AS
+BEGIN
+    DECLARE @Id INT
+
+    -- Select the most recent calculation to finalize
+    SELECT TOP 1 @Id = Id
+    FROM PremiumCalculations
+    WHERE Status = 'Pending'
+    ORDER BY Id DESC
+
+    -- If no pending calculations are found, raise an error
+    IF @Id IS NULL
+    BEGIN
+        RAISERROR('No pending premium calculations found.', 16, 1)
+        RETURN
+    END
+
+    -- Update the status to 'Purchased'
+    UPDATE PremiumCalculations
+    SET Status = 'Purchased'
+    WHERE Id = @Id
+
+    -- No need to return anything
+END;
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+--------stored procedure for Agent Commission Calculation--------------
+
+ALTER PROCEDURE sp_CalculateCommission
+    @AgentId INT,
+    @PolicyId INT,
+    @PremiumAmount DECIMAL(10, 2)
+AS
+BEGIN
+    DECLARE @CommissionRate DECIMAL(5, 2);
+    DECLARE @CommissionAmount DECIMAL(10, 2);
+
+    -- Get the commission rate for the agent and policy
+    SELECT @CommissionRate = CommissionRate
+    FROM AgentPolicyCommissionRates
+    WHERE AgentId = @AgentId AND PolicyId = @PolicyId;
+
+    -- Calculate the commission amount
+    SET @CommissionAmount = @PremiumAmount * @CommissionRate;
+
+    -- Insert the commission record into the Commissions table
+    INSERT INTO Commissions (AgentId, PolicyId, CommissionRate, CommissionAmount, PaymentDate)
+    VALUES (@AgentId, @PolicyId, @CommissionRate, @CommissionAmount, GETDATE());
+
+    -- Return the calculated commission amount
+    SELECT @CommissionAmount AS CommissionAmount;
+END;
+
+
+
+--------------Stored Procedure for view Particular Agents Commission using AgentID-----------
+
+CREATE PROCEDURE sp_ViewCommissions
+    @AgentId INT
+AS
+BEGIN
+    -- Retrieve commission information
+    SELECT * FROM Commissions WHERE AgentId = @AgentId;
+
+END;
+
+-------------------stored procedure for calculating totalAmount and updating into table(CommissionPayments)-------------
+CREATE PROCEDURE sp_PayAgentCommission
+    @AgentId INT
+AS
+BEGIN
+    DECLARE @TotalCommission DECIMAL(10, 2);
+
+    -- Calculate the total commission for the agent
+    SELECT @TotalCommission = SUM(CommissionAmount)
+    FROM Commissions
+    WHERE AgentId = @AgentId AND PaymentDate = CAST(GETDATE() AS DATE);
+
+    -- Insert the payment record into the CommissionPayments table
+    INSERT INTO CommissionPayments (AgentId, Amount, PaymentDate)
+    VALUES (@AgentId, @TotalCommission, GETDATE());
+
+END;
 
