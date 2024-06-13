@@ -16,7 +16,7 @@ namespace RepositoryLayer.Interface
 
         public Task<bool> RemoveCustomerPolicy(int customerPolicyId);
 
-        public Task<IEnumerable<CustomerPolicyDetails>> GetAllPurchases();
+        public Task<IEnumerable<AllCustomerPolicyDetails>> GetAllPurchases();
 
 
 

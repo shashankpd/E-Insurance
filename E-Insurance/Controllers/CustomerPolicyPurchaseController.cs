@@ -162,7 +162,7 @@ namespace E_Insurance.Controllers
                 var result = await _policyPurchaseBL.GetAllPurchases();
                 if (result != null)
                 {
-                    var response = new ResponseModel<IEnumerable<CustomerPolicyDetails>>
+                    var response = new ResponseModel<IEnumerable<AllCustomerPolicyDetails>>
                     {
                         Success = true,
                         Message = "Customer details retrieved successfully",
@@ -172,7 +172,7 @@ namespace E_Insurance.Controllers
                 }
                 else
                 {
-                    return NotFound(new ResponseModel<IEnumerable<CustomerPolicyDetails>>
+                    return NotFound(new ResponseModel<IEnumerable<AllCustomerPolicyDetails>>
                     {
                         Success = false,
                         Message = "No details found",

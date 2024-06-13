@@ -35,7 +35,7 @@ namespace BusinessLayer.Service
             return Policypurchase.RemoveCustomerPolicy(customerPolicyId);
         }
 
-        public Task<IEnumerable<CustomerPolicyDetails>> GetAllPurchases()
+        public Task<IEnumerable<AllCustomerPolicyDetails>> GetAllPurchases()
         {
             return Policypurchase.GetAllPurchases();
         }

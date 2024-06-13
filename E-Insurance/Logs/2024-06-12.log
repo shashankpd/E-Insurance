@@ -1087,3 +1087,10 @@ Error Number:515,State:2,Class:16
 2024-06-12 16:27:29.4875|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.usermanagementController.AgentRegistration (E-Insurance) in 15277.9289ms
 2024-06-12 16:27:29.4875|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.usermanagementController.AgentRegistration (E-Insurance)'
 2024-06-12 16:27:29.4875|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7264/api/usermanagement/agentregistration - 201 - application/json;+charset=utf-8 15284.3596ms
+2024-06-12 17:10:10.7686|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7264/api/paymentprocess/getbycustomerid - - -
+2024-06-12 17:10:10.7686|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'E_Insurance.Controllers.paymentprocessController.GetPaymentById (E-Insurance)'
+2024-06-12 17:10:10.7686|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetPaymentById", controller = "paymentprocess"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetPaymentById() on controller E_Insurance.Controllers.paymentprocessController (E-Insurance).
+2024-06-12 17:10:10.7686|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing UnauthorizedObjectResult, writing value of type 'System.String'.
+2024-06-12 17:10:10.7686|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action E_Insurance.Controllers.paymentprocessController.GetPaymentById (E-Insurance) in 0.3335ms
+2024-06-12 17:10:10.7686|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'E_Insurance.Controllers.paymentprocessController.GetPaymentById (E-Insurance)'
+2024-06-12 17:10:10.7686|INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7264/api/paymentprocess/getbycustomerid - 401 - text/plain;+charset=utf-8 1.8766ms

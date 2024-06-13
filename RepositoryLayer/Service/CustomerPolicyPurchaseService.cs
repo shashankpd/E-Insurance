@@ -95,11 +95,11 @@ namespace RepositoryLayer.Service
             }
         }
 
-        public async Task<IEnumerable<CustomerPolicyDetails>> GetAllPurchases()
+        public async Task<IEnumerable<AllCustomerPolicyDetails>> GetAllPurchases()
         {
             try
             {
-                var policies = await _context.CreateConnection().QueryAsync<CustomerPolicyDetails>(
+                var policies = await _context.CreateConnection().QueryAsync<AllCustomerPolicyDetails>(
                     "ViewAllCustomerPolicies",
                     commandType: CommandType.StoredProcedure
                 );

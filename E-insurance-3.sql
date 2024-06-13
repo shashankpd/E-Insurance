@@ -268,14 +268,16 @@ BEGIN
     INNER JOIN 
         Policies p ON cp.PolicyId = p.PolicyId    -- Join with Policies table to get PolicyName
     WHERE 
-        cp.CustomerId = @CustomerId;
+        cp.CustomerId = @CustomerId AND pc.Status = 'Purchased';
 END;
 ----stored Procedure for gitting details of all the  customers-------
-CREATE PROCEDURE ViewCustomerPolicies
+ALTER PROCEDURE ViewAllCustomerPolicies
 AS
 BEGIN
     SELECT 
+	    
         cp.CustomerPolicyId,
+		c.CustomerId,
         c.Name AS CustomerName,
         p.PolicyName,          -- Include PolicyName from Policies table
         pc.CoverageAmount, 
@@ -298,6 +300,8 @@ BEGIN
         CustomerRegistration c ON cp.CustomerId = c.CustomerId
     INNER JOIN 
         Policies p ON cp.PolicyId = p.PolicyId    -- Join with Policies table to get PolicyName
+
+		WHERE pc.Status = 'Purchased';
     
 END;
 

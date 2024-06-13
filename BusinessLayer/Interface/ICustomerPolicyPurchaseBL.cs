@@ -15,7 +15,7 @@ namespace BusinessLayer.Interface
         public Task<IEnumerable<CustomerPolicyDetails>> GetCustomerPurchaseDetailsById(int customerId);
 
         public Task<bool> RemoveCustomerPolicy(int customerPolicyId);
-        public Task<IEnumerable<CustomerPolicyDetails>> GetAllPurchases();
+        public Task<IEnumerable<AllCustomerPolicyDetails>> GetAllPurchases();
 
 
 
