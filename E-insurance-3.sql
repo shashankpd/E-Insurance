@@ -308,14 +308,45 @@ END;
 
 ----stored procedure for canceling the customers particular policy------
 
-CREATE PROCEDURE DeletePolicy
+ALTER PROCEDURE DeletePolicy
     @CustomerPolicyId INT
 AS
 BEGIN
-    -- Delete the policy based on the CustomerPolicyId
-    DELETE FROM CustomerPolicies
-    WHERE CustomerPolicyId = @CustomerPolicyId;
+    BEGIN TRY
+        -- Start a transaction
+        BEGIN TRANSACTION;
+
+        -- Delete the related records from the Payments table
+        DELETE FROM Payments
+        WHERE CustomerPolicyId = @CustomerPolicyId;
+
+        -- Get the PolicyId associated with the CustomerPolicyId
+        DECLARE @PolicyId INT;
+        SELECT @PolicyId = PolicyId FROM CustomerPolicies WHERE CustomerPolicyId = @CustomerPolicyId;
+
+        -- Delete the related records from the PremiumCalculations table
+        DELETE FROM PremiumCalculations
+        WHERE PolicyId = @PolicyId;
+
+        -- Delete the policy from CustomerPolicies table
+        DELETE FROM CustomerPolicies
+        WHERE CustomerPolicyId = @CustomerPolicyId;
+
+        -- Commit the transaction
+        COMMIT TRANSACTION;
+
+        PRINT 'Policy, related payments, and premium calculations deleted successfully.';
+    END TRY
+    BEGIN CATCH
+        -- Rollback the transaction if an error occurs
+        ROLLBACK TRANSACTION;
+
+        -- Print error message
+        PRINT 'An error occurred while deleting the policy, related payments, and premium calculations.';
+        THROW;
+    END CATCH;
 END;
+GO
 
 -------------------------------------------------------------------------------------------------------------------------
 -----stored procedure for adding Payment--------------
@@ -426,7 +457,7 @@ ALTER PROCEDURE CalculatePremium
     @PolicyType NVARCHAR(50),
     @PaymentFrequency NVARCHAR(50),
     @TermYears INT
-AS
+AS	
 BEGIN
     DECLARE @Premium DECIMAL(10, 2)
     DECLARE @MonthlyRate DECIMAL(5, 4)
